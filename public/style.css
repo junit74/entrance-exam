@@ -52,3 +52,6 @@ main{margin-left:230px;padding:0 38px;max-width:1900px}.topbar{height:83px;displ
 
 /* Center the ratio heading over its colored value badge. */
 th.ratio-column,td.ratio-column{text-align:center}
+
+.essay-exam{margin-bottom:23px}.essay-scope-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:16px;margin:16px 0}.essay-scope-group{background:#f6f8f2;border:1px solid var(--line);border-radius:10px;padding:16px;min-width:0}.essay-scope-group h4{font-size:13px;color:var(--ink)}.essay-scope-group .essay-subjects{font-weight:600;color:var(--ink);line-height:1.9}.essay-scope-group p{overflow-wrap:anywhere}.essay-scope-group .essay-units{font-size:11px}
+.essay-math-tags{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}.essay-scope-note{font-size:12px!important;line-height:1.8;color:#56674c!important}.essay-verified{display:inline-block;font-size:10px;color:var(--muted);margin-left:12px}.detail-section .essay-scope-grid{grid-template-columns:minmax(0,1fr)}

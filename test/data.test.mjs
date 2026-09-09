@@ -78,3 +78,30 @@ test('added schools distinguish natural sciences from engineering and aptitude l
  assert.equal(category('kau','자유전공학부(이학적성)'),'mixed');
  assert.equal(category('kau','항공운항학과'),'other');
 });
+
+test('every reviewed essay unit maps to exactly one sourced 2027 exam scope',()=>{
+ for(const s of latest.schools){
+  const exam=catalog.schools[s.id].essayExam;
+  assert.equal(exam.year,2027,s.id);
+  assert.ok(exam.durationMinutes>0&&exam.durationMinutes<=180,s.id);
+  assert.ok(exam.sourceUrl.startsWith('https://')&&exam.sourceUrl.includes('#page='),s.id);
+  for(const group of exam.groups){assert.ok(group.subjects.length&&group.units.length&&group.format,`${s.id}: ${group.label}`);}
+  for(const row of s.snapshot.rows)assert.equal(exam.groups.filter(g=>g.units.includes(row.name)).length,1,`${s.id}: ${row.name}`);
+ }
+});
+test('exam scopes preserve track and medical exceptions independently of dashboard categories',()=>{
+ const scope=(school,name)=>catalog.schools[school].essayExam.groups.find(g=>g.units.includes(name)).subjects;
+ assert.ok(scope('caudavinci','예술공학부').includes('확률과 통계'),'Davinci uses general-track scope, not creative-track scope');
+ assert.ok(!scope('caudavinci','예술공학부').includes('기하'));
+ assert.deepEqual(scope('yonseim','소프트웨어학부'),['수학','수학Ⅰ','수학Ⅱ','미적분','기하','확률과 통계']);
+ assert.ok(scope('tukorea','경영학부 경영 자율전공').includes('수학Ⅱ'));
+ assert.ok(scope('inha','수학교육과').includes('미적분'));
+ assert.ok(scope('kau','자유전공학부(공학적성)').includes('미적분'));
+ assert.ok(!scope('kau','자유전공학부(이학적성)').includes('미적분'));
+ for(const school of ['gachon','sahmyook']){
+  assert.ok(scope(school,'약학과').includes('미적분'));
+  assert.ok(!scope(school,'간호학과').includes('미적분'));
+ }
+ assert.ok(scope('ajou','의학과').includes('생명과학Ⅱ'));
+ assert.ok(!scope('ajou','약학과').includes('생명과학Ⅱ'));
+});

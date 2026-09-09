@@ -84,3 +84,29 @@
 과거 결과와 수능최저·분류는 수동 검증한 자료입니다. 입학처의 정정 공지가 생기면 JSON과 출처를 함께 수정해야 합니다. 현재 경쟁률만 자동 수집합니다. 실제 GitHub Pages 배포와 모바일 접속을 확인했습니다. GitHub 실행 환경에서는 진학어플라이가 보안 확인(403)을 반환하여 현재 운영은 로컬 수집 결과를 GitHub에 자동 게시하는 방식입니다.
 
 2026-09-09 학교별 독립 재검증 결과와 수정 내역은 [감사 보고서](audit-2026-09-09.md)에 정리했습니다. 가천대의 공식 최종접수 표와 입시결과 엑셀 간 경쟁률 차이 3건을 기록했으며, 자연과학 제외 후 표시 대상인 2건은 화면에 두 수치와 출처를 함께 표시합니다.
+
+## 2027 논술 출제 범위 (2026-09-09 확인)
+
+공식 모집요강 또는 논술가이드의 출제 범위 표를 직접 대조했습니다. 수능 선택과목 제한과 논술 출제 범위를 구분합니다. `data/catalog.json`의 `essayExam.groups.units`는 경쟁률 표의 모집단위 명칭과 명시적으로 연결하며, 대시보드의 공학·인문 분류로 논술 유형을 추정하지 않습니다.
+
+| 대학 | 시간 | 공식 근거 |
+| --- | ---: | --- |
+| 경기대 | 100분 | [2027 공식 모집요강 · 30쪽](https://enter.kyonggi.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=120&CONTENTS_NO=1&TYPE_CODE=C0601#page=32) |
+| 수원대 | 80분 | [2027 공식 모집요강 · 28쪽](https://ipsi.suwon.ac.kr/upload_data/guide/1787878393_6045.pdf#page=28) |
+| 한국기술교육대 | 80분 | [2027 공식 모집요강 · 25쪽](https://www.koreatech.ac.kr/menuDownload.es?sid=a4&mid=0101010100&file_seq=237#page=25) |
+| 한국공학대 | 80분 | [2027 공식 모집요강 · 21쪽](https://iphak.tukorea.ac.kr/bbs/filedown.php?bbsid=guide&file_seq=2027&save_file_nm=guide_20260907185426_2035.pdf#page=21) |
+| 가천대 | 80분 | [2027 공식 모집요강 · 39쪽](https://admission.gachon.ac.kr/upload/BBS0021/20260901154909TB3M9B.PDF#page=39) |
+| 삼육대 | 80분 | [2027 공식 논술가이드 · 11·13쪽](https://ipsi.syu.ac.kr/upload_data/guide/RF(0)_260527141648.pdf#page=13) |
+| 강남대 | 60분 | [2027 공식 모집요강 · 52쪽](https://admission.kangnam.ac.kr/bbs/filedown.php?bbsid=paper&file_seq=4167#page=52) |
+| 중앙대 다빈치 | 120분 | [2027 공식 모집요강 · 62쪽](https://admission.cau.ac.kr/file/pdfDown.pdf?sfn=20260805051607003_0c37226bf7e64ad79adafec6f6fdc72c.pdf&ofn=%ec%a4%91%ec%95%99%eb%8c%80%ed%95%99%ea%b5%90_2027%ed%95%99%eb%85%84%eb%8f%84+%ec%88%98%ec%8b%9c%eb%aa%a8%ec%a7%91%ec%9a%94%ea%b0%95_%ec%97%85%eb%a1%9c%eb%93%9c%ec%9a%a9(%ec%b5%9c%ec%a2%85).pdf#page=62) |
+| 한신대 | 80분 | [2027 공식 모집요강 · 21쪽](https://ent.hs.ac.kr/upload_data/mojib/RF(0)_26052893427.pdf#page=21) |
+| 인하대 | 100분 | [2027 공식 모집요강 · 35쪽](https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601#page=35) |
+| 연세대 미래 | 120분 | [2027 공식 모집요강 · 81쪽](https://admission.yonsei.ac.kr/mirae/upload/guide/202609091128343AZAWL.PDF#page=86) |
+| 아주대 | 120분 | [2027 공식 모집요강 · 69·70쪽](https://www.iajou.ac.kr/upload_data/mojib/20260825111418_62.pdf#page=69) |
+| 한국항공대 | 90분 | [2027 공식 모집요강 · 40쪽](https://ibhak.kau.ac.kr/upload/GUIDES/20260813105041001.pdf#page=41) |
+
+- 중앙대 다빈치는 논술(일반형) 62쪽을 적용합니다. 창의형 66쪽과 달리 일반형 자연계열은 확률과 통계가 포함됩니다.
+- 가천대 의예·한의예·약학, 삼육대 약학은 일반 모집단위와 범위가 다릅니다. 아주대 의학과는 생명과학Ⅰ·Ⅱ를 추가합니다.
+- 한국항공대 공학적성은 미적분을 포함하고, 이학적성은 수학·수학Ⅰ·수학Ⅱ입니다. 한국공학대 경영학부도 수리논술, 인하대 수학교육과도 자연계열 논술입니다.
+- 선택과목 ‘미적분’이 제외되어도 수학Ⅱ에 포함된 미분·적분은 범위에 포함됩니다.
+- 출제 범위는 공식 자료 확인일 기준의 정적 정보이며 경쟁률의 10분 수집 주기와 별개입니다.
