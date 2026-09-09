@@ -87,7 +87,7 @@ async function load({initial=false}={}){
     const [data,catalog,historical,runtime]=await Promise.all([json('./data/latest.json'),json('./data/catalog.json'),json('./data/historical.json'),json('./runtime.json')]);
     if(!Array.isArray(data.schools))throw Error('경쟁률 데이터 형식이 올바르지 않습니다.');
     Object.assign(state,{data,catalog,historical,runtime});
-    $('#runtime-label').textContent=runtime.mode==='local'?'로컬 수집 서버':'GitHub 자동 수집';render();
+    $('#runtime-label').textContent=runtime.mode==='local'?'로컬 수집 서버':runtime.mode==='pages-local'?'로컬 수집 · Pages 게시':'GitHub 자동 수집';render();
     if(!initial)toast('저장된 최신 자료를 읽었습니다.');
   }catch(e){if(!state.data)$('#app').innerHTML=`<div class="error-box"><strong>자료를 불러오지 못했습니다.</strong><p>${esc(e.message)}</p><p>초기 수집과 사이트 배포가 완료되었는지 확인해 주세요.</p><button class="button" data-retry>다시 읽기</button></div>`;else toast('자료를 다시 읽지 못했습니다. 기존 화면을 유지합니다.');}
   finally{loading=false;$('#reload').disabled=false;}

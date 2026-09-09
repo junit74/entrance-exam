@@ -27,7 +27,10 @@ concurrency:
 
 jobs:
   publish:
+    if: github.event_name != 'schedule' || vars.COLLECTION_MODE != 'local'
     runs-on: ubuntu-latest
+    env:
+      COLLECTION_MODE: ${{ vars.COLLECTION_MODE }}
     timeout-minutes: 10
     environment:
       name: github-pages
@@ -43,6 +46,7 @@ jobs:
       - run: npm ci
       - run: npm test
       - name: Collect official ratios
+        if: vars.COLLECTION_MODE != 'local'
         id: collect
         continue-on-error: true
         run: npm run collect

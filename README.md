@@ -2,6 +2,10 @@
 
 경기대·수원대·한국기술교육대·한국공학대·가천대·삼육대의 논술 경쟁률을 비교하는 개인용 대시보드입니다. **같은 코드와 JSON 데이터로 로컬 서버 또는 GitHub Actions + Pages에서 실행**합니다.
 
+**공개 대시보드: https://junit74.github.io/entrance-exam/**
+
+현재 운영은 **로컬 수집 → GitHub 자동 게시 → Pages 배포**입니다. 2026-09-09 실제 GitHub 실행에서 진학어플라이가 보안 확인(HTTP 403)을 반환하여, GitHub 서버만으로는 4개 대학을 수집할 수 없었습니다. 로컬에서는 6개 대학 모두 정상 수집됩니다. 페이지는 컴퓨터가 꺼져도 열리지만, 새 자료 갱신에는 로컬 게시 프로세스가 실행 중이어야 합니다.
+
 - 2027 실제 논술 모집단위의 모집인원·지원인원·경쟁률, 학교별 발표 시각과 수집 상태
 - 자연과학 제외, 공학 우선 정렬, 계열·검색 필터와 브라우저별 관심 목록
 - 학교 비교 그래프, 수집 이후 시간별 그래프, 2024~2026 최종 경쟁률
@@ -32,7 +36,20 @@ npm run check    # 문법 검사 + 테스트 + 빌드
 
 ## GitHub에서 실행
 
-GitHub Pages가 화면을 제공하고, GitHub Actions가 학교 사이트를 조회하여 데이터와 이력을 저장합니다. 별도의 상시 서버나 외부 DB는 필요하지 않습니다.
+GitHub Pages가 화면을 제공합니다. 이 저장소는 로컬 수집 모드로 설정했습니다. 아래 명령을 실행하면 별도 작업 폴더에서 최신 원격 이력을 가져오고, 6개 대학을 수집하여 데이터만 커밋·게시합니다. GitHub SSH 인증과 저장소 쓰기 권한이 필요합니다.
+
+```sh
+npm run publish        # 한 번 수집하고 게시
+npm run publish:watch  # 시작 시와 이후 약 10분마다 수집하고 게시
+```
+
+macOS에서 잠들지 않게 실행하려면 `caffeinate -i npm run publish:watch`를 사용합니다. 종료는 `Ctrl+C`이며 컴퓨터 재시작 후에는 다시 실행해야 합니다. `npm start`는 로컬 화면용이고, 공개 사이트 자동 갱신은 `publish:watch`가 담당합니다.
+
+게시 작업 폴더는 `tmp/pages-publisher`이며 개발 중인 작업 트리를 자동 커밋하지 않습니다. `PUBLISH_WORKSPACE`와 `PUBLISH_REMOTE`로 별도 경로·원격 주소를 지정할 수 있습니다. 게시 폴더에서 미완료 변경이나 원격 커밋 충돌을 발견하면 파일을 보존하고 중단합니다. 해당 폴더의 Git 상태를 확인한 뒤 해결해야 합니다.
+
+저장소의 **Settings → Secrets and variables → Actions → Variables**에 `COLLECTION_MODE=local`을 설정했습니다. 이 모드에서 Actions는 게시된 자료를 배포하고 클라우드 직접 수집은 건너뜁니다. 예약 이벤트도 배포하지 않습니다. 해당 변수를 제거하면 아래의 GitHub 직접 수집 방식으로 동작하지만, 진학어플라이의 접속 제한이 해소되어야 6개 대학 모두 갱신할 수 있습니다.
+
+다른 저장소에 배포하려면:
 
 1. GitHub에 **공개 저장소**를 만들고 이 프로젝트를 올립니다. `data/`를 함께 올려야 합니다. `node_modules/`, `dist/`, `tmp/`는 제외되어 있습니다.
 2. 저장소의 **Settings → Pages → Build and deployment → Source**를 **GitHub Actions**로 설정합니다.
@@ -47,11 +64,11 @@ GitHub Pages가 화면을 제공하고, GitHub Actions가 학교 사이트를 �
 
 정책 출처: [Actions 과금](https://docs.github.com/en/billing/concepts/product-billing/github-actions), [Pages 소개](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages), [예약 실행 제약](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule).
 
-이 프로젝트에는 배포 워크플로가 포함되어 있습니다. **실제 GitHub 저장소 연결 및 원격 배포는 별도로 해야 합니다.**
+저장소: https://github.com/junit74/entrance-exam · 실제 Pages 배포와 모바일 접속을 확인했습니다.
 
 ## 로컬과 GitHub의 데이터
 
-양쪽에서 같은 형식을 사용하지만 **자동 양방향 동기화는 하지 않습니다**. GitHub 이력을 로컬로 가져오려면 로컬 수집 서버를 종료한 뒤 Git 변경 사항을 확인하고 `git pull`하세요. 양쪽에서 독립적으로 수집한 JSON 파일은 임의로 덮어쓰지 말고 백업 후 병합해야 합니다. GitHub를 주 수집기로 사용한다면 로컬에서는 `npm run build` 후 `dist/`를 정적 서버로 보는 방법도 있습니다.
+`publish:watch`는 전용 작업 폴더와 GitHub 사이의 이력을 이어서 수집합니다. 개발 작업 폴더의 `data/`와는 **자동 양방향 동기화하지 않습니다**. GitHub 이력을 개발 폴더로 가져오려면 로컬 수집 서버를 종료한 뒤 Git 변경 사항을 확인하고 `git pull`하세요. 독립적으로 수집한 JSON 파일은 임의로 덮어쓰지 말고 백업 후 병합해야 합니다.
 
 - `data/latest.json`: 대학별 최신 검증 결과 및 확인 상태
 - `data/history/*.json`: 원문 발표 시각별 2027 스냅샷

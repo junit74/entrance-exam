@@ -7,6 +7,8 @@
   "scripts": {
     "start": "node src/server.mjs",
     "collect": "node src/collect.mjs",
+    "publish": "node scripts/publish.mjs",
+    "publish:watch": "node scripts/publish.mjs --watch",
     "build": "node scripts/build.mjs",
     "test": "node --test",
     "check": "node --check public/app.js && node --test && node scripts/build.mjs"
