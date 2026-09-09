@@ -146,9 +146,12 @@ function showChartTooltip(point){
   const d=point.dataset;
   chartTooltip.innerHTML=`<div class="tooltip-heading"><i style="background:${d.color}"></i><span>${esc(d.name)}</span></div><div class="tooltip-time">${esc(d.label)}</div><div class="tooltip-ratio">${rate(d.value)}<small>: 1</small></div>${d.applicants!==''||d.seats!==''?`<div class="tooltip-counts">${d.seats!==''?`<span>모집 <b>${num(Number(d.seats))}명</b></span>`:''}${d.applicants!==''?`<span>지원 <b>${num(Number(d.applicants))}명</b></span>`:''}</div>`:''}`;
   chartTooltip.hidden=false;
-  const rect=point.getBoundingClientRect(),tip=chartTooltip.getBoundingClientRect(),margin=12;
+  // The transparent bar hit area spans the plot; anchor to the visible bar instead.
+  const bar=point.querySelector('.school-bar-fill');
+  const rect=(bar||point).getBoundingClientRect(),tip=chartTooltip.getBoundingClientRect(),margin=12;
+  const above=rect.top-tip.height-(bar?28:margin);
   const left=Math.min(innerWidth-tip.width-margin,Math.max(margin,rect.x+rect.width/2-tip.width/2));
-  const top=rect.top-tip.height-margin>=margin?rect.top-tip.height-margin:Math.min(innerHeight-tip.height-margin,rect.bottom+margin);
+  const top=above>=margin?above:Math.min(innerHeight-tip.height-margin,rect.bottom+margin);
   chartTooltip.style.left=`${left}px`;chartTooltip.style.top=`${Math.max(margin,top)}px`;
 }
 document.addEventListener('pointerover',e=>{const p=e.target.closest('[data-chart-point]');if(p)showChartTooltip(p);});
