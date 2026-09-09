@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "year": 2027,
-  "generatedAt": "2026-09-09T03:14:00.218Z",
+  "generatedAt": "2026-09-09T03:22:56.891Z",
   "schools": [
     {
       "id": "kyonggi",
@@ -21,7 +21,7 @@
       "outcome": "updated",
       "snapshot": {
         "year": 2027,
-        "sourceAt": "2026-09-09T12:10:00+09:00",
+        "sourceAt": "2026-09-09T12:20:00+09:00",
         "isFinal": false,
         "sourceUrl": "https://ratio.uwayapply.com/Sl5KJXJyV2FiOUpmJSY6Jko3ZlRm",
         "track": "논술(논술우수자전형)",
@@ -33,8 +33,8 @@
             "college": "자유교양대학",
             "note": "자유전공학부(수원, 서울)으로 선발된 학생은 2학년 진급 시 수원 및 서울캠퍼스에 개설된 학과(학부, 전공)중에서 자유롭게 선택하며, 전공 선택 후에도 변경 가능함 (단, 유아교육과, 예술체육대학 소속 모집단위, AI컴퓨터공학부, 연기학과, 애니메이션학과, 실용음악학과는 선택할 수 없음)",
             "seats": 93,
-            "applicants": 856,
-            "ratio": 9.2
+            "applicants": 860,
+            "ratio": 9.25
           },
           {
             "id": "55e97acadfc48060",
@@ -53,8 +53,8 @@
             "college": "관광문화대학",
             "note": "자유전공학부(수원, 서울)으로 선발된 학생은 2학년 진급 시 수원 및 서울캠퍼스에 개설된 학과(학부, 전공)중에서 자유롭게 선택하며, 전공 선택 후에도 변경 가능함 (단, 유아교육과, 예술체육대학 소속 모집단위, AI컴퓨터공학부, 연기학과, 애니메이션학과, 실용음악학과는 선택할 수 없음)",
             "seats": 41,
-            "applicants": 315,
-            "ratio": 7.68
+            "applicants": 316,
+            "ratio": 7.71
           },
           {
             "id": "58e407e017eba44d",
@@ -69,21 +69,21 @@
         ],
         "total": {
           "seats": 239,
-          "applicants": 1713,
-          "ratio": 7.17
+          "applicants": 1718,
+          "ratio": 7.19
         },
-        "contentHash": "293924a3fe7ce13c65fddcfdb93579a08539a7e3017c3ab229396f2342ed0f13",
-        "collectedAt": "2026-09-09T03:14:00.066Z"
+        "contentHash": "a09d780346a18586fde7a7785020fd90c6ee779fa5ba327356697df0bb37fd49",
+        "collectedAt": "2026-09-09T03:22:55.781Z"
       },
-      "previousSourceAt": "2026-09-09T12:00:00+09:00",
+      "previousSourceAt": "2026-09-09T12:10:00+09:00",
       "previousApplicants": {
-        "8a29f30e4e7b5fa4": 850,
-        "55e97acadfc48060": 489,
-        "6a9518615b2ac4d8": 314,
+        "8a29f30e4e7b5fa4": 856,
+        "55e97acadfc48060": 490,
+        "6a9518615b2ac4d8": 315,
         "58e407e017eba44d": 52
       },
-      "lastCheckedAt": "2026-09-09T03:14:00.066Z",
-      "lastSuccessfulCheckAt": "2026-09-09T03:14:00.066Z",
+      "lastCheckedAt": "2026-09-09T03:22:55.781Z",
+      "lastSuccessfulCheckAt": "2026-09-09T03:22:55.781Z",
       "error": null
     },
     {
@@ -101,7 +101,6 @@
       "intervalMinutes": 10,
       "cutoffAt": "2026-09-11T12:00:00+09:00",
       "closeAt": "2026-09-11T18:00:00+09:00",
-      "outcome": "updated",
       "snapshot": {
         "year": 2027,
         "sourceAt": "2026-09-09T12:10:00+09:00",
@@ -308,7 +307,6 @@
         "contentHash": "f5d262c53c62308d347884094a191f9524590db935a020e0bbe2320d0256a8cb",
         "collectedAt": "2026-09-09T03:14:00.070Z"
       },
-      "previousSourceAt": "2026-09-09T12:00:00+09:00",
       "previousApplicants": {
         "db9122cf6c3f536e": 208,
         "2577dd9194e5c34a": 158,
@@ -330,9 +328,11 @@
         "690ddc9b15be9262": 15,
         "ec833ccb2ab66d15": 10
       },
-      "lastCheckedAt": "2026-09-09T03:14:00.070Z",
+      "previousSourceAt": "2026-09-09T12:00:00+09:00",
+      "lastCheckedAt": "2026-09-09T03:22:55.794Z",
       "lastSuccessfulCheckAt": "2026-09-09T03:14:00.070Z",
-      "error": null
+      "outcome": "error",
+      "error": "원문 응답 HTTP 403"
     },
     {
       "id": "koreatech",
@@ -352,7 +352,7 @@
       "outcome": "updated",
       "snapshot": {
         "year": 2027,
-        "sourceAt": "2026-09-09T12:10:00+09:00",
+        "sourceAt": "2026-09-09T12:20:00+09:00",
         "isFinal": false,
         "sourceUrl": "https://ratio.uwayapply.com/Sl5KfExgMDhgfWE5SmYlJjomSjdmVGY=",
         "track": "논술전형",
@@ -444,8 +444,8 @@
             "college": "",
             "note": "",
             "seats": 5,
-            "applicants": 39,
-            "ratio": 7.8
+            "applicants": 40,
+            "ratio": 8
           },
           {
             "id": "cf2963a2334dd631",
@@ -474,8 +474,8 @@
             "college": "",
             "note": "",
             "seats": 16,
-            "applicants": 40,
-            "ratio": 2.5
+            "applicants": 43,
+            "ratio": 2.69
           },
           {
             "id": "4affe379bc569651",
@@ -530,23 +530,23 @@
         ],
         "total": {
           "seats": 150,
-          "applicants": 610,
-          "ratio": 4.07
+          "applicants": 614,
+          "ratio": 4.09
         },
-        "contentHash": "991c30021bf532829c5247d6a9a140400a9558370f3d3d88ef86d82089ee9815",
-        "collectedAt": "2026-09-09T03:14:00.071Z"
+        "contentHash": "a335c59cc9666eac323410a9dc7c279b182ab886e7ffb4ae68114b5bf5e295d0",
+        "collectedAt": "2026-09-09T03:22:55.796Z"
       },
-      "previousSourceAt": "2026-09-09T12:00:00+09:00",
+      "previousSourceAt": "2026-09-09T12:10:00+09:00",
       "previousApplicants": {
-        "a0b81d6d583b87df": 120,
+        "a0b81d6d583b87df": 122,
         "0d70fa76f8ab00bc": 102,
-        "34fdbe326df51013": 28,
+        "34fdbe326df51013": 29,
         "04de93a4c297243a": 39,
         "70bb80b77050ddd9": 17,
         "ce2b4d71096d4389": 27,
         "27124333d85ee8ea": 56,
-        "cb843ec2fa581ad5": 33,
-        "f3969a839a8db858": 38,
+        "cb843ec2fa581ad5": 34,
+        "f3969a839a8db858": 39,
         "cf2963a2334dd631": 10,
         "f5b232711ad38d7d": 15,
         "a193cc781aa206b4": 40,
@@ -556,8 +556,8 @@
         "945d689f52c5c542": 9,
         "b5aca04ae392ceab": 15
       },
-      "lastCheckedAt": "2026-09-09T03:14:00.071Z",
-      "lastSuccessfulCheckAt": "2026-09-09T03:14:00.071Z",
+      "lastCheckedAt": "2026-09-09T03:22:55.796Z",
+      "lastSuccessfulCheckAt": "2026-09-09T03:22:55.796Z",
       "error": null
     },
     {
@@ -575,7 +575,6 @@
       "intervalMinutes": 10,
       "cutoffAt": "2026-09-11T12:00:00+09:00",
       "closeAt": "2026-09-11T18:00:00+09:00",
-      "outcome": "updated",
       "snapshot": {
         "year": 2027,
         "sourceAt": "2026-09-09T12:10:00+09:00",
@@ -652,7 +651,6 @@
         "contentHash": "0ed24e9fbd5dd2eb8ac0805cedc97cc1aa0bcac70aec5d095bf47e33612f6b2b",
         "collectedAt": "2026-09-09T03:14:00.072Z"
       },
-      "previousSourceAt": "2026-09-09T12:00:00+09:00",
       "previousApplicants": {
         "cce0224b263faa5f": 164,
         "3fed0b30989437ce": 99,
@@ -661,9 +659,11 @@
         "11f78fd6141120f6": 70,
         "6f05eb5ffcc81691": 22
       },
-      "lastCheckedAt": "2026-09-09T03:14:00.072Z",
+      "previousSourceAt": "2026-09-09T12:00:00+09:00",
+      "lastCheckedAt": "2026-09-09T03:22:55.797Z",
       "lastSuccessfulCheckAt": "2026-09-09T03:14:00.072Z",
-      "error": null
+      "outcome": "error",
+      "error": "원문 응답 HTTP 403"
     },
     {
       "id": "gachon",
@@ -680,7 +680,6 @@
       "intervalMinutes": 10,
       "cutoffAt": "2026-09-11T12:00:00+09:00",
       "closeAt": "2026-09-11T18:00:00+09:00",
-      "outcome": "updated",
       "snapshot": {
         "year": 2027,
         "sourceAt": "2026-09-09T12:10:00+09:00",
@@ -1167,7 +1166,6 @@
         "contentHash": "697d86895e7676baa76c8ce9e008fa3e36425eea30f4050767c6f1ab6f38a620",
         "collectedAt": "2026-09-09T03:14:00.073Z"
       },
-      "previousSourceAt": "2026-09-09T12:00:00+09:00",
       "previousApplicants": {
         "1a8c32e8978b71d1": 557,
         "27e4157add2aa819": 59,
@@ -1217,9 +1215,11 @@
         "28e719814cc3c769": 604,
         "d21d878a3e74c5f3": 144
       },
-      "lastCheckedAt": "2026-09-09T03:14:00.073Z",
+      "previousSourceAt": "2026-09-09T12:00:00+09:00",
+      "lastCheckedAt": "2026-09-09T03:22:55.798Z",
       "lastSuccessfulCheckAt": "2026-09-09T03:14:00.073Z",
-      "error": null
+      "outcome": "error",
+      "error": "원문 응답 HTTP 403"
     },
     {
       "id": "sahmyook",
@@ -1236,7 +1236,6 @@
       "intervalMinutes": 10,
       "cutoffAt": "2026-09-11T15:00:00+09:00",
       "closeAt": "2026-09-11T18:00:00+09:00",
-      "outcome": "updated",
       "snapshot": {
         "year": 2027,
         "sourceAt": "2026-09-09T12:10:00+09:00",
@@ -1473,7 +1472,6 @@
         "contentHash": "1463b4fd7a31e261a1b37d13fdeb9aa77ab4554a47447b296db02f24d7185264",
         "collectedAt": "2026-09-09T03:14:00.074Z"
       },
-      "previousSourceAt": "2026-09-09T12:00:00+09:00",
       "previousApplicants": {
         "7d6cfb27e2fce23e": 395,
         "fade7019606a4c85": 879,
@@ -1498,9 +1496,11 @@
         "c9121cebd7d11814": 17,
         "b064454e6860dec6": 48
       },
-      "lastCheckedAt": "2026-09-09T03:14:00.074Z",
+      "previousSourceAt": "2026-09-09T12:00:00+09:00",
+      "lastCheckedAt": "2026-09-09T03:22:55.799Z",
       "lastSuccessfulCheckAt": "2026-09-09T03:14:00.074Z",
-      "error": null
+      "outcome": "error",
+      "error": "원문 응답 HTTP 403"
     }
   ]
 }
