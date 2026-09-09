@@ -9,7 +9,7 @@ const categories={engineering:'공학',mixed:'자유·융합',humanities:'인문
 const rank={engineering:0,mixed:1,humanities:2,health:3,other:4,unknown:5,natural:9};
 let favorites;
 try{favorites=new Set(JSON.parse(localStorage.getItem('essay-favorites')||'[]'));}catch{favorites=new Set();}
-const state={data:null,catalog:{},historical:{},runtime:{mode:'github'},school:null,query:'',category:'all',sort:'low',favoritesOnly:false,historyYear:2026,historyCache:new Map()};
+const state={data:null,catalog:{},historical:{},runtime:{mode:'pages-local'},school:null,query:'',category:'all',sort:'low',favoritesOnly:false,historyYear:2026,historyCache:new Map()};
 let loading=false,detailGeneration=0;
 function toast(text){$('#toast').textContent=text;$('#toast').classList.add('show');clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('#toast').classList.remove('show'),3000);}
 async function json(url){const r=await fetch(url,{cache:'no-store'});if(!r.ok)throw Error(`자료를 읽지 못했습니다 (${r.status}).`);return r.json();}
@@ -184,7 +184,7 @@ async function load({initial=false}={}){
     if(!Array.isArray(data.schools))throw Error('경쟁률 데이터 형식이 올바르지 않습니다.');
     Object.assign(state,{data,catalog,historical,runtime});
     for(const [id,entry] of state.historyCache)if(entry.error)state.historyCache.delete(id);
-    $('#runtime-label').textContent=runtime.mode==='local'?'로컬 수집 서버':runtime.mode==='pages-local'?'로컬 수집 · Pages 게시':'GitHub 자동 수집';render();
+    $('#runtime-label').textContent=runtime.mode==='local'?'로컬 수집 서버':'로컬 수집 · Pages 게시';render();
     if(!initial)toast('저장된 최신 자료를 읽었습니다.');
   }catch(e){if(!state.data)$('#app').innerHTML=`<div class="error-box"><strong>자료를 불러오지 못했습니다.</strong><p>${esc(e.message)}</p><p>초기 수집과 사이트 배포가 완료되었는지 확인해 주세요.</p><button class="button" data-retry>다시 읽기</button></div>`;else toast('자료를 다시 읽지 못했습니다. 기존 화면을 유지합니다.');}
   finally{loading=false;$('#reload').disabled=false;}

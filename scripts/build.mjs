@@ -17,6 +17,6 @@ for(const name of ['style.css','app.js']) {
 }
 await writeFile(path.join(dist,'index.html'),html);
 for(const file of ['latest.json','historical.json','catalog.json','history'])await cp(path.join(dataDir,file),path.join(dist,'data',file),{recursive:true});
-await writeFile(path.join(dist,'runtime.json'),JSON.stringify({mode:process.env.COLLECTION_MODE==='local'?'pages-local':'github',intervalMinutes:10}));
+await writeFile(path.join(dist,'runtime.json'),JSON.stringify({mode:'pages-local',intervalMinutes:10}));
 await writeFile(path.join(dist,'.nojekyll'),'');
 console.log('정적 사이트 생성 완료: dist/');

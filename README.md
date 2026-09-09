@@ -4,9 +4,9 @@
 
 **공개 대시보드: https://junit74.github.io/entrance-exam/**
 
-GitHub Actions가 약 10분마다 13개 대학의 자료를 수집하여 이력을 저장하고 GitHub Pages에 배포합니다. 학교가 발표한 자료가 더 최신일 때만 경쟁률 이력을 갱신합니다. 공개 사이트 운영을 위해 로컬 Mac을 켜둘 필요가 없습니다.
+로컬 Mac이 약 10분마다 13개 대학의 자료를 수집하고 GitHub에 게시합니다. GitHub Actions는 push된 자료를 빌드하여 GitHub Pages에 배포합니다. 학교가 발표한 자료가 더 최신일 때만 경쟁률 이력을 갱신합니다. 자동 갱신을 계속하려면 Mac이 켜져 있어야 합니다.
 
-공개 사이트는 진학어플라이 7개 대학을 Scrapling의 브라우저 세션으로, 유웨이 6개 대학을 HTTP로 수집합니다. 기존 파서로 논술 전형·학년도·표 합계·발표 시각을 검증합니다. 추가 범위와 출처는 [7개 대학 추가 검증 기록](docs/local-expansion.md)을 참고하세요.
+로컬 수집기는 진학어플라이·유웨이의 공식 경쟁률 페이지를 HTTP로 읽고 논술 전형·학년도·표 합계·발표 시각을 검증합니다. 추가 범위와 출처는 [7개 대학 추가 검증 기록](docs/local-expansion.md)을 참고하세요.
 
 - 2027 실제 논술 모집단위의 모집인원·지원인원·경쟁률, 학교별 발표 시각과 수집 상태
 - 대학별 지역·캠퍼스 표시 및 지역명 검색, 자연과학 제외, 낮은 경쟁률 기본 정렬·공학 우선 정렬 옵션, 계열·검색 필터와 브라우저별 관심 목록
@@ -37,15 +37,9 @@ npm run check    # 문법 검사 + 테스트 + 빌드
 
 컴퓨터가 잠들거나 꺼지면 수집도 중단됩니다. macOS에서 실행 중 잠들지 않게 하려면 `caffeinate -i npm start`를 사용할 수 있습니다. 수집하지 못한 과거 시점을 만들어 채우지는 않습니다. 기본 바인딩은 `127.0.0.1`입니다.
 
-## GitHub에서 실행
+## 로컬 수집과 GitHub Pages 자동 배포
 
-GitHub Actions가 Python 3.12·Scrapling 0.4.15·Chromium을 설치하고 `xvfb-run -a npm run collect:browser`로 수집합니다. 브라우저 세션은 실행마다 새로 만들며, 개인 쿠키·외부 수집 API·유료 프록시가 필요하지 않습니다. 결과는 `data/`에 커밋한 뒤 Pages로 배포합니다. 브라우저 전체 수집은 5분으로 제한하며, 일부 실패 시 이미 수집한 대학은 검증 후 처리하고 실패한 대학은 기존 정상 이력과 오류 상태를 남깁니다.
-
-예약은 매시 03·13·23·33·43·53분입니다. 학교가 같은 시각의 자료를 유지하면 이력도 추가되지 않습니다. GitHub 예약 실행은 지연될 수 있으므로 정확히 10분 간격을 보장하지 않습니다.
-
-### 로컬 수집으로 운영을 되돌리는 경우
-
-`COLLECTION_MODE=local`로 설정하여 Actions 직접 수집을 끈 뒤 아래 명령을 사용합니다. 클라우드 수집과 로컬 자동 게시를 동시에 실행하지 마세요. 별도 작업 폴더에서 최신 원격 이력을 가져오고 데이터만 커밋·게시합니다. GitHub SSH 인증과 저장소 쓰기 권한이 필요합니다.
+`publish:watch`가 시작 시와 이후 약 10분마다 대학 자료를 수집하고, 별도 작업 폴더에서 최신 원격 이력을 가져와 데이터만 커밋·push합니다. GitHub SSH 인증과 저장소 쓰기 권한이 필요합니다. Actions는 push를 감지하여 테스트·빌드·Pages 배포만 실행합니다. Actions의 예약 실행과 대학 자료 수집 기능은 제거되어 있습니다.
 
 ```sh
 npm run publish        # 한 번 수집하고 게시
@@ -74,22 +68,20 @@ macOS `launchd`가 로컬 서버와 10분 주기 GitHub 게시 프로세스를 �
 
 게시 작업 폴더는 `tmp/pages-publisher`이며 개발 중인 작업 트리를 자동 커밋하지 않습니다. `PUBLISH_WORKSPACE`와 `PUBLISH_REMOTE`로 별도 경로·원격 주소를 지정할 수 있습니다. 게시 폴더에서 미완료 변경이나 원격 커밋 충돌을 발견하면 파일을 보존하고 중단합니다. 해당 폴더의 Git 상태를 확인한 뒤 해결해야 합니다.
 
-저장소의 **Settings → Secrets and variables → Actions → Variables**에서 `COLLECTION_MODE=github` 또는 변수 미설정이면 Scrapling을 포함한 Actions 직접 수집이 실행됩니다. `local`이면 직접 수집과 예약 실행을 건너뛰고, 로컬에서 push한 자료만 배포합니다. macOS 자동 게시 서비스가 설치되어 있다면 Actions 모드로 전환할 때 게시 서비스를 중지해야 합니다.
-
 다른 저장소에 배포하려면:
 
 1. GitHub에 **공개 저장소**를 만들고 이 프로젝트를 올립니다. `data/`를 함께 올려야 합니다. `node_modules/`, `dist/`, `tmp/`는 제외되어 있습니다.
 2. 저장소의 **Settings → Pages → Build and deployment → Source**를 **GitHub Actions**로 설정합니다.
-3. **Actions → Collect and publish dashboard → Run workflow**를 실행합니다. 포크한 저장소라면 먼저 Actions 실행을 활성화합니다.
+3. **Actions → Deploy dashboard to Pages → Run workflow**를 실행합니다. 포크한 저장소라면 먼저 Actions 실행을 활성화합니다.
 4. 완료되면 Pages에 표시되는 주소, 보통 `https://계정.github.io/저장소명/`에 접속합니다.
 
-워크플로는 기본 브랜치의 변경, 수동 실행, 매시 03·13·23·33·43·53분(UTC)에 실행됩니다. 화면은 저장된 자료를 1분마다 다시 읽습니다. ‘새로 읽기’ 버튼은 저장된 결과를 읽으며 즉시 수집을 요청하지는 않습니다.
+워크플로는 기본 브랜치의 화면·코드·데이터 변경 또는 수동 실행으로 시작됩니다. 수집 주기는 로컬 게시 프로세스가 관리합니다. 화면은 저장된 자료를 1분마다 다시 읽습니다. ‘새로 읽기’ 버튼은 저장된 결과를 읽으며 즉시 수집을 요청하지는 않습니다.
 
-워크플로에 `contents: write`, `pages: write`, `id-token: write` 권한이 포함되어 있습니다. 조직 정책이나 브랜치 보호가 봇의 데이터 커밋을 막는 저장소라면 허용되는 전용 저장소를 사용하세요. 수집 일부가 실패해도 기존 정상 자료와 오류 상태를 배포하고, Actions 실행 결과는 실패로 표시하여 확인할 수 있게 합니다.
+워크플로는 `contents: read`, `pages: write`, `id-token: write` 권한으로 저장된 데이터만 배포하며, 저장소에 데이터를 직접 쓰지 않습니다. 로컬 수집에서 일부 대학이 실패하면 기존 정상 자료를 유지하고 오류 상태를 게시합니다. Mac이나 게시 프로세스가 중지되면 공개 사이트는 마지막 배포 자료를 계속 표시합니다.
 
-공개 저장소의 표준 GitHub Actions 실행과 Pages는 무료 범위에서 운영할 수 있습니다. 비공개 저장소의 무료 실행 시간과 Pages 지원 조건은 다릅니다. 예약 작업은 지연되거나 생략될 수 있고, 공개 저장소는 60일 동안 활동이 없으면 예약 작업이 비활성화될 수 있습니다. 접수 마감 후에는 Actions에서 워크플로를 비활성화해 불필요한 수집을 중지할 수 있습니다.
+공개 저장소의 표준 GitHub Actions 실행과 Pages는 무료 범위에서 운영할 수 있습니다. 비공개 저장소의 무료 실행 시간과 Pages 지원 조건은 다릅니다. 접수 마감 후 수집을 중지하려면 로컬의 `publish:watch` 또는 macOS 서비스를 중지하세요.
 
-정책 출처: [Actions 과금](https://docs.github.com/en/billing/concepts/product-billing/github-actions), [Pages 소개](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages), [예약 실행 제약](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule).
+정책 출처: [Actions 과금](https://docs.github.com/en/billing/concepts/product-billing/github-actions), [Pages 소개](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages).
 
 저장소: https://github.com/junit74/entrance-exam · 실제 Pages 배포와 모바일 접속을 확인했습니다.
 
