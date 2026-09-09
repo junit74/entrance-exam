@@ -1,0 +1,71 @@
+name: Collect and publish dashboard
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Offset from the busy beginning of each hour. GitHub may delay scheduled runs.
+    - cron: '3-59/10 * * * *'
+  push:
+    branches: [main, master]
+    paths:
+      - 'src/**'
+      - 'public/**'
+      - 'scripts/**'
+      - 'test/**'
+      - 'data/**'
+      - 'package*.json'
+      - '.github/workflows/dashboard.yml'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: admissions-dashboard
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - name: Collect official ratios
+        id: collect
+        continue-on-error: true
+        run: npm run collect
+      - name: Preserve history and collection status
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update admissions snapshots'
+            git push origin HEAD:${{ github.event.repository.default_branch }}
+          fi
+      - run: npm run build
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+          retention-days: 1
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Report collection errors
+        if: steps.collect.outcome == 'failure'
+        run: |
+          echo 'One or more sources failed or require review. The published dashboard retains the last verified data and displays the error.' >> "$GITHUB_STEP_SUMMARY"
+          exit 1

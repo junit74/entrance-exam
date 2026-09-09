@@ -1,0 +1,1037 @@
+{
+  "schemaVersion": 1,
+  "schoolId": "suwon",
+  "year": 2027,
+  "snapshots": [
+    {
+      "year": 2027,
+      "sourceAt": "2026-09-09T11:30:00+09:00",
+      "isFinal": false,
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970461.html",
+      "track": "교과논술전형",
+      "rows": [
+        {
+          "id": "db9122cf6c3f536e",
+          "name": "인문사회융합대학",
+          "campus": "",
+          "college": "인문사회융합대학",
+          "note": "",
+          "seats": 70,
+          "applicants": 208,
+          "ratio": 2.97
+        },
+        {
+          "id": "2577dd9194e5c34a",
+          "name": "경영공학대학",
+          "campus": "",
+          "college": "경영공학대학",
+          "note": "",
+          "seats": 63,
+          "applicants": 154,
+          "ratio": 2.44
+        },
+        {
+          "id": "746f331363687f9f",
+          "name": "바이오공학과",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 8,
+          "applicants": 31,
+          "ratio": 3.88
+        },
+        {
+          "id": "3be354cdfebcf1ed",
+          "name": "건설환경에너지공학부",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 30,
+          "applicants": 53,
+          "ratio": 1.77
+        },
+        {
+          "id": "28453595781c3bf5",
+          "name": "건축학과",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 14,
+          "applicants": 24,
+          "ratio": 1.71
+        },
+        {
+          "id": "d6f09677d0613130",
+          "name": "도시부동산학과",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 8,
+          "applicants": 2,
+          "ratio": 0.25
+        },
+        {
+          "id": "3da822dd190ec82c",
+          "name": "기계공학부",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 15,
+          "applicants": 49,
+          "ratio": 3.27
+        },
+        {
+          "id": "1f1fb3f882597302",
+          "name": "반도체공학과",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 15,
+          "applicants": 20,
+          "ratio": 1.33
+        },
+        {
+          "id": "a14cc2fe69520cfe",
+          "name": "전기전자공학부",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 50,
+          "applicants": 103,
+          "ratio": 2.06
+        },
+        {
+          "id": "eba189c831ebfd75",
+          "name": "화학공학·신소재공학부",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 30,
+          "applicants": 44,
+          "ratio": 1.47
+        },
+        {
+          "id": "450792704c0e7de6",
+          "name": "소방재난공학과",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 5,
+          "applicants": 16,
+          "ratio": 3.2
+        },
+        {
+          "id": "171ef1e784c83e7f",
+          "name": "AI데이터과학부",
+          "campus": "",
+          "college": "지능형SW융합대학",
+          "note": "",
+          "seats": 32,
+          "applicants": 40,
+          "ratio": 1.25
+        },
+        {
+          "id": "eb3dde52c4da0e3e",
+          "name": "컴퓨터공학부",
+          "campus": "",
+          "college": "지능형SW융합대학",
+          "note": "",
+          "seats": 32,
+          "applicants": 36,
+          "ratio": 1.13
+        },
+        {
+          "id": "dc1ed0939a5bd9d0",
+          "name": "지능형보안학부",
+          "campus": "",
+          "college": "지능형SW융합대학",
+          "note": "",
+          "seats": 12,
+          "applicants": 6,
+          "ratio": 0.5
+        },
+        {
+          "id": "1d8b9b10df8b4ec5",
+          "name": "간호학과",
+          "campus": "",
+          "college": "라이프케어사이언스대학",
+          "note": "",
+          "seats": 25,
+          "applicants": 309,
+          "ratio": 12.36
+        },
+        {
+          "id": "48629b6df833ea31",
+          "name": "아동가족복지학과",
+          "campus": "",
+          "college": "라이프케어사이언스대학",
+          "note": "",
+          "seats": 5,
+          "applicants": 19,
+          "ratio": 3.8
+        },
+        {
+          "id": "f44bae61e49cd382",
+          "name": "의류학과",
+          "campus": "",
+          "college": "라이프케어사이언스대학",
+          "note": "",
+          "seats": 5,
+          "applicants": 11,
+          "ratio": 2.2
+        },
+        {
+          "id": "690ddc9b15be9262",
+          "name": "식품영양학과",
+          "campus": "",
+          "college": "라이프케어사이언스대학",
+          "note": "",
+          "seats": 5,
+          "applicants": 15,
+          "ratio": 3
+        },
+        {
+          "id": "ec833ccb2ab66d15",
+          "name": "아트앤엔터테인먼트학부 디지털콘텐츠",
+          "campus": "",
+          "college": "문화예술융합대학",
+          "note": "",
+          "seats": 10,
+          "applicants": 10,
+          "ratio": 1
+        }
+      ],
+      "total": {
+        "seats": 434,
+        "applicants": 1150,
+        "ratio": 2.65
+      },
+      "contentHash": "7da150aca6e9eb662a78f6336a206568b6802323b8961522fce2ed6084848f68",
+      "collectedAt": "2026-09-09T02:31:24.251Z"
+    },
+    {
+      "year": 2027,
+      "sourceAt": "2026-09-09T11:40:00+09:00",
+      "isFinal": false,
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970461.html",
+      "track": "교과논술전형",
+      "rows": [
+        {
+          "id": "db9122cf6c3f536e",
+          "name": "인문사회융합대학",
+          "campus": "",
+          "college": "인문사회융합대학",
+          "note": "",
+          "seats": 70,
+          "applicants": 208,
+          "ratio": 2.97
+        },
+        {
+          "id": "2577dd9194e5c34a",
+          "name": "경영공학대학",
+          "campus": "",
+          "college": "경영공학대학",
+          "note": "",
+          "seats": 63,
+          "applicants": 155,
+          "ratio": 2.46
+        },
+        {
+          "id": "746f331363687f9f",
+          "name": "바이오공학과",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 8,
+          "applicants": 31,
+          "ratio": 3.88
+        },
+        {
+          "id": "3be354cdfebcf1ed",
+          "name": "건설환경에너지공학부",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 30,
+          "applicants": 53,
+          "ratio": 1.77
+        },
+        {
+          "id": "28453595781c3bf5",
+          "name": "건축학과",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 14,
+          "applicants": 24,
+          "ratio": 1.71
+        },
+        {
+          "id": "d6f09677d0613130",
+          "name": "도시부동산학과",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 8,
+          "applicants": 2,
+          "ratio": 0.25
+        },
+        {
+          "id": "3da822dd190ec82c",
+          "name": "기계공학부",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 15,
+          "applicants": 49,
+          "ratio": 3.27
+        },
+        {
+          "id": "1f1fb3f882597302",
+          "name": "반도체공학과",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 15,
+          "applicants": 20,
+          "ratio": 1.33
+        },
+        {
+          "id": "a14cc2fe69520cfe",
+          "name": "전기전자공학부",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 50,
+          "applicants": 104,
+          "ratio": 2.08
+        },
+        {
+          "id": "eba189c831ebfd75",
+          "name": "화학공학·신소재공학부",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 30,
+          "applicants": 44,
+          "ratio": 1.47
+        },
+        {
+          "id": "450792704c0e7de6",
+          "name": "소방재난공학과",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 5,
+          "applicants": 16,
+          "ratio": 3.2
+        },
+        {
+          "id": "171ef1e784c83e7f",
+          "name": "AI데이터과학부",
+          "campus": "",
+          "college": "지능형SW융합대학",
+          "note": "",
+          "seats": 32,
+          "applicants": 40,
+          "ratio": 1.25
+        },
+        {
+          "id": "eb3dde52c4da0e3e",
+          "name": "컴퓨터공학부",
+          "campus": "",
+          "college": "지능형SW융합대학",
+          "note": "",
+          "seats": 32,
+          "applicants": 36,
+          "ratio": 1.13
+        },
+        {
+          "id": "dc1ed0939a5bd9d0",
+          "name": "지능형보안학부",
+          "campus": "",
+          "college": "지능형SW융합대학",
+          "note": "",
+          "seats": 12,
+          "applicants": 6,
+          "ratio": 0.5
+        },
+        {
+          "id": "1d8b9b10df8b4ec5",
+          "name": "간호학과",
+          "campus": "",
+          "college": "라이프케어사이언스대학",
+          "note": "",
+          "seats": 25,
+          "applicants": 309,
+          "ratio": 12.36
+        },
+        {
+          "id": "48629b6df833ea31",
+          "name": "아동가족복지학과",
+          "campus": "",
+          "college": "라이프케어사이언스대학",
+          "note": "",
+          "seats": 5,
+          "applicants": 19,
+          "ratio": 3.8
+        },
+        {
+          "id": "f44bae61e49cd382",
+          "name": "의류학과",
+          "campus": "",
+          "college": "라이프케어사이언스대학",
+          "note": "",
+          "seats": 5,
+          "applicants": 11,
+          "ratio": 2.2
+        },
+        {
+          "id": "690ddc9b15be9262",
+          "name": "식품영양학과",
+          "campus": "",
+          "college": "라이프케어사이언스대학",
+          "note": "",
+          "seats": 5,
+          "applicants": 15,
+          "ratio": 3
+        },
+        {
+          "id": "ec833ccb2ab66d15",
+          "name": "아트앤엔터테인먼트학부 디지털콘텐츠",
+          "campus": "",
+          "college": "문화예술융합대학",
+          "note": "",
+          "seats": 10,
+          "applicants": 10,
+          "ratio": 1
+        }
+      ],
+      "total": {
+        "seats": 434,
+        "applicants": 1152,
+        "ratio": 2.65
+      },
+      "contentHash": "bbd7a2d34a720013d37a20d7a9c952fe85c222a9f12bd6091721bcf242d86009",
+      "collectedAt": "2026-09-09T02:43:22.686Z"
+    },
+    {
+      "year": 2027,
+      "sourceAt": "2026-09-09T11:50:00+09:00",
+      "isFinal": false,
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970461.html",
+      "track": "교과논술전형",
+      "rows": [
+        {
+          "id": "db9122cf6c3f536e",
+          "name": "인문사회융합대학",
+          "campus": "",
+          "college": "인문사회융합대학",
+          "note": "",
+          "seats": 70,
+          "applicants": 208,
+          "ratio": 2.97
+        },
+        {
+          "id": "2577dd9194e5c34a",
+          "name": "경영공학대학",
+          "campus": "",
+          "college": "경영공학대학",
+          "note": "",
+          "seats": 63,
+          "applicants": 156,
+          "ratio": 2.48
+        },
+        {
+          "id": "746f331363687f9f",
+          "name": "바이오공학과",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 8,
+          "applicants": 31,
+          "ratio": 3.88
+        },
+        {
+          "id": "3be354cdfebcf1ed",
+          "name": "건설환경에너지공학부",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 30,
+          "applicants": 53,
+          "ratio": 1.77
+        },
+        {
+          "id": "28453595781c3bf5",
+          "name": "건축학과",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 14,
+          "applicants": 24,
+          "ratio": 1.71
+        },
+        {
+          "id": "d6f09677d0613130",
+          "name": "도시부동산학과",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 8,
+          "applicants": 2,
+          "ratio": 0.25
+        },
+        {
+          "id": "3da822dd190ec82c",
+          "name": "기계공학부",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 15,
+          "applicants": 49,
+          "ratio": 3.27
+        },
+        {
+          "id": "1f1fb3f882597302",
+          "name": "반도체공학과",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 15,
+          "applicants": 20,
+          "ratio": 1.33
+        },
+        {
+          "id": "a14cc2fe69520cfe",
+          "name": "전기전자공학부",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 50,
+          "applicants": 104,
+          "ratio": 2.08
+        },
+        {
+          "id": "eba189c831ebfd75",
+          "name": "화학공학·신소재공학부",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 30,
+          "applicants": 45,
+          "ratio": 1.5
+        },
+        {
+          "id": "450792704c0e7de6",
+          "name": "소방재난공학과",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 5,
+          "applicants": 16,
+          "ratio": 3.2
+        },
+        {
+          "id": "171ef1e784c83e7f",
+          "name": "AI데이터과학부",
+          "campus": "",
+          "college": "지능형SW융합대학",
+          "note": "",
+          "seats": 32,
+          "applicants": 40,
+          "ratio": 1.25
+        },
+        {
+          "id": "eb3dde52c4da0e3e",
+          "name": "컴퓨터공학부",
+          "campus": "",
+          "college": "지능형SW융합대학",
+          "note": "",
+          "seats": 32,
+          "applicants": 36,
+          "ratio": 1.13
+        },
+        {
+          "id": "dc1ed0939a5bd9d0",
+          "name": "지능형보안학부",
+          "campus": "",
+          "college": "지능형SW융합대학",
+          "note": "",
+          "seats": 12,
+          "applicants": 6,
+          "ratio": 0.5
+        },
+        {
+          "id": "1d8b9b10df8b4ec5",
+          "name": "간호학과",
+          "campus": "",
+          "college": "라이프케어사이언스대학",
+          "note": "",
+          "seats": 25,
+          "applicants": 309,
+          "ratio": 12.36
+        },
+        {
+          "id": "48629b6df833ea31",
+          "name": "아동가족복지학과",
+          "campus": "",
+          "college": "라이프케어사이언스대학",
+          "note": "",
+          "seats": 5,
+          "applicants": 19,
+          "ratio": 3.8
+        },
+        {
+          "id": "f44bae61e49cd382",
+          "name": "의류학과",
+          "campus": "",
+          "college": "라이프케어사이언스대학",
+          "note": "",
+          "seats": 5,
+          "applicants": 11,
+          "ratio": 2.2
+        },
+        {
+          "id": "690ddc9b15be9262",
+          "name": "식품영양학과",
+          "campus": "",
+          "college": "라이프케어사이언스대학",
+          "note": "",
+          "seats": 5,
+          "applicants": 15,
+          "ratio": 3
+        },
+        {
+          "id": "ec833ccb2ab66d15",
+          "name": "아트앤엔터테인먼트학부 디지털콘텐츠",
+          "campus": "",
+          "college": "문화예술융합대학",
+          "note": "",
+          "seats": 10,
+          "applicants": 10,
+          "ratio": 1
+        }
+      ],
+      "total": {
+        "seats": 434,
+        "applicants": 1154,
+        "ratio": 2.66
+      },
+      "contentHash": "52ef72cdecdeb905808e6592dc0635bc3603e1ffafaa1253c56e64f62f918637",
+      "collectedAt": "2026-09-09T02:53:22.672Z"
+    },
+    {
+      "year": 2027,
+      "sourceAt": "2026-09-09T12:00:00+09:00",
+      "isFinal": false,
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970461.html",
+      "track": "교과논술전형",
+      "rows": [
+        {
+          "id": "db9122cf6c3f536e",
+          "name": "인문사회융합대학",
+          "campus": "",
+          "college": "인문사회융합대학",
+          "note": "",
+          "seats": 70,
+          "applicants": 208,
+          "ratio": 2.97
+        },
+        {
+          "id": "2577dd9194e5c34a",
+          "name": "경영공학대학",
+          "campus": "",
+          "college": "경영공학대학",
+          "note": "",
+          "seats": 63,
+          "applicants": 158,
+          "ratio": 2.51
+        },
+        {
+          "id": "746f331363687f9f",
+          "name": "바이오공학과",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 8,
+          "applicants": 31,
+          "ratio": 3.88
+        },
+        {
+          "id": "3be354cdfebcf1ed",
+          "name": "건설환경에너지공학부",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 30,
+          "applicants": 53,
+          "ratio": 1.77
+        },
+        {
+          "id": "28453595781c3bf5",
+          "name": "건축학과",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 14,
+          "applicants": 24,
+          "ratio": 1.71
+        },
+        {
+          "id": "d6f09677d0613130",
+          "name": "도시부동산학과",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 8,
+          "applicants": 2,
+          "ratio": 0.25
+        },
+        {
+          "id": "3da822dd190ec82c",
+          "name": "기계공학부",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 15,
+          "applicants": 49,
+          "ratio": 3.27
+        },
+        {
+          "id": "1f1fb3f882597302",
+          "name": "반도체공학과",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 15,
+          "applicants": 20,
+          "ratio": 1.33
+        },
+        {
+          "id": "a14cc2fe69520cfe",
+          "name": "전기전자공학부",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 50,
+          "applicants": 105,
+          "ratio": 2.1
+        },
+        {
+          "id": "eba189c831ebfd75",
+          "name": "화학공학·신소재공학부",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 30,
+          "applicants": 45,
+          "ratio": 1.5
+        },
+        {
+          "id": "450792704c0e7de6",
+          "name": "소방재난공학과",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 5,
+          "applicants": 17,
+          "ratio": 3.4
+        },
+        {
+          "id": "171ef1e784c83e7f",
+          "name": "AI데이터과학부",
+          "campus": "",
+          "college": "지능형SW융합대학",
+          "note": "",
+          "seats": 32,
+          "applicants": 40,
+          "ratio": 1.25
+        },
+        {
+          "id": "eb3dde52c4da0e3e",
+          "name": "컴퓨터공학부",
+          "campus": "",
+          "college": "지능형SW융합대학",
+          "note": "",
+          "seats": 32,
+          "applicants": 36,
+          "ratio": 1.13
+        },
+        {
+          "id": "dc1ed0939a5bd9d0",
+          "name": "지능형보안학부",
+          "campus": "",
+          "college": "지능형SW융합대학",
+          "note": "",
+          "seats": 12,
+          "applicants": 6,
+          "ratio": 0.5
+        },
+        {
+          "id": "1d8b9b10df8b4ec5",
+          "name": "간호학과",
+          "campus": "",
+          "college": "라이프케어사이언스대학",
+          "note": "",
+          "seats": 25,
+          "applicants": 310,
+          "ratio": 12.4
+        },
+        {
+          "id": "48629b6df833ea31",
+          "name": "아동가족복지학과",
+          "campus": "",
+          "college": "라이프케어사이언스대학",
+          "note": "",
+          "seats": 5,
+          "applicants": 19,
+          "ratio": 3.8
+        },
+        {
+          "id": "f44bae61e49cd382",
+          "name": "의류학과",
+          "campus": "",
+          "college": "라이프케어사이언스대학",
+          "note": "",
+          "seats": 5,
+          "applicants": 11,
+          "ratio": 2.2
+        },
+        {
+          "id": "690ddc9b15be9262",
+          "name": "식품영양학과",
+          "campus": "",
+          "college": "라이프케어사이언스대학",
+          "note": "",
+          "seats": 5,
+          "applicants": 15,
+          "ratio": 3
+        },
+        {
+          "id": "ec833ccb2ab66d15",
+          "name": "아트앤엔터테인먼트학부 디지털콘텐츠",
+          "campus": "",
+          "college": "문화예술융합대학",
+          "note": "",
+          "seats": 10,
+          "applicants": 10,
+          "ratio": 1
+        }
+      ],
+      "total": {
+        "seats": 434,
+        "applicants": 1159,
+        "ratio": 2.67
+      },
+      "contentHash": "0a89a2ca4ae8278026364e2ff8b2fc7b65f2f2f1b40d5ad8829f97f1872ffb45",
+      "collectedAt": "2026-09-09T03:03:22.678Z"
+    },
+    {
+      "year": 2027,
+      "sourceAt": "2026-09-09T12:10:00+09:00",
+      "isFinal": false,
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970461.html",
+      "track": "교과논술전형",
+      "rows": [
+        {
+          "id": "db9122cf6c3f536e",
+          "name": "인문사회융합대학",
+          "campus": "",
+          "college": "인문사회융합대학",
+          "note": "",
+          "seats": 70,
+          "applicants": 208,
+          "ratio": 2.97
+        },
+        {
+          "id": "2577dd9194e5c34a",
+          "name": "경영공학대학",
+          "campus": "",
+          "college": "경영공학대학",
+          "note": "",
+          "seats": 63,
+          "applicants": 158,
+          "ratio": 2.51
+        },
+        {
+          "id": "746f331363687f9f",
+          "name": "바이오공학과",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 8,
+          "applicants": 31,
+          "ratio": 3.88
+        },
+        {
+          "id": "3be354cdfebcf1ed",
+          "name": "건설환경에너지공학부",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 30,
+          "applicants": 53,
+          "ratio": 1.77
+        },
+        {
+          "id": "28453595781c3bf5",
+          "name": "건축학과",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 14,
+          "applicants": 24,
+          "ratio": 1.71
+        },
+        {
+          "id": "d6f09677d0613130",
+          "name": "도시부동산학과",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 8,
+          "applicants": 2,
+          "ratio": 0.25
+        },
+        {
+          "id": "3da822dd190ec82c",
+          "name": "기계공학부",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 15,
+          "applicants": 50,
+          "ratio": 3.33
+        },
+        {
+          "id": "1f1fb3f882597302",
+          "name": "반도체공학과",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 15,
+          "applicants": 20,
+          "ratio": 1.33
+        },
+        {
+          "id": "a14cc2fe69520cfe",
+          "name": "전기전자공학부",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 50,
+          "applicants": 105,
+          "ratio": 2.1
+        },
+        {
+          "id": "eba189c831ebfd75",
+          "name": "화학공학·신소재공학부",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 30,
+          "applicants": 45,
+          "ratio": 1.5
+        },
+        {
+          "id": "450792704c0e7de6",
+          "name": "소방재난공학과",
+          "campus": "",
+          "college": "혁신공과대학",
+          "note": "",
+          "seats": 5,
+          "applicants": 18,
+          "ratio": 3.6
+        },
+        {
+          "id": "171ef1e784c83e7f",
+          "name": "AI데이터과학부",
+          "campus": "",
+          "college": "지능형SW융합대학",
+          "note": "",
+          "seats": 32,
+          "applicants": 40,
+          "ratio": 1.25
+        },
+        {
+          "id": "eb3dde52c4da0e3e",
+          "name": "컴퓨터공학부",
+          "campus": "",
+          "college": "지능형SW융합대학",
+          "note": "",
+          "seats": 32,
+          "applicants": 36,
+          "ratio": 1.13
+        },
+        {
+          "id": "dc1ed0939a5bd9d0",
+          "name": "지능형보안학부",
+          "campus": "",
+          "college": "지능형SW융합대학",
+          "note": "",
+          "seats": 12,
+          "applicants": 6,
+          "ratio": 0.5
+        },
+        {
+          "id": "1d8b9b10df8b4ec5",
+          "name": "간호학과",
+          "campus": "",
+          "college": "라이프케어사이언스대학",
+          "note": "",
+          "seats": 25,
+          "applicants": 312,
+          "ratio": 12.48
+        },
+        {
+          "id": "48629b6df833ea31",
+          "name": "아동가족복지학과",
+          "campus": "",
+          "college": "라이프케어사이언스대학",
+          "note": "",
+          "seats": 5,
+          "applicants": 19,
+          "ratio": 3.8
+        },
+        {
+          "id": "f44bae61e49cd382",
+          "name": "의류학과",
+          "campus": "",
+          "college": "라이프케어사이언스대학",
+          "note": "",
+          "seats": 5,
+          "applicants": 12,
+          "ratio": 2.4
+        },
+        {
+          "id": "690ddc9b15be9262",
+          "name": "식품영양학과",
+          "campus": "",
+          "college": "라이프케어사이언스대학",
+          "note": "",
+          "seats": 5,
+          "applicants": 15,
+          "ratio": 3
+        },
+        {
+          "id": "ec833ccb2ab66d15",
+          "name": "아트앤엔터테인먼트학부 디지털콘텐츠",
+          "campus": "",
+          "college": "문화예술융합대학",
+          "note": "",
+          "seats": 10,
+          "applicants": 10,
+          "ratio": 1
+        }
+      ],
+      "total": {
+        "seats": 434,
+        "applicants": 1164,
+        "ratio": 2.68
+      },
+      "contentHash": "f5d262c53c62308d347884094a191f9524590db935a020e0bbe2320d0256a8cb",
+      "collectedAt": "2026-09-09T03:14:00.070Z"
+    }
+  ]
+}

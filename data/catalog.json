@@ -1,0 +1,658 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-09-09",
+  "classificationNote": "논술 모집단위별 수동 분류. 대학 원문의 자연계열(입시계열)과 자연과학(학문분류)은 다릅니다. 혼합 모집단위는 자유·융합으로 별도 표시합니다.",
+  "schools": {
+    "kyonggi": {
+      "minimum": {
+        "text": "논술전형 수능최저학력기준 없음.",
+        "sourceUrl": "https://enter.kyonggi.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=130&CONTENTS_NO=2&TYPE_CODE=C0601"
+      }
+    },
+    "suwon": {
+      "minimum": {
+        "text": "논술전형 수능최저학력기준 없음.",
+        "sourceUrl": "https://ipsi.suwon.ac.kr/upload_data/guide/1787878393_6045.pdf"
+      }
+    },
+    "koreatech": {
+      "minimum": {
+        "text": "논술전형 수능최저학력기준 없음.",
+        "sourceUrl": "https://www.koreatech.ac.kr/menuDownload.es?sid=a4&mid=0101010100&file_seq=237"
+      }
+    },
+    "tukorea": {
+      "minimum": {
+        "text": "논술전형 수능최저학력기준 없음.",
+        "sourceUrl": "https://iphak.tukorea.ac.kr/bbs/filedown.php?bbsid=guide&file_seq=2027&save_file_nm=guide_20260907185426_2035.pdf"
+      }
+    },
+    "gachon": {
+      "minimum": {
+        "text": "일반 모집단위: 국어·수학·영어·사회/과학탐구(1과목) 중 1개 영역 3등급 이내.",
+        "sourceUrl": "https://admission.gachon.ac.kr/upload/BBS0021/20260901154909TB3M9B.PDF",
+        "exceptions": [
+          {
+            "label": "바이오로직스학과",
+            "text": "국어·수학·영어·사회/과학탐구(1과목) 중 2개 영역 등급 합 5 이내."
+          },
+          {
+            "label": "의예과",
+            "text": "국어·수학(기하/미적분)·영어·과학탐구(2과목) 중 3개 영역 각 1등급. 과탐은 2과목 평균의 소수점 절사."
+          },
+          {
+            "label": "한의예과",
+            "text": "국어·수학(기하/미적분)·영어·과학탐구(2과목) 중 2개 영역 각 1등급. 과탐 적용 시 2과목 모두 1등급."
+          },
+          {
+            "label": "약학과",
+            "text": "국어·수학(기하/미적분)·영어·과학탐구(2과목) 중 3개 영역 등급 합 5 이내. 과탐은 2과목 평균의 소수점 절사."
+          }
+        ]
+      }
+    },
+    "sahmyook": {
+      "minimum": {
+        "text": "일반 모집단위: 국어·영어·수학·탐구(1과목) 중 1개 영역 3등급 이내.",
+        "sourceUrl": "https://ipsi.syu.ac.kr/upload_data/guide/RF(0)_260527141648.pdf",
+        "exceptions": [
+          {
+            "label": "약학과",
+            "text": "국어·영어·수학(미적분/기하)·과학탐구(1과목) 중 3개 영역 등급 합 5 이내."
+          }
+        ]
+      }
+    }
+  },
+  "units": {
+    "8a29f30e4e7b5fa4": {
+      "name": "자유전공학부(수원) · 언어사회",
+      "category": "mixed",
+      "sourceUrl": "https://ratio.uwayapply.com/Sl5KJXJyV2FiOUpmJSY6Jko3ZlRm",
+      "note": "공학 외 전공이 포함될 수 있습니다. 선택 가능한 전공과 제한은 공식 모집요강에서 확인하세요."
+    },
+    "55e97acadfc48060": {
+      "name": "자유전공학부(수원) · 수리",
+      "category": "mixed",
+      "sourceUrl": "https://ratio.uwayapply.com/Sl5KJXJyV2FiOUpmJSY6Jko3ZlRm",
+      "note": "공학 외 전공이 포함될 수 있습니다. 선택 가능한 전공과 제한은 공식 모집요강에서 확인하세요."
+    },
+    "6a9518615b2ac4d8": {
+      "name": "자유전공학부(서울) · 언어사회",
+      "category": "mixed",
+      "sourceUrl": "https://ratio.uwayapply.com/Sl5KJXJyV2FiOUpmJSY6Jko3ZlRm",
+      "note": "공학 외 전공이 포함될 수 있습니다. 선택 가능한 전공과 제한은 공식 모집요강에서 확인하세요."
+    },
+    "58e407e017eba44d": {
+      "name": "자유전공학부(서울) · 수리",
+      "category": "mixed",
+      "sourceUrl": "https://ratio.uwayapply.com/Sl5KJXJyV2FiOUpmJSY6Jko3ZlRm",
+      "note": "공학 외 전공이 포함될 수 있습니다. 선택 가능한 전공과 제한은 공식 모집요강에서 확인하세요."
+    },
+    "db9122cf6c3f536e": {
+      "name": "인문사회융합대학",
+      "category": "humanities",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970461.html"
+    },
+    "2577dd9194e5c34a": {
+      "name": "경영공학대학",
+      "category": "mixed",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970461.html",
+      "note": "공학 외 전공이 포함될 수 있습니다. 선택 가능한 전공과 제한은 공식 모집요강에서 확인하세요."
+    },
+    "746f331363687f9f": {
+      "name": "바이오공학과",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970461.html"
+    },
+    "3be354cdfebcf1ed": {
+      "name": "건설환경에너지공학부",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970461.html"
+    },
+    "28453595781c3bf5": {
+      "name": "건축학과",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970461.html"
+    },
+    "d6f09677d0613130": {
+      "name": "도시부동산학과",
+      "category": "humanities",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970461.html"
+    },
+    "3da822dd190ec82c": {
+      "name": "기계공학부",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970461.html"
+    },
+    "1f1fb3f882597302": {
+      "name": "반도체공학과",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970461.html"
+    },
+    "a14cc2fe69520cfe": {
+      "name": "전기전자공학부",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970461.html"
+    },
+    "eba189c831ebfd75": {
+      "name": "화학공학·신소재공학부",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970461.html"
+    },
+    "450792704c0e7de6": {
+      "name": "소방재난공학과",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970461.html"
+    },
+    "171ef1e784c83e7f": {
+      "name": "AI데이터과학부",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970461.html"
+    },
+    "eb3dde52c4da0e3e": {
+      "name": "컴퓨터공학부",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970461.html"
+    },
+    "dc1ed0939a5bd9d0": {
+      "name": "지능형보안학부",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970461.html"
+    },
+    "1d8b9b10df8b4ec5": {
+      "name": "간호학과",
+      "category": "health",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970461.html"
+    },
+    "48629b6df833ea31": {
+      "name": "아동가족복지학과",
+      "category": "humanities",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970461.html"
+    },
+    "f44bae61e49cd382": {
+      "name": "의류학과",
+      "category": "other",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970461.html"
+    },
+    "690ddc9b15be9262": {
+      "name": "식품영양학과",
+      "category": "natural",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970461.html"
+    },
+    "ec833ccb2ab66d15": {
+      "name": "아트앤엔터테인먼트학부 디지털콘텐츠",
+      "category": "other",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970461.html"
+    },
+    "a0b81d6d583b87df": {
+      "name": "기계공학부",
+      "category": "engineering",
+      "sourceUrl": "https://ratio.uwayapply.com/Sl5KfExgMDhgfWE5SmYlJjomSjdmVGY="
+    },
+    "0d70fa76f8ab00bc": {
+      "name": "메카트로닉스공학부",
+      "category": "engineering",
+      "sourceUrl": "https://ratio.uwayapply.com/Sl5KfExgMDhgfWE5SmYlJjomSjdmVGY="
+    },
+    "34fdbe326df51013": {
+      "name": "디자인공학과",
+      "category": "engineering",
+      "sourceUrl": "https://ratio.uwayapply.com/Sl5KfExgMDhgfWE5SmYlJjomSjdmVGY="
+    },
+    "04de93a4c297243a": {
+      "name": "건축공학과",
+      "category": "engineering",
+      "sourceUrl": "https://ratio.uwayapply.com/Sl5KfExgMDhgfWE5SmYlJjomSjdmVGY="
+    },
+    "70bb80b77050ddd9": {
+      "name": "에너지신소재화학공학부 · 에너지신소재공학전공",
+      "category": "engineering",
+      "sourceUrl": "https://ratio.uwayapply.com/Sl5KfExgMDhgfWE5SmYlJjomSjdmVGY="
+    },
+    "ce2b4d71096d4389": {
+      "name": "에너지신소재화학공학부 · 화학생명공학전공",
+      "category": "engineering",
+      "sourceUrl": "https://ratio.uwayapply.com/Sl5KfExgMDhgfWE5SmYlJjomSjdmVGY="
+    },
+    "27124333d85ee8ea": {
+      "name": "공학융합자율전공",
+      "category": "engineering",
+      "sourceUrl": "https://ratio.uwayapply.com/Sl5KfExgMDhgfWE5SmYlJjomSjdmVGY="
+    },
+    "cb843ec2fa581ad5": {
+      "name": "전기·전자·통신공학부 · 전기공학전공",
+      "category": "engineering",
+      "sourceUrl": "https://ratio.uwayapply.com/Sl5KfExgMDhgfWE5SmYlJjomSjdmVGY="
+    },
+    "f3969a839a8db858": {
+      "name": "전기·전자·통신공학부 · 전자공학전공",
+      "category": "engineering",
+      "sourceUrl": "https://ratio.uwayapply.com/Sl5KfExgMDhgfWE5SmYlJjomSjdmVGY="
+    },
+    "cf2963a2334dd631": {
+      "name": "전기·전자·통신공학부 · AI정보통신공학전공",
+      "category": "engineering",
+      "sourceUrl": "https://ratio.uwayapply.com/Sl5KfExgMDhgfWE5SmYlJjomSjdmVGY="
+    },
+    "f5b232711ad38d7d": {
+      "name": "컴퓨터공학부 · 컴퓨터공학전공",
+      "category": "engineering",
+      "sourceUrl": "https://ratio.uwayapply.com/Sl5KfExgMDhgfWE5SmYlJjomSjdmVGY="
+    },
+    "a193cc781aa206b4": {
+      "name": "컴퓨터공학부 · AI·소프트웨어전공",
+      "category": "engineering",
+      "sourceUrl": "https://ratio.uwayapply.com/Sl5KfExgMDhgfWE5SmYlJjomSjdmVGY="
+    },
+    "4affe379bc569651": {
+      "name": "ICT융합자율전공",
+      "category": "engineering",
+      "sourceUrl": "https://ratio.uwayapply.com/Sl5KfExgMDhgfWE5SmYlJjomSjdmVGY="
+    },
+    "7b50904e7a8c4023": {
+      "name": "경영학부 · 융합경영전공",
+      "category": "humanities",
+      "sourceUrl": "https://ratio.uwayapply.com/Sl5KfExgMDhgfWE5SmYlJjomSjdmVGY="
+    },
+    "0b2fc82e852a7218": {
+      "name": "경영학부 · 데이터경영전공",
+      "category": "humanities",
+      "sourceUrl": "https://ratio.uwayapply.com/Sl5KfExgMDhgfWE5SmYlJjomSjdmVGY="
+    },
+    "945d689f52c5c542": {
+      "name": "고용서비스정책학과",
+      "category": "humanities",
+      "sourceUrl": "https://ratio.uwayapply.com/Sl5KfExgMDhgfWE5SmYlJjomSjdmVGY="
+    },
+    "b5aca04ae392ceab": {
+      "name": "사회융합자율전공",
+      "category": "humanities",
+      "sourceUrl": "https://ratio.uwayapply.com/Sl5KfExgMDhgfWE5SmYlJjomSjdmVGY="
+    },
+    "cce0224b263faa5f": {
+      "name": "자유전공학부",
+      "category": "mixed",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio30170741.html",
+      "note": "공학 외 전공이 포함될 수 있습니다. 선택 가능한 전공과 제한은 공식 모집요강에서 확인하세요."
+    },
+    "3fed0b30989437ce": {
+      "name": "AI융합 자율전공",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio30170741.html"
+    },
+    "312a331ea3df2784": {
+      "name": "IT반도체융합 자율전공",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio30170741.html"
+    },
+    "19676aeff2897216": {
+      "name": "스마트기계융합 자율전공",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio30170741.html"
+    },
+    "11f78fd6141120f6": {
+      "name": "첨단융합 자율전공",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio30170741.html"
+    },
+    "6f05eb5ffcc81691": {
+      "name": "경영학부 경영 자율전공",
+      "category": "humanities",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio30170741.html"
+    },
+    "1a8c32e8978b71d1": {
+      "name": "경영학과",
+      "category": "humanities",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "27e4157add2aa819": {
+      "name": "회계세무학과",
+      "category": "humanities",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "59eb0d5c9d0b272c": {
+      "name": "관광경영학과",
+      "category": "humanities",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "f69a91919bba3a67": {
+      "name": "의료산업경영학과",
+      "category": "humanities",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "bbb68e4094dbfa8d": {
+      "name": "금융·빅데이터학부",
+      "category": "humanities",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "ad6d3814c8193f33": {
+      "name": "미디어커뮤니케이션학과",
+      "category": "humanities",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "a258590adabcab14": {
+      "name": "경제학과",
+      "category": "humanities",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "976657d8ab2e4873": {
+      "name": "응용통계학과",
+      "category": "humanities",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "0d827896e97ef4b8": {
+      "name": "사회복지학과",
+      "category": "humanities",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "82596bd1f7a7c0c4": {
+      "name": "유아교육학과",
+      "category": "humanities",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "74e6f64e798a8a65": {
+      "name": "심리학과",
+      "category": "humanities",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "cd93bd82710e81f0": {
+      "name": "패션산업학과",
+      "category": "humanities",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "9566316790eaf422": {
+      "name": "AI인문대학",
+      "category": "humanities",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "a2dccea1b20238a3": {
+      "name": "법과대학",
+      "category": "humanities",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "f1148e0ed27f44b6": {
+      "name": "도시계획·조경학부",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "d8ed3f97a3a44c24": {
+      "name": "건축학부",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "3f9872b2c87ed7be": {
+      "name": "건축공학과",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "843f1f4ad49fab93": {
+      "name": "화공생명배터리공학부",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "51edfbab5743f5b2": {
+      "name": "기계공학부",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "344f0c404ba7f1b7": {
+      "name": "스마트팩토리학과",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "31a73fd9a66a4e99": {
+      "name": "건설환경공학과",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "4a06edbd25664ba4": {
+      "name": "신소재공학과",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "83454ee40d901be0": {
+      "name": "바이오나노학과",
+      "category": "natural",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "9975142a39dab7e3": {
+      "name": "식품생명공학과",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "8e2e9339de1a48bf": {
+      "name": "식품영양학과",
+      "category": "natural",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "ed68df6d5207963b": {
+      "name": "생명과학과",
+      "category": "natural",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "73ea3212c41d35af": {
+      "name": "반도체물리학과",
+      "category": "natural",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "5dc022d391c0ca2e": {
+      "name": "화학과",
+      "category": "natural",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "6f0f2bd1826306cf": {
+      "name": "반도체대학",
+      "category": "mixed",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "note": "공학 외 전공이 포함될 수 있습니다. 선택 가능한 전공과 제한은 공식 모집요강에서 확인하세요."
+    },
+    "9972103bd40a1f1f": {
+      "name": "시스템반도체학과",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "1329569be99c329c": {
+      "name": "컴퓨터공학과",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "9f9af143bbdc970f": {
+      "name": "인공지능학과",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "8e43d643057c4a87": {
+      "name": "인공지능시스템학과",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "742f7bbfb91c1a72": {
+      "name": "정보보호학과",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "67ea6cbe1db2a7b9": {
+      "name": "전기공학과",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "4fa7ea27a26d8c7c": {
+      "name": "스마트시티학과",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "a825b9c17ed2a0cf": {
+      "name": "의공학과",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "a42c28c0c3936bd6": {
+      "name": "간호학과",
+      "category": "health",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "750324fc7e9e200b": {
+      "name": "치위생학과",
+      "category": "health",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "8e9685445b6ff650": {
+      "name": "응급구조학과",
+      "category": "health",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "a3a9121d625dd159": {
+      "name": "물리치료학과",
+      "category": "health",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "db83d79f1e37bb15": {
+      "name": "방사선학과",
+      "category": "health",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "4b46b798942dc2e0": {
+      "name": "운동재활학과",
+      "category": "health",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+    },
+    "1b05452c84488f31": {
+      "name": "의예과",
+      "category": "health",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "minimumText": "국어·수학(기하/미적분)·영어·과학탐구(2과목) 중 3개 영역 각 1등급. 과탐은 2과목 평균의 소수점 절사."
+    },
+    "ee97b0de24b069c8": {
+      "name": "한의예과",
+      "category": "health",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "minimumText": "국어·수학(기하/미적분)·영어·과학탐구(2과목) 중 2개 영역 각 1등급. 과탐 적용 시 2과목 모두 1등급."
+    },
+    "28e719814cc3c769": {
+      "name": "약학과",
+      "category": "health",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "minimumText": "국어·수학(기하/미적분)·영어·과학탐구(2과목) 중 3개 영역 등급 합 5 이내. 과탐은 2과목 평균의 소수점 절사."
+    },
+    "d21d878a3e74c5f3": {
+      "name": "바이오로직스학과",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "minimumText": "국어·수학·영어·사회/과학탐구(1과목) 중 2개 영역 등급 합 5 이내."
+    },
+    "7d6cfb27e2fce23e": {
+      "name": "간호학과",
+      "category": "health",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10760741.html"
+    },
+    "fade7019606a4c85": {
+      "name": "약학과",
+      "category": "health",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10760741.html",
+      "minimumText": "국어·영어·수학(미적분/기하)·과학탐구(1과목) 중 3개 영역 등급 합 5 이내."
+    },
+    "55294da72e03c39f": {
+      "name": "창의융합자유전공학부",
+      "category": "mixed",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10760741.html",
+      "note": "공학 외 전공이 포함될 수 있습니다. 선택 가능한 전공과 제한은 공식 모집요강에서 확인하세요."
+    },
+    "13d716e28b9f4582": {
+      "name": "영어영문학과",
+      "category": "humanities",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10760741.html"
+    },
+    "e94e52fd8fbfa735": {
+      "name": "항공관광외국어학부",
+      "category": "humanities",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10760741.html"
+    },
+    "72485b6a3c9f9b12": {
+      "name": "글로벌한국학과",
+      "category": "humanities",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10760741.html"
+    },
+    "7e507ccaddda3045": {
+      "name": "경영학과",
+      "category": "humanities",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10760741.html"
+    },
+    "a9568dea830bbac9": {
+      "name": "유아교육과",
+      "category": "humanities",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10760741.html"
+    },
+    "256e76ea5706b314": {
+      "name": "사회복지학과",
+      "category": "humanities",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10760741.html"
+    },
+    "6a3ea71ebb08d793": {
+      "name": "상담심리학과",
+      "category": "humanities",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10760741.html"
+    },
+    "af616e8d2a58a193": {
+      "name": "미래융합자유전공학부",
+      "category": "mixed",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10760741.html",
+      "note": "공학 외 전공이 포함될 수 있습니다. 선택 가능한 전공과 제한은 공식 모집요강에서 확인하세요."
+    },
+    "a5916fb3d256e77f": {
+      "name": "물리치료학과",
+      "category": "health",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10760741.html"
+    },
+    "ab9000ccdaed9617": {
+      "name": "보건관리학과",
+      "category": "health",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10760741.html"
+    },
+    "2e9d5696d3078ed4": {
+      "name": "식품영양학과",
+      "category": "natural",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10760741.html"
+    },
+    "b7c602992eca89c3": {
+      "name": "컴퓨터공학부",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10760741.html"
+    },
+    "f99dc8b611edaedd": {
+      "name": "인공지능융합학부",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10760741.html"
+    },
+    "36ea3f9298931af1": {
+      "name": "바이오융합공학과",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10760741.html"
+    },
+    "12057b576fc95349": {
+      "name": "화학생명과학과",
+      "category": "natural",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10760741.html"
+    },
+    "e4464bcb2253b317": {
+      "name": "동물자원과학과",
+      "category": "natural",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10760741.html"
+    },
+    "ee473afccbe1121d": {
+      "name": "환경디자인원예학과",
+      "category": "natural",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10760741.html"
+    },
+    "c9121cebd7d11814": {
+      "name": "데이터클라우드공학과",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10760741.html"
+    },
+    "b064454e6860dec6": {
+      "name": "건축학과(5년제)",
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10760741.html"
+    }
+  }
+}

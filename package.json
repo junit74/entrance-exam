@@ -1,0 +1,15 @@
+{
+  "name": "essay-admissions-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node src/server.mjs",
+    "collect": "node src/collect.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test",
+    "check": "node --check public/app.js && node --test && node scripts/build.mjs"
+  },
+  "dependencies": { "cheerio": "1.2.0" }
+}
