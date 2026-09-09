@@ -21,3 +21,18 @@ main{margin-left:230px;padding:0 38px;max-width:1900px}.topbar{height:83px;displ
 .line-chart .point-hit{fill:transparent;stroke:none;pointer-events:all}.line-chart .point-dot{pointer-events:none}.chart-point{cursor:pointer;outline:none}.chart-point:hover .point-dot,.chart-point.active .point-dot,.chart-point:focus-visible .point-dot{stroke:var(--series);stroke-width:8;stroke-opacity:.22}.line-chart .point-label{pointer-events:none}
 .chart-tooltip{position:fixed;z-index:1000;pointer-events:none;width:max-content;max-width:min(290px,calc(100vw - 24px));padding:15px 17px;background:#fff;color:#203b30;border:1px solid #dce8dc;border-radius:13px;box-shadow:0 8px 32px #153b2829;font-size:12px;line-height:1.5;text-align:left}.chart-tooltip[hidden]{display:none}.tooltip-heading{display:flex;gap:7px;align-items:center;font-size:11px;font-weight:600}.tooltip-time{font-size:10px;color:#768679;margin-top:5px}.tooltip-ratio{font-size:27px;font-weight:700;letter-spacing:-.8px;margin-top:6px;font-variant-numeric:tabular-nums}.tooltip-ratio small{font-size:12px;font-weight:400;color:#829382;letter-spacing:0;margin-left:5px}.tooltip-counts{border-top:1px solid #e8eee5;margin-top:9px;padding-top:9px;display:flex;gap:17px;font-size:10px;color:#81917e}.tooltip-counts b{color:#3f5c44;font-size:11px;font-weight:600;margin-left:3px}
 @media(max-width:620px){.trend-chart{padding:0 16px 17px;border-right:0}.chart-legend{gap:8px 12px}.chart-legend span{font-size:10px}.chart-tooltip{padding:12px 14px;max-width:250px}.tooltip-ratio{font-size:25px}.trend-chart .line-chart{min-height:180px}.line-chart .axis-label{font-size:9px}}
+
+/* University comparison uses a categorical X axis and a shared ratio Y axis. */
+.summary-comparison{display:block}.school-chart{min-width:0;padding:0 23px 20px}
+.bar-chart-scroll{overflow-x:auto;overscroll-behavior-x:contain;border-radius:8px}
+.school-bar-chart{display:block;width:100%;height:auto;max-height:360px}
+.school-bar-chart .grid{stroke:#e3e9db;stroke-dasharray:4 5;stroke-width:1}
+.bar-tick,.bar-axis-title{fill:#83937b;font-size:11px}
+.bar-school{fill:#50695a;font-size:11px}
+.school-bar-value{fill:#29463b;font-size:12px;font-weight:600;pointer-events:none}
+.chart-bar{outline:none;cursor:pointer}
+.chart-bar:hover .school-bar-fill,.chart-bar:focus .school-bar-fill,.chart-bar.active .school-bar-fill{stroke:#29463b;stroke-width:2;opacity:.85}
+.bar-scroll-hint{font-size:11px;color:var(--muted);margin-top:8px;display:none}
+@media(max-width:700px){.school-chart{padding:0 0 18px}.bar-scroll-hint{display:block}.school-bar-chart{max-height:none}}
+
+@media(min-width:621px){.summary-comparison .summary-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;border-top:1px solid var(--line)}.summary-comparison .summary-tip{grid-column:1 / -1;margin:0}}

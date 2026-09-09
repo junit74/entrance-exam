@@ -9,7 +9,7 @@ const categories={engineering:'공학',mixed:'자유·융합',humanities:'인문
 const rank={engineering:0,mixed:1,humanities:2,health:3,other:4,unknown:5,natural:9};
 let favorites;
 try{favorites=new Set(JSON.parse(localStorage.getItem('essay-favorites')||'[]'));}catch{favorites=new Set();}
-const state={data:null,catalog:{},historical:{},runtime:{mode:'github'},school:null,query:'',category:'all',sort:'priority',favoritesOnly:false,historyYear:2026,historyCache:new Map()};
+const state={data:null,catalog:{},historical:{},runtime:{mode:'github'},school:null,query:'',category:'all',sort:'low',favoritesOnly:false,historyYear:2026,historyCache:new Map()};
 let loading=false,detailGeneration=0;
 function toast(text){$('#toast').textContent=text;$('#toast').classList.add('show');clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('#toast').classList.remove('show'),3000);}
 async function json(url){const r=await fetch(url,{cache:'no-store'});if(!r.ok)throw Error(`자료를 읽지 못했습니다 (${r.status}).`);return r.json();}
@@ -35,10 +35,27 @@ function status(s){
 }
 function sourceLink(url,label='공식 원문 ↗'){return /^https?:\/\//.test(url||'')?`<a class="source-link" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)}</a>`:'';}
 function schoolCards(){return `<div class="school-cards">${state.data.schools.map(s=>{const t=s.snapshot?.total,st=status(s);return `<a href="#school/${s.id}" class="school-card" style="--school:${s.color}"><div class="card-identity"><div class="card-name"><i class="school-dot"></i>${s.shortName}</div><div class="region-text">${esc(region(s))}</div></div><div class="card-number">${rate(t?.ratio)}<small>: 1</small></div><div class="card-caption">논술 전체 · 모집 ${num(t?.seats)}명</div><div class="card-time ${st.warning?'warning':''}"><i></i>${time(s.snapshot?.sourceAt)} 기준 · ${st.label}</div></a>`;}).join('')}</div>`;}
-function filterControls(){return `<div class="table-toolbar"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="대학·지역·모집단위 검색" aria-label="대학·지역·모집단위 검색" value="${esc(state.query)}"></label><select id="category" aria-label="계열 필터"><option value="all">전체 계열 · 자연과학 제외</option>${['engineering','mixed','humanities','health','other','unknown'].map(c=>`<option value="${c}" ${state.category===c?'selected':''}>${categories[c]}</option>`).join('')}</select><select id="sort" aria-label="정렬"><option value="priority">공학 우선 · 낮은 경쟁률</option><option value="low" ${state.sort==='low'?'selected':''}>낮은 경쟁률순</option><option value="high" ${state.sort==='high'?'selected':''}>높은 경쟁률순</option><option value="seats" ${state.sort==='seats'?'selected':''}>많은 모집인원순</option></select><label class="favorite-filter"><input type="checkbox" id="favorites-only" ${state.favoritesOnly?'checked':''}> 관심 모집단위</label></div>`;}
+function filterControls(){return `<div class="table-toolbar"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="대학·지역·모집단위 검색" aria-label="대학·지역·모집단위 검색" value="${esc(state.query)}"></label><select id="category" aria-label="계열 필터"><option value="all">전체 계열 · 자연과학 제외</option>${['engineering','mixed','humanities','health','other','unknown'].map(c=>`<option value="${c}" ${state.category===c?'selected':''}>${categories[c]}</option>`).join('')}</select><select id="sort" aria-label="정렬"><option value="low" ${state.sort==='low'?'selected':''}>낮은 경쟁률순</option><option value="priority" ${state.sort==='priority'?'selected':''}>공학 우선 · 낮은 경쟁률</option><option value="high" ${state.sort==='high'?'selected':''}>높은 경쟁률순</option><option value="seats" ${state.sort==='seats'?'selected':''}>많은 모집인원순</option></select><label class="favorite-filter"><input type="checkbox" id="favorites-only" ${state.favoritesOnly?'checked':''}> 관심 모집단위</label></div>`;}
 function delta(r){const before=r.school.previousApplicants?.[r.id];if(before==null)return '—';const d=r.applicants-before;return `${d>0?'+':''}${num(d)}`;}
 function currentTable(rows){return `<div class="table-wrap"><table><thead><tr><th aria-label="관심"></th><th>대학</th><th>모집단위</th><th>계열</th><th class="number">모집인원</th><th class="number">지원인원</th><th class="number" title="직전 저장 현황 대비 지원인원 변화">직전 대비</th><th class="number">경쟁률</th><th>자료 기준</th><th></th></tr></thead><tbody>${rows.map(r=>`<tr><td><button class="star ${favorites.has(r.id)?'on':''}" data-star="${r.id}" aria-label="${esc(r.name)} 관심 ${favorites.has(r.id)?'해제':'등록'}" aria-pressed="${favorites.has(r.id)}">${favorites.has(r.id)?'★':'☆'}</button></td><td style="white-space:nowrap"><a href="#school/${r.school.id}">${r.school.shortName}</a><small class="region-text">${esc(region(r.school,r))}</small></td><td class="unit-cell"><button class="unit-link" data-detail="${r.id}">${esc(r.name)}</button><small>${esc(r.campus||r.school.track)}</small></td><td><span class="tag ${r.category}">${categories[r.category]}</span></td><td class="number">${num(r.seats)}</td><td class="number">${num(r.applicants)}</td><td class="number delta" title="${time(r.school.previousSourceAt,true)} 대비">${delta(r)}</td><td class="number"><span class="ratio-value">${rate(r.ratio)}<small>: 1</small></span></td><td style="white-space:nowrap">${time(r.school.snapshot.sourceAt)}</td><td><button class="unit-link" data-detail="${r.id}" aria-label="${esc(r.name)} 상세보기">↗</button></td></tr>`).join('')}</tbody></table>${rows.length?'':`<div class="empty">조건에 맞는 모집단위가 없습니다.<br>검색어나 계열 필터를 변경해 주세요.</div>`}</div>`;}
 function summary(rows){
+  if(state.school)return schoolTrendSummary(rows);
+  const totals=sums(rows),selected=state.data.schools.filter(s=>rows.some(r=>r.school.id===s.id));
+  const bars=selected.map(s=>({...s,...sums(rows.filter(r=>r.school.id===s.id))}));
+  return `<section class="panel"><div class="panel-head"><div><h2>한눈에 보는 경쟁률</h2><p>현재 필터에 포함된 모집단위 · 대학별 최신 경쟁률</p></div><span class="pill green">자연과학 제외</span></div><div class="summary-layout summary-comparison"><div class="school-chart"><div class="bar-chart-scroll" tabindex="0" role="region" aria-label="대학별 경쟁률 막대그래프, 가로로 스크롤할 수 있습니다">${schoolBarChart(bars)}</div><p class="chart-note">현재 필터의 지원인원 합계 ÷ 모집인원 합계 · 대학별 자료 기준 시각은 다를 수 있습니다.</p><p class="chart-note">막대에 마우스를 올리거나 터치하면 발표 시각과 모집·지원 인원을 볼 수 있습니다.</p>${bars.length>3?'<p class="bar-scroll-hint">좌우로 밀어 모든 대학을 확인하세요.</p>':''}</div><div class="summary-stats"><div class="summary-stat">비교 중인 모집단위<strong>${num(rows.length)}<small>개</small></strong></div><div class="summary-stat">모집인원 합계<strong>${num(totals.seats)}<small>명</small></strong></div><div class="summary-stat">지원인원 합계<strong>${num(totals.applicants)}<small>명</small></strong></div><div class="summary-tip">지금의 경쟁률은 접수 중 현황입니다.<br>모집단위를 선택하면 과거 최종 경쟁률도 함께 볼 수 있습니다.</div></div></div></section>`;
+}
+function schoolBarChart(bars){
+  if(!bars.length)return '<div class="empty">조건에 맞는 모집단위가 없습니다.</div>';
+  const w=Math.max(300,bars.length*80+72),h=320,l=52,r=20,t=38,b=64;
+  const ceiling=Math.max(1,...bars.map(s=>s.ratio??0))*1.15;
+  const step=ceiling<=5?1:ceiling<=25?5:ceiling<=50?10:Math.ceil(ceiling/50)*10;
+  const max=Math.ceil(ceiling/step)*step,baseline=h-b,plot=baseline-t,slot=(w-l-r)/bars.length;
+  return `<svg class="school-bar-chart" style="min-width:${w}px" viewBox="0 0 ${w} ${h}" role="group" aria-label="대학별 최신 경쟁률: 가로축 대학교, 세로축 경쟁률"><text class="bar-axis-title" x="${l}" y="18">경쟁률 (:1)</text>${Array.from({length:max/step+1},(_,i)=>i*step).map(v=>`<line class="grid" x1="${l}" x2="${w-r}" y1="${baseline-v/max*plot}" y2="${baseline-v/max*plot}"/><text class="bar-tick" x="${l-10}" y="${baseline-v/max*plot+4}" text-anchor="end">${v}</text>`).join('')}${bars.map((s,i)=>{
+    const center=l+slot*(i+.5),width=Math.min(44,slot*.55),height=(s.ratio??0)/max*plot,y=baseline-height;
+    return `<g class="chart-point chart-bar" tabindex="0" role="img" aria-label="${esc(s.shortName+' · '+rate(s.ratio)+' 대 1')}" data-chart-point data-name="${esc(s.shortName)}" data-label="${esc(time(s.snapshot?.sourceAt,true))}" data-value="${s.ratio??''}" data-applicants="${s.applicants}" data-seats="${s.seats}" data-color="${s.color}"><rect class="bar-hit" x="${center-slot/2+4}" y="${t}" width="${slot-8}" height="${plot}" fill="transparent"/><rect class="school-bar-fill" x="${center-width/2}" y="${y}" width="${width}" height="${Math.max(1,height)}" rx="4" fill="${s.color}"/><text class="school-bar-value" x="${center}" y="${y-9}" text-anchor="middle">${rate(s.ratio)}</text></g><text class="bar-school" x="${center}" y="${baseline+23}" text-anchor="middle">${esc(s.shortName)}</text>`;
+  }).join('')}<text class="bar-axis-title" x="${w-r}" y="${h-9}" text-anchor="end">대학교</text></svg>`;
+}
+function schoolTrendSummary(rows){
   const totals=sums(rows),selected=state.data.schools.filter(s=>rows.some(r=>r.school.id===s.id));
   const series=selected.flatMap(s=>{
     const archive=state.historyCache.get(s.id)?.archive;if(!archive)return [];
@@ -63,7 +80,9 @@ function archiveFor(s){
 }
 let summaryGeneration=0;
 async function updateSummaryTrend(){
-  const generation=++summaryGeneration,rows=visibleRows();
+  const generation=++summaryGeneration;
+  if(!state.school)return;
+  const rows=visibleRows();
   const selected=state.data.schools.filter(s=>rows.some(r=>r.school.id===s.id));
   await Promise.allSettled(selected.map(archiveFor));
   if(generation===summaryGeneration&&$('#summary')){hideChartTooltip();$('#summary').innerHTML=summary(visibleRows());}
