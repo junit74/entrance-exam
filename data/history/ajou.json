@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "schoolId": "ajou",
+  "year": 2027,
+  "snapshots": [
+    {
+      "year": 2027,
+      "sourceAt": "2026-09-09T13:00:00+09:00",
+      "isFinal": false,
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio11040711.html",
+      "track": "논술우수자전형",
+      "rows": [
+        {
+          "id": "0b7f74542adacfae",
+          "name": "기계공학과",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 5,
+          "applicants": 63,
+          "ratio": 12.6
+        },
+        {
+          "id": "1a33b17fbe543a81",
+          "name": "첨단스마트산업공학과",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 5,
+          "applicants": 16,
+          "ratio": 3.2
+        },
+        {
+          "id": "a70e9c3961d23f59",
+          "name": "화학공학과",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 5,
+          "applicants": 36,
+          "ratio": 7.2
+        },
+        {
+          "id": "99bddc8e792c8eda",
+          "name": "첨단신소재공학과",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 8,
+          "applicants": 53,
+          "ratio": 6.63
+        },
+        {
+          "id": "2afc67b2b328be7e",
+          "name": "첨단에코에너지공학과",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 8,
+          "applicants": 27,
+          "ratio": 3.38
+        },
+        {
+          "id": "11130e63feaef9c1",
+          "name": "건축학과",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 9,
+          "applicants": 52,
+          "ratio": 5.78
+        },
+        {
+          "id": "32d025f45c8781d7",
+          "name": "전자공학과",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 35,
+          "applicants": 386,
+          "ratio": 11.03
+        },
+        {
+          "id": "2f6df023317ffefe",
+          "name": "지능형반도체공학과",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 12,
+          "applicants": 66,
+          "ratio": 5.5
+        },
+        {
+          "id": "786ecaf8289e1a7e",
+          "name": "미래모빌리티공학과",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 14,
+          "applicants": 67,
+          "ratio": 4.79
+        },
+        {
+          "id": "919395b9dd0f1541",
+          "name": "AI컴퓨터공학부",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 10,
+          "applicants": 59,
+          "ratio": 5.9
+        },
+        {
+          "id": "94a2ad65b2a9feb2",
+          "name": "수학과",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 16,
+          "applicants": 62,
+          "ratio": 3.88
+        },
+        {
+          "id": "69f3f60c13e43c97",
+          "name": "경영학과",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 15,
+          "applicants": 270,
+          "ratio": 18
+        },
+        {
+          "id": "4bbfd3bc7ca59865",
+          "name": "국어국문학과",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 5,
+          "applicants": 71,
+          "ratio": 14.2
+        },
+        {
+          "id": "4a2858452e0cc7ab",
+          "name": "경제정치사회융합학부",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 5,
+          "applicants": 65,
+          "ratio": 13
+        },
+        {
+          "id": "84cf416aa6156a0d",
+          "name": "의학과",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 10,
+          "applicants": 703,
+          "ratio": 70.3
+        },
+        {
+          "id": "91f18c4c138860c8",
+          "name": "약학과",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 5,
+          "applicants": 880,
+          "ratio": 176
+        },
+        {
+          "id": "3f13424abcaab6e0",
+          "name": "자유전공학부(자연)",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 10,
+          "applicants": 75,
+          "ratio": 7.5
+        },
+        {
+          "id": "2df5c5338d26bb93",
+          "name": "자유전공학부(인문)",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 5,
+          "applicants": 119,
+          "ratio": 23.8
+        }
+      ],
+      "total": {
+        "seats": 182,
+        "applicants": 3070,
+        "ratio": 16.87
+      },
+      "contentHash": "4092da9826b217d3efb7d0dd73ea289207380b800c3ec022098e8a64178b9cd4",
+      "collectedAt": "2026-09-09T04:48:50.546Z"
+    }
+  ]
+}

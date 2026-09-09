@@ -32,7 +32,7 @@ export function expandTable($,table) {
 }
 function integer(s) { if(!/^\d[\d,]*$/.test(s??''))throw Error(`인원 형식 오류: ${s}`); return Number(s.replaceAll(',','')); }
 function columns(header) {
-  return { seats:header.findIndex(s=>/^(총)?모집인원$/.test(s)), applicants:header.findIndex(s=>/^(지원인원|지원자수)$/.test(s)), ratio:header.findIndex(s=>s==='경쟁률'), units:header.map((s,i)=>/모집단위|전공/.test(s)&&!s.includes('개설')?i:-1).filter(i=>i>=0), campus:header.indexOf('캠퍼스'), college:header.findIndex(s=>/^(대학|소속|계열)$/.test(s)),note:header.indexOf('비고') };
+  return { seats:header.findIndex(s=>/^(총)?모집인원$/.test(s)), applicants:header.findIndex(s=>/^(지원인원|지원자수|지원자)$/.test(s)), ratio:header.findIndex(s=>s==='경쟁률'), units:header.map((s,i)=>/모집단위|전공/.test(s)&&!s.includes('개설')?i:-1).filter(i=>i>=0), campus:header.indexOf('캠퍼스'), college:header.findIndex(s=>/^(대학|소속|계열)$/.test(s)),note:header.indexOf('비고') };
 }
 export function parseRatio(html,school,{allowUndatedFinal=false}={}) {
   const $=load(html); $('script,style').remove();
@@ -40,7 +40,7 @@ export function parseRatio(html,school,{allowUndatedFinal=false}={}) {
   const year=Number(text.match(/(20\d{2})학년도/)?.[1]);
   if(year!==school.year)throw Error(`학년도 불일치 (${year||'확인 불가'})`);
   const title=clean($('title').text());
-  if(!title.includes(school.name))throw Error('학교명 불일치');
+  if(!title.includes(school.sourceName||school.name))throw Error('학교명 불일치');
   const timeText=clean($('#RatioTime').text()) || clean($('body').text()).slice(0,1800);
   const sourceAt=parseSourceTime(timeText);
   // Instructions saying a final result WILL be published do not mean final.
@@ -58,7 +58,7 @@ export function parseRatio(html,school,{allowUndatedFinal=false}={}) {
   if(hi<0)throw Error('논술 표 머리글 없음');
   const col=columns(grid[hi]);
   if(col.seats<0||col.applicants<0||col.ratio<0||!col.units.length)throw Error('필수 열 없음');
-  const rows=[];let total=null;
+  let rows=[];let total=null;
   for(const cells of grid.slice(hi+1)) {
     if(!cells?.length || cells[col.seats]==='모집인원')continue;
     if(cells.slice(0,col.seats).some(s=>/^(총계|소계|합계)$/.test(s))){
@@ -76,5 +76,13 @@ export function parseRatio(html,school,{allowUndatedFinal=false}={}) {
   if(!rows.length||new Set(rows.map(r=>r.id)).size!==rows.length)throw Error('모집단위 누락 또는 중복');
   const sums=rows.reduce((a,r)=>({seats:a.seats+r.seats,applicants:a.applicants+r.applicants}),{seats:0,applicants:0});
   if(!total||sums.seats!==total.seats||sums.applicants!==total.applicants)throw Error('논술 합계 불일치');
-  return {year,sourceAt,isFinal,sourceUrl:school.url,track:school.track,rows,total:{...total,ratio:Math.round(total.applicants/total.seats*100)/100},contentHash:createHash('sha256').update(JSON.stringify(rows)).digest('hex')};
+  // Reconcile the entire official track before narrowing to a requested campus.
+  const sourceTotal={...total};
+  if(school.campusFilter){
+    if(col.campus<0)throw Error('캠퍼스 구분 열 없음');
+    rows=rows.filter(r=>compact(r.campus)===compact(school.campusFilter));
+    if(!rows.length)throw Error('선택 캠퍼스의 논술 모집단위 없음');
+    total=rows.reduce((a,r)=>({seats:a.seats+r.seats,applicants:a.applicants+r.applicants}),{seats:0,applicants:0});
+  }
+  return {year,sourceAt,isFinal,sourceUrl:school.url,track:school.track,rows,total:{...total,ratio:Math.round(total.applicants/total.seats*100)/100},...(school.campusFilter?{sourceTotal}:{}),contentHash:createHash('sha256').update(JSON.stringify(rows)).digest('hex')};
 }

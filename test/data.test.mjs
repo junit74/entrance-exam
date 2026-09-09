@@ -46,3 +46,35 @@ test('historical name links resolve uniquely within the school and include offic
   }
  }
 });
+
+test('added university history retains track/campus identities and published counts',()=>{
+ const expected={kangnam:{2026:[359,3061]},caudavinci:{2024:[52,672],2025:[48,549],2026:[48,512]},hanshin:{2024:[168,833],2025:[265,1198],2026:[261,1537]},inha:{2024:[459,20345],2025:[458,16923],2026:[457,13361]},yonseim:{2024:[251,6028],2025:[227,3599],2026:[240,3424]},ajou:{2024:[158,13667],2025:[178,16357],2026:[173,14111]},kau:{2024:[201,5075],2025:[195,5532],2026:[198,6098]}};
+ for(const [id,years] of Object.entries(expected))for(const [year,total] of Object.entries(years)){
+  const rows=historical.schools[id][year].rows;
+  assert.deepEqual(rows.reduce((a,r)=>[a[0]+r.seats,a[1]+r.applicants],[0,0]),total,`${id} ${year}`);
+  assert.equal(new Set(rows.map(r=>`${r.campus||''}|${r.track||''}|${r.name}`)).size,rows.length);
+  for(const r of rows){
+   assert.ok(Math.abs(r.ratio-r.applicants/r.seats)<(r.ratioPrecision===1?.051:.011),`${id} ${year} ${r.name}`);
+   assert.ok(r.category&&r.category!=='unknown');
+   assert.ok(!(r.reserveRank!=null&&r.additionalAdmissions!=null));
+  }
+ }
+ for(const y of [2024,2025]){assert.equal(historical.schools.kangnam[y].rows.length,0);assert.match(historical.schools.kangnam[y].status,/미운영/);}
+ for(const y of [2024,2025,2026])assert.ok(historical.schools.caudavinci[y].rows.every(r=>r.campus==='다빈치'));
+ assert.ok(historical.schools.yonseim[2026].rows.filter(r=>r.name==='자율융합계열').length===2);
+ assert.equal(historical.schools.kau[2026].rows.find(r=>r.name==='공과대학').additionalAdmissions,14);
+ assert.equal(historical.schools.inha[2026].rows.find(r=>r.name==='전기전자공학부').reserveRank,11);
+ assert.equal(historical.schools.caudavinci[2026].rows.find(r=>r.name==='첨단소재공학과').admissionText,'충원율 14.3%');
+});
+
+test('added schools distinguish natural sciences from engineering and aptitude labels',()=>{
+ const category=(id,name)=>catalog.units[latest.schools.find(s=>s.id===id).snapshot.rows.find(r=>r.name===name).id].category;
+ assert.equal(category('inha','생명과학과'),'natural');
+ assert.equal(category('inha','생명공학과'),'engineering');
+ assert.equal(category('caudavinci','식품공학부 · 식품영양학'),'natural');
+ assert.equal(category('caudavinci','식품공학부 · 식품공학'),'engineering');
+ assert.equal(category('hanshin','금융공학'),'natural');
+ assert.equal(category('hanshin','AI시스템반도체학'),'engineering');
+ assert.equal(category('kau','자유전공학부(이학적성)'),'mixed');
+ assert.equal(category('kau','항공운항학과'),'other');
+});

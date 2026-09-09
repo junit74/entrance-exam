@@ -3,12 +3,13 @@ import assert from 'node:assert/strict';
 import { readFile,mkdtemp,rm } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
+import {load} from 'cheerio';
 import {schools} from '../src/schools.mjs';
 import {parseRatio,parseSourceTime} from '../src/parser.mjs';
 import {saveSnapshot,readJSON,withLock} from '../src/store.mjs';
 import {collect} from '../src/collect.mjs';
 const fixtures=new Map(await Promise.all(schools.map(async s=>[s.id,await readFile(new URL(`./fixtures/${s.id}.html`,import.meta.url),'utf8')])));
-const expected={kyonggi:[4,239],suwon:[19,434],koreatech:[17,150],tukorea:[6,200],gachon:[47,1036],sahmyook:[22,277]};
+const expected={kyonggi:[4,239],suwon:[19,434],koreatech:[17,150],tukorea:[6,200],gachon:[47,1036],sahmyook:[22,277],kangnam:[16,309],caudavinci:[7,48],hanshin:[23,231],inha:[48,457],yonseim:[7,182],ajou:[18,182],kau:[8,198]};
 for(const school of schools)test(`${school.name}: official essay table only, expanded spans and reconciled totals`,()=>{
  const p=parseRatio(fixtures.get(school.id),school);assert.equal(p.rows.length,expected[school.id][0]);assert.equal(p.total.seats,expected[school.id][1]);assert.equal(p.year,2027);
  assert.equal(p.rows.reduce((a,r)=>a+r.applicants,0),p.total.applicants);assert.equal(p.isFinal,false);
@@ -43,7 +44,7 @@ test('newer timestamps append; unchanged, older and corrected-at-same-time respo
 }));
 test('partial network failure keeps a school snapshot and successful schools stay usable after restart',()=>temporary(async dir=>{
  const fetcher=async url=>fixtures.get(schools.find(s=>s.url===url).id);
- const first=await collect({dir,fetcher});assert.equal(first.schools.filter(s=>s.outcome==='updated').length,6);
+ const first=await collect({dir,fetcher});assert.equal(first.schools.filter(s=>s.outcome==='updated').length,schools.length);
  const second=await collect({dir,fetcher:async url=>{if(url===schools[0].url)throw Error('network unavailable');return fetcher(url);}});
  assert.equal(second.schools[0].outcome,'error');assert.deepEqual(second.schools[0].snapshot,first.schools[0].snapshot);
  assert.equal(second.schools[1].outcome,'unchanged');
@@ -73,3 +74,16 @@ test('undated final pages are retained for review without overwriting dated inte
  assert.equal(accepted.snapshot.isFinal,true);assert.equal(accepted.previousApplicants[interim.rows[0].id],interim.rows[0].applicants);
  assert.equal((await saveSnapshot(dir,s,{...interim,sourceAt:'2026-09-11T21:00:00+09:00'},checked)).outcome,'older');
 }));
+
+test('Davinci totals exclude Seoul only after validating the entire official essay table',()=>{
+ const school=schools.find(s=>s.id==='caudavinci'),html=fixtures.get(school.id),p=parseRatio(html,school);
+ assert.ok(p.rows.every(r=>r.campus==='다빈치'));
+ assert.deepEqual(p.sourceTotal,{seats:403,applicants:8608});
+ assert.deepEqual(p.total,{seats:48,applicants:67,ratio:1.4});
+ const $=load(html),table=$('table').filter((_,t)=>$(t).find('caption').text().trim()==='논술(일반형)').first();
+ // A damaged Seoul row must still reject the full source, even though Seoul is hidden.
+ const cell=table.find('tr').eq(1).children('td').filter((_,td)=>/^\d+$/.test($(td).text().trim())).first();
+ assert.ok(cell.length);cell.text(Number(cell.text())+1);
+ assert.throws(()=>parseRatio($.html(),school),/검증|합계/);
+ assert.throws(()=>parseRatio(html.replaceAll('캠퍼스','소재지'),school),/캠퍼스/);
+});

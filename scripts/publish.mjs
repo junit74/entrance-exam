@@ -1,6 +1,7 @@
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { mkdir, stat } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { root, collect } from '../src/collect.mjs';
@@ -34,6 +35,10 @@ export async function publishOnce({ workspace, remote, branch = 'main', collecto
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  if (existsSync(path.join(root, 'tmp', 'publishing-paused'))) {
+    console.error('로컬 전용 작업으로 원격 게시가 중지되어 있습니다. 원격 반영을 승인한 뒤 tmp/publishing-paused 파일을 제거하세요.');
+    process.exit(1);
+  }
   const remote = process.env.PUBLISH_REMOTE || await git(['remote', 'get-url', 'origin'], root);
   const workspace = path.resolve(process.env.PUBLISH_WORKSPACE || path.join(root, 'tmp', 'pages-publisher'));
   const watch = process.argv.includes('--watch');

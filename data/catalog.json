@@ -7,24 +7,45 @@
       "minimum": {
         "text": "논술전형 수능최저학력기준 없음.",
         "sourceUrl": "https://enter.kyonggi.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=120&CONTENTS_NO=1&TYPE_CODE=C0601"
+      },
+      "location": {
+        "label": "경기 수원 · 서울",
+        "sourceUrl": "https://enter.kyonggi.ac.kr/ajaxfile/CMN_SVC/FileView.do?CONTENTS_NO=1&GBN=X12&MENU_NO=140&SITE_NO=2&TYPE_CODE=C0601",
+        "campuses": {
+          "수원캠퍼스": "경기 수원",
+          "서울캠퍼스": "서울 서대문"
+        },
+        "description": "수원캠퍼스: 경기 수원 · 서울캠퍼스: 서울 서대문"
       }
     },
     "suwon": {
       "minimum": {
         "text": "논술전형 수능최저학력기준 없음.",
         "sourceUrl": "https://ipsi.suwon.ac.kr/upload_data/guide/1787878393_6045.pdf"
+      },
+      "location": {
+        "label": "경기 화성",
+        "sourceUrl": "https://www.suwon.ac.kr/index.html?menuno=621"
       }
     },
     "koreatech": {
       "minimum": {
         "text": "논술전형 수능최저학력기준 없음.",
         "sourceUrl": "https://www.koreatech.ac.kr/menuDownload.es?sid=a4&mid=0101010100&file_seq=237"
+      },
+      "location": {
+        "label": "충남 천안",
+        "sourceUrl": "https://www.koreatech.ac.kr/index.es?sid=b1"
       }
     },
     "tukorea": {
       "minimum": {
         "text": "논술전형 수능최저학력기준 없음.",
         "sourceUrl": "https://iphak.tukorea.ac.kr/bbs/filedown.php?bbsid=guide&file_seq=2027&save_file_nm=guide_20260907185426_2035.pdf"
+      },
+      "location": {
+        "label": "경기 시흥",
+        "sourceUrl": "https://www.tukorea.ac.kr/sites/tukorea/index.do"
       }
     },
     "gachon": {
@@ -49,6 +70,11 @@
             "text": "국어·수학(기하/미적분)·영어·과학탐구(2과목) 중 3개 영역 등급 합 5 이내. 과탐은 2과목 평균의 소수점 절사."
           }
         ]
+      },
+      "location": {
+        "label": "경기 성남 · 인천",
+        "sourceUrl": "https://admission.gachon.ac.kr/upload/BBS0021/20260901154909TB3M9B.PDF",
+        "description": "글로벌캠퍼스: 경기 성남 · 메디컬캠퍼스: 인천 연수"
       }
     },
     "sahmyook": {
@@ -61,6 +87,96 @@
             "text": "국어·영어·수학(미적분/기하)·과학탐구(1과목) 중 3개 영역 등급 합 5 이내."
           }
         ]
+      },
+      "location": {
+        "label": "서울 노원",
+        "sourceUrl": "https://ipsi.syu.ac.kr/2016_syu/pages/index.asp?p=40"
+      }
+    },
+    "kangnam": {
+      "minimum": {
+        "text": "수능최저학력기준 없음.",
+        "sourceUrl": "https://admission.kangnam.ac.kr/bbs/filedown.php?bbsid=paper&file_seq=4167"
+      },
+      "location": {
+        "label": "경기 용인",
+        "sourceUrl": "https://admission.kangnam.ac.kr/bbs/filedown.php?bbsid=paper&file_seq=4167"
+      }
+    },
+    "caudavinci": {
+      "minimum": {
+        "text": "다빈치캠퍼스 논술(일반형)은 수능최저학력기준 없음.",
+        "sourceUrl": "https://admission.cau.ac.kr/file/pdfDown.pdf?sfn=20260805051607003_0c37226bf7e64ad79adafec6f6fdc72c.pdf&ofn=%ec%a4%91%ec%95%99%eb%8c%80%ed%95%99%ea%b5%90_2027%ed%95%99%eb%85%84%eb%8f%84+%ec%88%98%ec%8b%9c%eb%aa%a8%ec%a7%91%ec%9a%94%ea%b0%95_%ec%97%85%eb%a1%9c%eb%93%9c%ec%9a%a9(%ec%b5%9c%ec%a2%85).pdf"
+      },
+      "location": {
+        "label": "경기 안성",
+        "sourceUrl": "https://www.cau.ac.kr/cms/FR_CON/index.do?CONTENTS_NO=2&MENU_ID=290&P_TAB_NO=2"
+      }
+    },
+    "hanshin": {
+      "minimum": {
+        "text": "수능최저학력기준 없음.",
+        "sourceUrl": "https://ent.hs.ac.kr/upload_data/mojib/RF(0)_26052893427.pdf"
+      },
+      "location": {
+        "label": "경기 오산",
+        "sourceUrl": "https://ent.hs.ac.kr/ipsi/pages/?p=43&b=b_1_8"
+      }
+    },
+    "inha": {
+      "minimum": {
+        "text": "의예과를 제외한 논술 모집단위는 수능최저학력기준 없음.",
+        "sourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601",
+        "exceptions": [
+          {
+            "label": "의예과",
+            "text": "국어·수학·영어·과학탐구(2과목) 중 3개 영역 각각 1등급. 과학탐구는 2과목 평균을 소수점 첫째 자리에서 올림."
+          }
+        ]
+      },
+      "location": {
+        "label": "인천 미추홀",
+        "sourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+      }
+    },
+    "yonseim": {
+      "minimum": {
+        "text": "2027학년도 논술우수자전형은 수능최저학력기준 없음.",
+        "sourceUrl": "https://admission.yonsei.ac.kr/mirae/upload/guide/202609091128343AZAWL.PDF"
+      },
+      "location": {
+        "label": "강원 원주",
+        "sourceUrl": "https://admission.yonsei.ac.kr/mirae/upload/guide/202609091128343AZAWL.PDF"
+      }
+    },
+    "ajou": {
+      "minimum": {
+        "text": "의학과·약학과를 제외한 논술 모집단위는 수능최저학력기준 없음.",
+        "sourceUrl": "https://www.iajou.ac.kr/upload_data/mojib/20260825111418_62.pdf",
+        "exceptions": [
+          {
+            "label": "의학과",
+            "text": "국어·수학(선택과목 제한 없음)·영어·탐구(사회/과학 2과목 평균) 4개 영역 등급 합 6 이내. 탐구는 사회·과학 혼합 가능, 소수점 반올림·절사 없음."
+          },
+          {
+            "label": "약학과",
+            "text": "국어·수학(선택과목 제한 없음)·영어·탐구(사회/과학 2과목 평균) 중 3개 영역 등급 합 5 이내. 탐구는 사회·과학 혼합 가능, 소수점 반올림·절사 없음."
+          }
+        ]
+      },
+      "location": {
+        "label": "경기 수원",
+        "sourceUrl": "https://www.iajou.ac.kr/upload_data/mojib/20260825111418_62.pdf"
+      }
+    },
+    "kau": {
+      "minimum": {
+        "text": "국어·수학·영어·탐구(사회/과학/직업) 중 2개 영역 등급 합 6 이내. 탐구는 상위 1과목 반영. 한국사 응시 필수.",
+        "sourceUrl": "https://ibhak.kau.ac.kr/upload/GUIDES/20260813105041001.pdf"
+      },
+      "location": {
+        "label": "경기 고양",
+        "sourceUrl": "https://ibhak.kau.ac.kr/upload/GUIDES/20260813105041001.pdf"
       }
     }
   },
@@ -337,7 +453,11 @@
       "historicalNameSources": {
         "2024": "https://admission.gachon.ac.kr/upload/BBS0011/20240621133138BPBQBZ.XLSX"
       },
-      "historicalNote": "입학처는 2025학년도 명칭 변경을 경영학부 → 경영학과로 안내합니다. 과거 표에는 당시 명칭을 함께 표시합니다."
+      "historicalNote": "입학처는 2025학년도 명칭 변경을 경영학부 → 경영학과로 안내합니다. 과거 표에는 당시 명칭을 함께 표시합니다.",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "27e4157add2aa819": {
       "name": "회계세무학과",
@@ -349,129 +469,229 @@
       "historicalNameSources": {
         "2024": "https://admission.gachon.ac.kr/upload/BBS0011/20240621133138BPBQBZ.XLSX"
       },
-      "historicalNote": "입학처는 2025학년도 명칭 변경을 회계세무학전공 → 회계세무학과로 안내합니다. 과거 표에는 당시 명칭을 함께 표시합니다."
+      "historicalNote": "입학처는 2025학년도 명칭 변경을 회계세무학전공 → 회계세무학과로 안내합니다. 과거 표에는 당시 명칭을 함께 표시합니다.",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "59eb0d5c9d0b272c": {
       "name": "관광경영학과",
       "category": "humanities",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "f69a91919bba3a67": {
       "name": "의료산업경영학과",
       "category": "humanities",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "bbb68e4094dbfa8d": {
       "name": "금융·빅데이터학부",
       "category": "humanities",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "ad6d3814c8193f33": {
       "name": "미디어커뮤니케이션학과",
       "category": "humanities",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "a258590adabcab14": {
       "name": "경제학과",
       "category": "humanities",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "976657d8ab2e4873": {
       "name": "응용통계학과",
       "category": "humanities",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "0d827896e97ef4b8": {
       "name": "사회복지학과",
       "category": "humanities",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "82596bd1f7a7c0c4": {
       "name": "유아교육학과",
       "category": "humanities",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "74e6f64e798a8a65": {
       "name": "심리학과",
       "category": "humanities",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "cd93bd82710e81f0": {
       "name": "패션산업학과",
       "category": "humanities",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "9566316790eaf422": {
       "name": "AI인문대학",
       "category": "humanities",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "a2dccea1b20238a3": {
       "name": "법과대학",
       "category": "humanities",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "f1148e0ed27f44b6": {
       "name": "도시계획·조경학부",
       "category": "engineering",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "d8ed3f97a3a44c24": {
       "name": "건축학부",
       "category": "engineering",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "3f9872b2c87ed7be": {
       "name": "건축공학과",
       "category": "engineering",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "843f1f4ad49fab93": {
       "name": "화공생명배터리공학부",
       "category": "engineering",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "51edfbab5743f5b2": {
       "name": "기계공학부",
       "category": "engineering",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "344f0c404ba7f1b7": {
       "name": "스마트팩토리학과",
       "category": "engineering",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "31a73fd9a66a4e99": {
       "name": "건설환경공학과",
       "category": "engineering",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "4a06edbd25664ba4": {
       "name": "신소재공학과",
       "category": "engineering",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "83454ee40d901be0": {
       "name": "바이오나노학과",
       "category": "engineering",
       "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
       "classificationSourceUrl": "https://www.gachon.ac.kr/regltn/kor/2/15/synapView.do",
-      "note": "공식 학칙에서 공학사 학위 및 공학계열로 분류한 모집단위입니다."
+      "note": "공식 학칙에서 공학사 학위 및 공학계열로 분류한 모집단위입니다.",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "9975142a39dab7e3": {
       "name": "식품생명공학과",
       "category": "engineering",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "8e2e9339de1a48bf": {
       "name": "식품영양학과",
       "category": "natural",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "ed68df6d5207963b": {
       "name": "생명과학과",
       "category": "natural",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "73ea3212c41d35af": {
       "name": "반도체물리학과",
@@ -483,12 +703,20 @@
       "historicalNameSources": {
         "2024": "https://admission.gachon.ac.kr/upload/BBS0011/20240621133138BPBQBZ.XLSX"
       },
-      "historicalNote": "입학처는 2025학년도 명칭 변경을 물리학과 → 반도체물리학과로 안내합니다. 과거 표에는 당시 명칭을 함께 표시합니다."
+      "historicalNote": "입학처는 2025학년도 명칭 변경을 물리학과 → 반도체물리학과로 안내합니다. 과거 표에는 당시 명칭을 함께 표시합니다.",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "5dc022d391c0ca2e": {
       "name": "화학과",
       "category": "natural",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "6f0f2bd1826306cf": {
       "name": "반도체대학",
@@ -496,12 +724,20 @@
       "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
       "note": "논술 모집단위는 전자공학과·반도체공학과로 구성된 반도체대학입니다.",
       "classificationSourceUrl": "https://admission.gachon.ac.kr/upload/BBS0021/20260901154909TB3M9B.PDF",
-      "classificationSourcePage": 40
+      "classificationSourcePage": 40,
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "9972103bd40a1f1f": {
       "name": "시스템반도체학과",
       "category": "engineering",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "1329569be99c329c": {
       "name": "컴퓨터공학과",
@@ -513,7 +749,11 @@
       "historicalNameSources": {
         "2024": "https://admission.gachon.ac.kr/upload/BBS0011/20240621133138BPBQBZ.XLSX"
       },
-      "historicalNote": "입학처는 2025학년도 명칭 변경을 컴퓨터공학전공 → 컴퓨터공학과로 안내합니다. 과거 표에는 당시 명칭을 함께 표시합니다."
+      "historicalNote": "입학처는 2025학년도 명칭 변경을 컴퓨터공학전공 → 컴퓨터공학과로 안내합니다. 과거 표에는 당시 명칭을 함께 표시합니다.",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "9f9af143bbdc970f": {
       "name": "인공지능학과",
@@ -525,12 +765,20 @@
       "historicalNameSources": {
         "2024": "https://admission.gachon.ac.kr/upload/BBS0011/20240621133138BPBQBZ.XLSX"
       },
-      "historicalNote": "입학처는 2025학년도 명칭 변경을 인공지능전공 → 인공지능학과로 안내합니다. 과거 표에는 당시 명칭을 함께 표시합니다."
+      "historicalNote": "입학처는 2025학년도 명칭 변경을 인공지능전공 → 인공지능학과로 안내합니다. 과거 표에는 당시 명칭을 함께 표시합니다.",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "8e43d643057c4a87": {
       "name": "인공지능시스템학과",
       "category": "engineering",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "742f7bbfb91c1a72": {
       "name": "정보보호학과",
@@ -546,76 +794,132 @@
         "2025": "https://admission.gachon.ac.kr/common/downLoad.asp?strFileName=2025%C7%D0%B3%E2%B5%B5%20%BC%F6%BD%C3%20%C0%D4%BD%C3%B0%E1%B0%FA.xlsx&strRealFileName=/upload/BBS0011/20250511175238EG2MNZ.XLSX",
         "2024": "https://admission.gachon.ac.kr/common/downLoad.asp?strFileName=%B0%A1%C3%B5%B4%EB%C7%D0%B1%B3_2024%C7%D0%B3%E2%B5%B5_%BC%F6%BD%C3_%C0%D4%BD%C3%B0%E1%B0%FA.xlsx&strRealFileName=/upload/BBS0011/20240621133138BPBQBZ.XLSX"
       },
-      "historicalNote": "입학처의 명칭 변경 안내에 따라 스마트보안전공·스마트보안학과의 과거 자료를 연결했습니다."
+      "historicalNote": "입학처의 명칭 변경 안내에 따라 스마트보안전공·스마트보안학과의 과거 자료를 연결했습니다.",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "67ea6cbe1db2a7b9": {
       "name": "전기공학과",
       "category": "engineering",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "4fa7ea27a26d8c7c": {
       "name": "스마트시티학과",
       "category": "engineering",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "a825b9c17ed2a0cf": {
       "name": "의공학과",
       "category": "engineering",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "a42c28c0c3936bd6": {
       "name": "간호학과",
       "category": "health",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "인천 연수",
+        "campus": "메디컬캠퍼스"
+      }
     },
     "750324fc7e9e200b": {
       "name": "치위생학과",
       "category": "health",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "인천 연수",
+        "campus": "메디컬캠퍼스"
+      }
     },
     "8e9685445b6ff650": {
       "name": "응급구조학과",
       "category": "health",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "인천 연수",
+        "campus": "메디컬캠퍼스"
+      }
     },
     "a3a9121d625dd159": {
       "name": "물리치료학과",
       "category": "health",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "인천 연수",
+        "campus": "메디컬캠퍼스"
+      }
     },
     "db83d79f1e37bb15": {
       "name": "방사선학과",
       "category": "health",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "인천 연수",
+        "campus": "메디컬캠퍼스"
+      }
     },
     "4b46b798942dc2e0": {
       "name": "운동재활학과",
       "category": "health",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "1b05452c84488f31": {
       "name": "의예과",
       "category": "health",
       "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
-      "minimumText": "국어·수학(기하/미적분)·영어·과학탐구(2과목) 중 3개 영역 각 1등급. 과탐은 2과목 평균의 소수점 절사."
+      "minimumText": "국어·수학(기하/미적분)·영어·과학탐구(2과목) 중 3개 영역 각 1등급. 과탐은 2과목 평균의 소수점 절사.",
+      "location": {
+        "label": "인천 연수",
+        "campus": "메디컬캠퍼스"
+      }
     },
     "ee97b0de24b069c8": {
       "name": "한의예과",
       "category": "health",
       "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
-      "minimumText": "국어·수학(기하/미적분)·영어·과학탐구(2과목) 중 2개 영역 각 1등급. 과탐 적용 시 2과목 모두 1등급."
+      "minimumText": "국어·수학(기하/미적분)·영어·과학탐구(2과목) 중 2개 영역 각 1등급. 과탐 적용 시 2과목 모두 1등급.",
+      "location": {
+        "label": "경기 성남",
+        "campus": "글로벌캠퍼스"
+      }
     },
     "28e719814cc3c769": {
       "name": "약학과",
       "category": "health",
       "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
-      "minimumText": "국어·수학(기하/미적분)·영어·과학탐구(2과목) 중 3개 영역 등급 합 5 이내. 과탐은 2과목 평균의 소수점 절사."
+      "minimumText": "국어·수학(기하/미적분)·영어·과학탐구(2과목) 중 3개 영역 등급 합 5 이내. 과탐은 2과목 평균의 소수점 절사.",
+      "location": {
+        "label": "인천 연수",
+        "campus": "메디컬캠퍼스"
+      }
     },
     "d21d878a3e74c5f3": {
       "name": "바이오로직스학과",
       "category": "engineering",
       "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
-      "minimumText": "국어·수학·영어·사회/과학탐구(1과목) 중 2개 영역 등급 합 5 이내."
+      "minimumText": "국어·수학·영어·사회/과학탐구(1과목) 중 2개 영역 등급 합 5 이내.",
+      "location": {
+        "label": "인천 연수",
+        "campus": "메디컬캠퍼스"
+      }
     },
     "7d6cfb27e2fce23e": {
       "name": "간호학과",
@@ -729,6 +1033,606 @@
       "name": "건축학과(5년제)",
       "category": "engineering",
       "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10760741.html"
+    },
+    "5919c93d4be4c420": {
+      "category": "mixed",
+      "classificationSourceUrl": "https://admission.kangnam.ac.kr/bbs/filedown.php?bbsid=paper&file_seq=4167"
+    },
+    "cb05d91d136ac82c": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://admission.kangnam.ac.kr/bbs/filedown.php?bbsid=paper&file_seq=4167"
+    },
+    "03406c1b8046e0aa": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://admission.kangnam.ac.kr/bbs/filedown.php?bbsid=paper&file_seq=4167"
+    },
+    "2ec8992cc419ae6f": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://admission.kangnam.ac.kr/bbs/filedown.php?bbsid=paper&file_seq=4167"
+    },
+    "6c966f1130b0b819": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://admission.kangnam.ac.kr/bbs/filedown.php?bbsid=paper&file_seq=4167"
+    },
+    "11409c3ed045fc9b": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.kangnam.ac.kr/bbs/filedown.php?bbsid=paper&file_seq=4167"
+    },
+    "700f0f6de82fd62a": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.kangnam.ac.kr/bbs/filedown.php?bbsid=paper&file_seq=4167"
+    },
+    "24852239f360466a": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.kangnam.ac.kr/bbs/filedown.php?bbsid=paper&file_seq=4167"
+    },
+    "bc966162475b724d": {
+      "category": "mixed",
+      "classificationSourceUrl": "https://admission.kangnam.ac.kr/bbs/filedown.php?bbsid=paper&file_seq=4167",
+      "note": "부동산학과 도시건축·건설 분야가 함께 있는 모집단위로 자유·융합에 표시합니다."
+    },
+    "d13d32cbc996d95d": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://admission.kangnam.ac.kr/bbs/filedown.php?bbsid=paper&file_seq=4167"
+    },
+    "d75b5f8ed62211dd": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://admission.kangnam.ac.kr/bbs/filedown.php?bbsid=paper&file_seq=4167"
+    },
+    "7e426a46bb2220e7": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://admission.kangnam.ac.kr/bbs/filedown.php?bbsid=paper&file_seq=4167"
+    },
+    "08dd92c12931af02": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://admission.kangnam.ac.kr/bbs/filedown.php?bbsid=paper&file_seq=4167"
+    },
+    "d888f8186eee81b4": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://admission.kangnam.ac.kr/bbs/filedown.php?bbsid=paper&file_seq=4167"
+    },
+    "13c32998c87b2aef": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://admission.kangnam.ac.kr/bbs/filedown.php?bbsid=paper&file_seq=4167"
+    },
+    "b530fd6cb46b022c": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://admission.kangnam.ac.kr/bbs/filedown.php?bbsid=paper&file_seq=4167"
+    },
+    "d0c79f334bfd3771": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.cau.ac.kr/file/pdfDown.pdf?sfn=20260805051607003_0c37226bf7e64ad79adafec6f6fdc72c.pdf&ofn=%ec%a4%91%ec%95%99%eb%8c%80%ed%95%99%ea%b5%90_2027%ed%95%99%eb%85%84%eb%8f%84+%ec%88%98%ec%8b%9c%eb%aa%a8%ec%a7%91%ec%9a%94%ea%b0%95_%ec%97%85%eb%a1%9c%eb%93%9c%ec%9a%a9(%ec%b5%9c%ec%a2%85).pdf"
+    },
+    "9dd1b1468e9f48d7": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://www.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=1020",
+      "note": "생명공학 분야입니다. 학교 입시자료의 자연계열은 시험 구분이며, 이 화면에서는 공학 분야로 분류합니다."
+    },
+    "461b9c5926c25ce1": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://www.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=1020",
+      "note": "생명공학 분야입니다. 학교 입시자료의 자연계열은 시험 구분이며, 이 화면에서는 공학 분야로 분류합니다."
+    },
+    "e91a7bd2aacee85b": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.cau.ac.kr/file/pdfDown.pdf?sfn=20260805051607003_0c37226bf7e64ad79adafec6f6fdc72c.pdf&ofn=%ec%a4%91%ec%95%99%eb%8c%80%ed%95%99%ea%b5%90_2027%ed%95%99%eb%85%84%eb%8f%84+%ec%88%98%ec%8b%9c%eb%aa%a8%ec%a7%91%ec%9a%94%ea%b0%95_%ec%97%85%eb%a1%9c%eb%93%9c%ec%9a%a9(%ec%b5%9c%ec%a2%85).pdf"
+    },
+    "31ad5471bcb8ad0d": {
+      "category": "natural",
+      "classificationSourceUrl": "https://admission.cau.ac.kr/file/pdfDown.pdf?sfn=20260805051607003_0c37226bf7e64ad79adafec6f6fdc72c.pdf&ofn=%ec%a4%91%ec%95%99%eb%8c%80%ed%95%99%ea%b5%90_2027%ed%95%99%eb%85%84%eb%8f%84+%ec%88%98%ec%8b%9c%eb%aa%a8%ec%a7%91%ec%9a%94%ea%b0%95_%ec%97%85%eb%a1%9c%eb%93%9c%ec%9a%a9(%ec%b5%9c%ec%a2%85).pdf",
+      "historicalNames": {
+        "2024": "식품공학부 · 식품영양",
+        "2025": "식품공학부 · 식품영양",
+        "2026": "식품공학부 · 식품영양"
+      },
+      "historicalNameSources": {
+        "2024": "https://admission.cau.ac.kr/file/pdfDown.pdf?sfn=20260805051607003_0c37226bf7e64ad79adafec6f6fdc72c.pdf&ofn=%ec%a4%91%ec%95%99%eb%8c%80%ed%95%99%ea%b5%90_2027%ed%95%99%eb%85%84%eb%8f%84+%ec%88%98%ec%8b%9c%eb%aa%a8%ec%a7%91%ec%9a%94%ea%b0%95_%ec%97%85%eb%a1%9c%eb%93%9c%ec%9a%a9(%ec%b5%9c%ec%a2%85).pdf",
+        "2025": "https://admission.cau.ac.kr/file/pdfDown.pdf?sfn=20260805051607003_0c37226bf7e64ad79adafec6f6fdc72c.pdf&ofn=%ec%a4%91%ec%95%99%eb%8c%80%ed%95%99%ea%b5%90_2027%ed%95%99%eb%85%84%eb%8f%84+%ec%88%98%ec%8b%9c%eb%aa%a8%ec%a7%91%ec%9a%94%ea%b0%95_%ec%97%85%eb%a1%9c%eb%93%9c%ec%9a%a9(%ec%b5%9c%ec%a2%85).pdf",
+        "2026": "https://admission.cau.ac.kr/file/pdfDown.pdf?sfn=20260805051607003_0c37226bf7e64ad79adafec6f6fdc72c.pdf&ofn=%ec%a4%91%ec%95%99%eb%8c%80%ed%95%99%ea%b5%90_2027%ed%95%99%eb%85%84%eb%8f%84+%ec%88%98%ec%8b%9c%eb%aa%a8%ec%a7%91%ec%9a%94%ea%b0%95_%ec%97%85%eb%a1%9c%eb%93%9c%ec%9a%a9(%ec%b5%9c%ec%a2%85).pdf"
+      }
+    },
+    "75108c53ddbf5513": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://cobiotech.cau.ac.kr/system/bm/bm-1.php",
+      "note": "생명공학 분야입니다. 학교 입시자료의 자연계열은 시험 구분이며, 이 화면에서는 공학 분야로 분류합니다."
+    },
+    "4dc0ffe1ff75a12c": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.cau.ac.kr/file/pdfDown.pdf?sfn=20260805051607003_0c37226bf7e64ad79adafec6f6fdc72c.pdf&ofn=%ec%a4%91%ec%95%99%eb%8c%80%ed%95%99%ea%b5%90_2027%ed%95%99%eb%85%84%eb%8f%84+%ec%88%98%ec%8b%9c%eb%aa%a8%ec%a7%91%ec%9a%94%ea%b0%95_%ec%97%85%eb%a1%9c%eb%93%9c%ec%9a%a9(%ec%b5%9c%ec%a2%85).pdf"
+    },
+    "386768ac5800d507": {
+      "category": "mixed",
+      "classificationSourceUrl": "https://ent.hs.ac.kr/upload_data/mojib/RF(0)_26052893427.pdf"
+    },
+    "291ecf6e5c9a872a": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://ent.hs.ac.kr/upload_data/mojib/RF(0)_26052893427.pdf"
+    },
+    "f103c29e1d5b7079": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://ent.hs.ac.kr/upload_data/mojib/RF(0)_26052893427.pdf"
+    },
+    "8d00b7fd9b60e352": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://ent.hs.ac.kr/upload_data/mojib/RF(0)_26052893427.pdf"
+    },
+    "14f6479bf51950e8": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://ent.hs.ac.kr/upload_data/mojib/RF(0)_26052893427.pdf"
+    },
+    "74021b58ec0f30f8": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://ent.hs.ac.kr/upload_data/mojib/RF(0)_26052893427.pdf"
+    },
+    "2f28e1ccfa8328b4": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://ent.hs.ac.kr/upload_data/mojib/RF(0)_26052893427.pdf"
+    },
+    "4626cc92ed546ef8": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://ent.hs.ac.kr/upload_data/mojib/RF(0)_26052893427.pdf"
+    },
+    "77dc99c33e336056": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://ent.hs.ac.kr/upload_data/mojib/RF(0)_26052893427.pdf"
+    },
+    "50fa6ae725323bed": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://ent.hs.ac.kr/upload_data/mojib/RF(0)_26052893427.pdf"
+    },
+    "5e466a42fecbf110": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://ent.hs.ac.kr/upload_data/mojib/RF(0)_26052893427.pdf"
+    },
+    "5986c9e9557b2b8f": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://ent.hs.ac.kr/upload_data/mojib/RF(0)_26052893427.pdf"
+    },
+    "160ce68d6d26c8d6": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://ent.hs.ac.kr/upload_data/mojib/RF(0)_26052893427.pdf"
+    },
+    "ef82b191d0fe6475": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://ent.hs.ac.kr/upload_data/mojib/RF(0)_26052893427.pdf",
+      "historicalNote": "2024~2025학년도에는 경영학·IT경영학·글로벌비즈니스학을 분리 모집했습니다. 현재 통합 경영학과 범위가 달라 학과 그래프에는 연결하지 않습니다.",
+      "historicalExcludeYears": [
+        2024,
+        2025
+      ]
+    },
+    "073e3edf6b69b41b": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://ent.hs.ac.kr/upload_data/mojib/RF(0)_26052893427.pdf"
+    },
+    "c63a14668bdfb33c": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://ent.hs.ac.kr/upload_data/mojib/RF(0)_26052893427.pdf"
+    },
+    "1394098efc1a3167": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://ent.hs.ac.kr/upload_data/mojib/RF(0)_26052893427.pdf"
+    },
+    "5e94dec4a51dda28": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://ent.hs.ac.kr/upload_data/mojib/RF(0)_26052893427.pdf"
+    },
+    "6a76b06abbe7ee7a": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://ent.hs.ac.kr/upload_data/mojib/RF(0)_26052893427.pdf"
+    },
+    "08f6a45f67b759e2": {
+      "category": "natural",
+      "classificationSourceUrl": "https://ent.hs.ac.kr/ipsi/pages/?p=43&b=b_1_8&bn=21210&m=read",
+      "note": "각각 수리금융학·응용통계학에서 명칭이 변경된 수학·통계 분야로 자연과학에 분류합니다."
+    },
+    "1c81223831d841f1": {
+      "category": "natural",
+      "classificationSourceUrl": "https://ent.hs.ac.kr/ipsi/pages/?p=43&b=b_1_8&bn=21210&m=read",
+      "note": "각각 수리금융학·응용통계학에서 명칭이 변경된 수학·통계 분야로 자연과학에 분류합니다."
+    },
+    "1a15a1aaa201efed": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://ent.hs.ac.kr/upload_data/mojib/RF(0)_26052893427.pdf",
+      "historicalNames": {
+        "2025": "AI·SW학",
+        "2026": "AI·SW학(소프트웨어/인공지능/데이터사이언스/XR콘텐츠/지능형IoT)"
+      },
+      "historicalNameSources": {
+        "2025": "https://ent.hs.ac.kr/upload_data/mojib/RF(0)_26052893427.pdf",
+        "2026": "https://ent.hs.ac.kr/upload_data/mojib/RF(0)_26052893427.pdf"
+      }
+    },
+    "1a9adb4670269924": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://ent.hs.ac.kr/upload_data/mojib/RF(0)_26052893427.pdf"
+    },
+    "4cb057f23a2391b4": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "ee56e6fa42b19cb5": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "8afdeedbe2af311b": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "a3154ac46a16b759": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "1990fc3ecae82518": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601",
+      "historicalNames": {
+        "2024": "화학공학과",
+        "2025": "화학공학과",
+        "2026": "화학공학과"
+      },
+      "historicalNameSources": {
+        "2024": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601",
+        "2025": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601",
+        "2026": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+      }
+    },
+    "ab75d7f9403c909f": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601",
+      "historicalNames": {
+        "2025": "이차전지융합학과",
+        "2026": "이차전지융합학과"
+      },
+      "historicalNameSources": {
+        "2025": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601",
+        "2026": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+      }
+    },
+    "453f8384837aee16": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "d12eddb8ac6353f0": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "814792cbd1a4936f": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "99cc9a7a91572aab": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "b33db24f9f7e3297": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "34ab07545dc59596": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "431bfb6d2a9a03d4": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "12c5f77c4941ec07": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "f0e76ea495d85e09": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "24de021a724f6cd2": {
+      "category": "natural",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "e3a856687f046534": {
+      "category": "natural",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "c8f4e2780e453a99": {
+      "category": "natural",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "704514ff4b72e9ab": {
+      "category": "natural",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "9687b42729b473f5": {
+      "category": "natural",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "eb5166fac2397551": {
+      "category": "natural",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "b86a7b8a2efd33cf": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601",
+      "historicalNames": {
+        "2024": "경영학과",
+        "2025": "경영학부 경영학과",
+        "2026": "경영학부 경영학과"
+      },
+      "historicalNameSources": {
+        "2024": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601",
+        "2025": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601",
+        "2026": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+      }
+    },
+    "bf2516a2c77407c5": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601",
+      "historicalNames": {
+        "2025": "경영학부 파이낸스경영학과",
+        "2026": "경영학부 파이낸스경영학과"
+      },
+      "historicalNameSources": {
+        "2025": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601",
+        "2026": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+      }
+    },
+    "1abc1599a5fd0c9a": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "3cef2cc79bee02d5": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "b2ce36f6ae17ca4b": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "5f1fade50b25b0d6": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "04379aad205a134a": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "9093115df0a857ba": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "7b35395589d99c86": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "26e59c043a215050": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "0c207c1882170519": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "2ca03e6ed0404f4b": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "cdd43f75050e49a5": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "f06cb3fefa5842a8": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "509e1ee311f63579": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "4b808b4b4bbffd50": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "697c8f02417cf7dc": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "9d648f87e1d3a0be": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "25bc735f32545ec9": {
+      "category": "health",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601",
+      "minimumText": "국어·수학·영어·과학탐구(2과목) 중 3개 영역 각각 1등급. 과학탐구는 2과목 평균을 소수점 첫째 자리에서 올림."
+    },
+    "ec329bb35cbc9bf1": {
+      "category": "health",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "1660cb97f7255c9b": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "e62c55aa904cd212": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "d3ea52109f026be7": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "2256ca90c744c094": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "fd96e91ca535e2ad": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "6032a29639fd4629": {
+      "category": "natural",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "a640423300bae943": {
+      "category": "health",
+      "classificationSourceUrl": "https://admission.inha.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=80&CONTENTS_NO=1&TYPE_CODE=C0601"
+    },
+    "b9b921a5e01f785c": {
+      "category": "mixed",
+      "classificationSourceUrl": "https://admission.yonsei.ac.kr/mirae/upload/guide/202609091128343AZAWL.PDF",
+      "historicalNote": "2024~2026학년도에는 미래인재·창의인재 논술전형을 별도로 운영했습니다. 당시 전형은 지난 입시결과 표에 구분해 표시합니다. 당시 자율융합계열은 현재 인문·자연 모집과 일대일 대응하지 않아 그래프에 연결하지 않습니다."
+    },
+    "6d41dfe3c0c5d7f5": {
+      "category": "mixed",
+      "classificationSourceUrl": "https://admission.yonsei.ac.kr/mirae/upload/guide/202609091128343AZAWL.PDF",
+      "historicalNote": "2024~2026학년도에는 미래인재·창의인재 논술전형을 별도로 운영했습니다. 당시 전형은 지난 입시결과 표에 구분해 표시합니다. 당시 자율융합계열은 현재 인문·자연 모집과 일대일 대응하지 않아 그래프에 연결하지 않습니다."
+    },
+    "4b52eea3d3363556": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.yonsei.ac.kr/mirae/upload/guide/202609091128343AZAWL.PDF",
+      "historicalNote": "2024~2026학년도에는 미래인재·창의인재 논술전형을 별도로 운영했습니다. 당시 전형은 지난 입시결과 표에 구분해 표시합니다."
+    },
+    "3ebaec7c7a616924": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.yonsei.ac.kr/mirae/upload/guide/202609091128343AZAWL.PDF",
+      "historicalNote": "2024~2026학년도에는 미래인재·창의인재 논술전형을 별도로 운영했습니다. 당시 전형은 지난 입시결과 표에 구분해 표시합니다."
+    },
+    "cb8c6af773d8fa11": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.yonsei.ac.kr/mirae/upload/guide/202609091128343AZAWL.PDF",
+      "historicalNote": "2024~2026학년도에는 미래인재·창의인재 논술전형을 별도로 운영했습니다. 당시 전형은 지난 입시결과 표에 구분해 표시합니다."
+    },
+    "f46dea9d31dfb2d3": {
+      "category": "mixed",
+      "classificationSourceUrl": "https://admission.yonsei.ac.kr/mirae/upload/guide/202609091128343AZAWL.PDF",
+      "historicalNote": "2024~2026학년도에는 미래인재·창의인재 논술전형을 별도로 운영했습니다. 당시 전형은 지난 입시결과 표에 구분해 표시합니다.",
+      "note": "통계·데이터 분석과 컴퓨팅을 함께 다루는 융합 분야입니다."
+    },
+    "9bdaae2a4dfa2911": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://admission.yonsei.ac.kr/mirae/upload/guide/202609091128343AZAWL.PDF",
+      "historicalNote": "2024~2026학년도에는 미래인재·창의인재 논술전형을 별도로 운영했습니다. 당시 전형은 지난 입시결과 표에 구분해 표시합니다."
+    },
+    "0b7f74542adacfae": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://www.iajou.ac.kr/upload_data/mojib/20260825111418_62.pdf"
+    },
+    "1a33b17fbe543a81": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://www.iajou.ac.kr/upload_data/mojib/20260825111418_62.pdf"
+    },
+    "a70e9c3961d23f59": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://www.iajou.ac.kr/upload_data/mojib/20260825111418_62.pdf"
+    },
+    "99bddc8e792c8eda": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://www.iajou.ac.kr/upload_data/mojib/20260825111418_62.pdf"
+    },
+    "2afc67b2b328be7e": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://www.iajou.ac.kr/upload_data/mojib/20260825111418_62.pdf"
+    },
+    "11130e63feaef9c1": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://www.iajou.ac.kr/upload_data/mojib/20260825111418_62.pdf"
+    },
+    "32d025f45c8781d7": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://www.iajou.ac.kr/upload_data/mojib/20260825111418_62.pdf"
+    },
+    "2f6df023317ffefe": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://www.iajou.ac.kr/upload_data/mojib/20260825111418_62.pdf"
+    },
+    "786ecaf8289e1a7e": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://www.iajou.ac.kr/upload_data/mojib/20260825111418_62.pdf",
+      "historicalNames": {
+        "2024": "AI모빌리티공학과"
+      },
+      "historicalNameSources": {
+        "2024": "https://www.iajou.ac.kr/upload_data/mojib/20260819131018_44.pdf"
+      },
+      "historicalNote": "2024학년도 AI모빌리티공학과의 결과는 대학 공식 3개년 입시결과에서 미래모빌리티공학과에 대응해 공개한 값입니다."
+    },
+    "919395b9dd0f1541": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://www.iajou.ac.kr/upload_data/mojib/20260825111418_62.pdf",
+      "historicalNote": "2027학년도 통합·개편 모집단위입니다. 과거 소프트웨어학과 수치를 현재 학부 전체 수치로 연결하지 않습니다."
+    },
+    "94a2ad65b2a9feb2": {
+      "category": "natural",
+      "classificationSourceUrl": "https://www.iajou.ac.kr/upload_data/mojib/20260825111418_62.pdf"
+    },
+    "69f3f60c13e43c97": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://www.iajou.ac.kr/upload_data/mojib/20260825111418_62.pdf"
+    },
+    "4bbfd3bc7ca59865": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://www.iajou.ac.kr/upload_data/mojib/20260825111418_62.pdf"
+    },
+    "4a2858452e0cc7ab": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://www.iajou.ac.kr/upload_data/mojib/20260825111418_62.pdf",
+      "historicalNote": "2024학년도에는 정치외교학과·사회학과를 별도로 모집했습니다. 당시 수치를 임의로 합산하지 않았습니다."
+    },
+    "84cf416aa6156a0d": {
+      "category": "health",
+      "classificationSourceUrl": "https://www.iajou.ac.kr/upload_data/mojib/20260825111418_62.pdf",
+      "minimumText": "국어·수학(선택과목 제한 없음)·영어·탐구(사회/과학 2과목 평균) 4개 영역 등급 합 6 이내. 탐구는 사회·과학 혼합 가능, 소수점 반올림·절사 없음."
+    },
+    "91f18c4c138860c8": {
+      "category": "health",
+      "classificationSourceUrl": "https://www.iajou.ac.kr/upload_data/mojib/20260825111418_62.pdf",
+      "minimumText": "국어·수학(선택과목 제한 없음)·영어·탐구(사회/과학 2과목 평균) 중 3개 영역 등급 합 5 이내. 탐구는 사회·과학 혼합 가능, 소수점 반올림·절사 없음."
+    },
+    "3f13424abcaab6e0": {
+      "category": "mixed",
+      "classificationSourceUrl": "https://www.iajou.ac.kr/upload_data/mojib/20260825111418_62.pdf"
+    },
+    "2df5c5338d26bb93": {
+      "category": "mixed",
+      "classificationSourceUrl": "https://www.iajou.ac.kr/upload_data/mojib/20260825111418_62.pdf"
+    },
+    "e4f5992903ade0ac": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://ibhak.kau.ac.kr/upload/GUIDES/20260813105041001.pdf",
+      "historicalNote": "2027학년도에는 스마트드론공학과가 공과대학, AI자율주행시스템공학과가 AI융합대학으로 통합되었습니다. 과거 같은 이름의 대학과 모집 범위가 다르며, 분리 모집하던 학과 수치를 임의로 합산하지 않았습니다."
+    },
+    "8db3e0acd5718693": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://ibhak.kau.ac.kr/upload/GUIDES/20260813105041001.pdf",
+      "historicalNote": "2027학년도에는 스마트드론공학과가 공과대학, AI자율주행시스템공학과가 AI융합대학으로 통합되었습니다. 과거 같은 이름의 대학과 모집 범위가 다르며, 분리 모집하던 학과 수치를 임의로 합산하지 않았습니다."
+    },
+    "af6a3a7d36676f4e": {
+      "category": "mixed",
+      "classificationSourceUrl": "https://ibhak.kau.ac.kr/upload/GUIDES/20260813105041001.pdf",
+      "note": "항공교통물류·경영·항공경영을 포함하는 모집단위입니다. 이학·사회적성은 시험 구분입니다."
+    },
+    "cdecee6477c1bf86": {
+      "category": "mixed",
+      "classificationSourceUrl": "https://ibhak.kau.ac.kr/upload/GUIDES/20260813105041001.pdf",
+      "note": "항공교통물류·경영·항공경영을 포함하는 모집단위입니다. 이학·사회적성은 시험 구분입니다."
+    },
+    "141352502a2c456d": {
+      "category": "other",
+      "classificationSourceUrl": "https://ibhak.kau.ac.kr/upload/GUIDES/20260813105041001.pdf"
+    },
+    "a920a40f4eb8f9dd": {
+      "category": "mixed",
+      "classificationSourceUrl": "https://ibhak.kau.ac.kr/upload/GUIDES/20260813105041001.pdf",
+      "note": "공학·이학·사회적성은 논술시험 구분입니다. 입학 후 전공 선택 범위는 세 유형이 동일하며, 항공운항학과 선택에는 별도 인원 제한이 있습니다."
+    },
+    "184abd3c9ecb1c48": {
+      "category": "mixed",
+      "classificationSourceUrl": "https://ibhak.kau.ac.kr/upload/GUIDES/20260813105041001.pdf",
+      "note": "공학·이학·사회적성은 논술시험 구분입니다. 입학 후 전공 선택 범위는 세 유형이 동일하며, 항공운항학과 선택에는 별도 인원 제한이 있습니다."
+    },
+    "ad6506d789217466": {
+      "category": "mixed",
+      "classificationSourceUrl": "https://ibhak.kau.ac.kr/upload/GUIDES/20260813105041001.pdf",
+      "note": "공학·이학·사회적성은 논술시험 구분입니다. 입학 후 전공 선택 범위는 세 유형이 동일하며, 항공운항학과 선택에는 별도 인원 제한이 있습니다."
     }
   }
 }
