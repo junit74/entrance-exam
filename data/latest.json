@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "year": 2027,
-  "generatedAt": "2026-09-09T08:59:06.325Z",
+  "generatedAt": "2026-09-09T09:09:15.145Z",
   "schools": [
     {
       "id": "kyonggi",
@@ -22,7 +22,7 @@
       "outcome": "updated",
       "snapshot": {
         "year": 2027,
-        "sourceAt": "2026-09-09T17:50:00+09:00",
+        "sourceAt": "2026-09-09T18:00:00+09:00",
         "isFinal": false,
         "sourceUrl": "https://ratio.uwayapply.com/Sl5KJXJyV2FiOUpmJSY6Jko3ZlRm",
         "track": "논술(논술우수자전형)",
@@ -34,8 +34,8 @@
             "college": "자유교양대학",
             "note": "자유전공학부(수원, 서울)으로 선발된 학생은 2학년 진급 시 수원 및 서울캠퍼스에 개설된 학과(학부, 전공)중에서 자유롭게 선택하며, 전공 선택 후에도 변경 가능함 (단, 유아교육과, 예술체육대학 소속 모집단위, AI컴퓨터공학부, 연기학과, 애니메이션학과, 실용음악학과는 선택할 수 없음)",
             "seats": 93,
-            "applicants": 1050,
-            "ratio": 11.29
+            "applicants": 1062,
+            "ratio": 11.42
           },
           {
             "id": "55e97acadfc48060",
@@ -44,8 +44,8 @@
             "college": "자유교양대학",
             "note": "자유전공학부(수원, 서울)으로 선발된 학생은 2학년 진급 시 수원 및 서울캠퍼스에 개설된 학과(학부, 전공)중에서 자유롭게 선택하며, 전공 선택 후에도 변경 가능함 (단, 유아교육과, 예술체육대학 소속 모집단위, AI컴퓨터공학부, 연기학과, 애니메이션학과, 실용음악학과는 선택할 수 없음)",
             "seats": 92,
-            "applicants": 589,
-            "ratio": 6.4
+            "applicants": 593,
+            "ratio": 6.45
           },
           {
             "id": "6a9518615b2ac4d8",
@@ -54,8 +54,8 @@
             "college": "관광문화대학",
             "note": "자유전공학부(수원, 서울)으로 선발된 학생은 2학년 진급 시 수원 및 서울캠퍼스에 개설된 학과(학부, 전공)중에서 자유롭게 선택하며, 전공 선택 후에도 변경 가능함 (단, 유아교육과, 예술체육대학 소속 모집단위, AI컴퓨터공학부, 연기학과, 애니메이션학과, 실용음악학과는 선택할 수 없음)",
             "seats": 41,
-            "applicants": 388,
-            "ratio": 9.46
+            "applicants": 392,
+            "ratio": 9.56
           },
           {
             "id": "58e407e017eba44d",
@@ -64,27 +64,27 @@
             "college": "관광문화대학",
             "note": "자유전공학부(수원, 서울)으로 선발된 학생은 2학년 진급 시 수원 및 서울캠퍼스에 개설된 학과(학부, 전공)중에서 자유롭게 선택하며, 전공 선택 후에도 변경 가능함 (단, 유아교육과, 예술체육대학 소속 모집단위, AI컴퓨터공학부, 연기학과, 애니메이션학과, 실용음악학과는 선택할 수 없음)",
             "seats": 13,
-            "applicants": 61,
-            "ratio": 4.69
+            "applicants": 62,
+            "ratio": 4.77
           }
         ],
         "total": {
           "seats": 239,
-          "applicants": 2088,
-          "ratio": 8.74
+          "applicants": 2109,
+          "ratio": 8.82
         },
-        "contentHash": "27bf9dc55f0f26e1a8c1cf3ca37474bc28a80f458d0b3891043345b1d42ceeed",
-        "collectedAt": "2026-09-09T08:59:06.142Z"
+        "contentHash": "a30e13a0a88b23aed8b3493c88fc2a7a59a7adf6503b0ac20b5e10b2bfe3008e",
+        "collectedAt": "2026-09-09T09:09:14.960Z"
       },
-      "previousSourceAt": "2026-09-09T17:40:00+09:00",
+      "previousSourceAt": "2026-09-09T17:50:00+09:00",
       "previousApplicants": {
-        "8a29f30e4e7b5fa4": 1038,
-        "55e97acadfc48060": 587,
-        "6a9518615b2ac4d8": 387,
+        "8a29f30e4e7b5fa4": 1050,
+        "55e97acadfc48060": 589,
+        "6a9518615b2ac4d8": 388,
         "58e407e017eba44d": 61
       },
-      "lastCheckedAt": "2026-09-09T08:59:06.142Z",
-      "lastSuccessfulCheckAt": "2026-09-09T08:59:06.142Z",
+      "lastCheckedAt": "2026-09-09T09:09:14.960Z",
+      "lastSuccessfulCheckAt": "2026-09-09T09:09:14.960Z",
       "error": null
     },
     {
@@ -106,7 +106,7 @@
       "outcome": "updated",
       "snapshot": {
         "year": 2027,
-        "sourceAt": "2026-09-09T17:50:00+09:00",
+        "sourceAt": "2026-09-09T18:00:00+09:00",
         "isFinal": false,
         "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970461.html",
         "track": "교과논술전형",
@@ -118,8 +118,8 @@
             "college": "인문사회융합대학",
             "note": "",
             "seats": 70,
-            "applicants": 257,
-            "ratio": 3.67
+            "applicants": 263,
+            "ratio": 3.76
           },
           {
             "id": "2577dd9194e5c34a",
@@ -178,8 +178,8 @@
             "college": "혁신공과대학",
             "note": "",
             "seats": 15,
-            "applicants": 54,
-            "ratio": 3.6
+            "applicants": 55,
+            "ratio": 3.67
           },
           {
             "id": "1f1fb3f882597302",
@@ -238,8 +238,8 @@
             "college": "지능형SW융합대학",
             "note": "",
             "seats": 32,
-            "applicants": 39,
-            "ratio": 1.22
+            "applicants": 40,
+            "ratio": 1.25
           },
           {
             "id": "dc1ed0939a5bd9d0",
@@ -258,8 +258,8 @@
             "college": "라이프케어사이언스대학",
             "note": "",
             "seats": 25,
-            "applicants": 355,
-            "ratio": 14.2
+            "applicants": 356,
+            "ratio": 14.24
           },
           {
             "id": "48629b6df833ea31",
@@ -268,8 +268,8 @@
             "college": "라이프케어사이언스대학",
             "note": "",
             "seats": 5,
-            "applicants": 20,
-            "ratio": 4
+            "applicants": 21,
+            "ratio": 4.2
           },
           {
             "id": "f44bae61e49cd382",
@@ -304,16 +304,16 @@
         ],
         "total": {
           "seats": 434,
-          "applicants": 1380,
-          "ratio": 3.18
+          "applicants": 1390,
+          "ratio": 3.2
         },
-        "contentHash": "857284799e0f3dd8405626d7d8dcdde7933e42f72e0da860087764b1c68921b1",
-        "collectedAt": "2026-09-09T08:59:06.143Z"
+        "contentHash": "e834cd63376aab94736af2a559a3885d08b39d6f6b045b7a21bb990dfa4dc512",
+        "collectedAt": "2026-09-09T09:09:14.962Z"
       },
-      "previousSourceAt": "2026-09-09T17:40:00+09:00",
+      "previousSourceAt": "2026-09-09T17:50:00+09:00",
       "previousApplicants": {
-        "db9122cf6c3f536e": 256,
-        "2577dd9194e5c34a": 187,
+        "db9122cf6c3f536e": 257,
+        "2577dd9194e5c34a": 190,
         "746f331363687f9f": 35,
         "3be354cdfebcf1ed": 65,
         "28453595781c3bf5": 26,
@@ -321,19 +321,19 @@
         "3da822dd190ec82c": 54,
         "1f1fb3f882597302": 24,
         "a14cc2fe69520cfe": 130,
-        "eba189c831ebfd75": 57,
+        "eba189c831ebfd75": 58,
         "450792704c0e7de6": 20,
         "171ef1e784c83e7f": 50,
-        "eb3dde52c4da0e3e": 38,
+        "eb3dde52c4da0e3e": 39,
         "dc1ed0939a5bd9d0": 7,
-        "1d8b9b10df8b4ec5": 354,
+        "1d8b9b10df8b4ec5": 355,
         "48629b6df833ea31": 20,
         "f44bae61e49cd382": 15,
         "690ddc9b15be9262": 17,
         "ec833ccb2ab66d15": 12
       },
-      "lastCheckedAt": "2026-09-09T08:59:06.143Z",
-      "lastSuccessfulCheckAt": "2026-09-09T08:59:06.143Z",
+      "lastCheckedAt": "2026-09-09T09:09:14.962Z",
+      "lastSuccessfulCheckAt": "2026-09-09T09:09:14.962Z",
       "error": null
     },
     {
@@ -355,7 +355,7 @@
       "outcome": "updated",
       "snapshot": {
         "year": 2027,
-        "sourceAt": "2026-09-09T17:50:00+09:00",
+        "sourceAt": "2026-09-09T18:00:00+09:00",
         "isFinal": false,
         "sourceUrl": "https://ratio.uwayapply.com/Sl5KfExgMDhgfWE5SmYlJjomSjdmVGY=",
         "track": "논술전형",
@@ -387,8 +387,8 @@
             "college": "",
             "note": "",
             "seats": 9,
-            "applicants": 34,
-            "ratio": 3.78
+            "applicants": 35,
+            "ratio": 3.89
           },
           {
             "id": "04de93a4c297243a",
@@ -417,8 +417,8 @@
             "college": "",
             "note": "",
             "seats": 5,
-            "applicants": 35,
-            "ratio": 7
+            "applicants": 36,
+            "ratio": 7.2
           },
           {
             "id": "27124333d85ee8ea",
@@ -427,8 +427,8 @@
             "college": "",
             "note": "",
             "seats": 12,
-            "applicants": 68,
-            "ratio": 5.67
+            "applicants": 70,
+            "ratio": 5.83
           },
           {
             "id": "cb843ec2fa581ad5",
@@ -447,8 +447,8 @@
             "college": "",
             "note": "",
             "seats": 5,
-            "applicants": 42,
-            "ratio": 8.4
+            "applicants": 43,
+            "ratio": 8.6
           },
           {
             "id": "cf2963a2334dd631",
@@ -533,13 +533,13 @@
         ],
         "total": {
           "seats": 150,
-          "applicants": 733,
-          "ratio": 4.89
+          "applicants": 738,
+          "ratio": 4.92
         },
-        "contentHash": "9e836b6bc4470060b971cfa3249278bc75a15c7172839b3967750eeb36504f12",
-        "collectedAt": "2026-09-09T08:59:06.144Z"
+        "contentHash": "7c0606021824490a3aacfdc77d341a050986f76f25c2930c7328807cb08e46c7",
+        "collectedAt": "2026-09-09T09:09:14.963Z"
       },
-      "previousSourceAt": "2026-09-09T17:40:00+09:00",
+      "previousSourceAt": "2026-09-09T17:50:00+09:00",
       "previousApplicants": {
         "a0b81d6d583b87df": 145,
         "0d70fa76f8ab00bc": 121,
@@ -552,15 +552,15 @@
         "f3969a839a8db858": 42,
         "cf2963a2334dd631": 12,
         "f5b232711ad38d7d": 15,
-        "a193cc781aa206b4": 51,
-        "4affe379bc569651": 29,
+        "a193cc781aa206b4": 53,
+        "4affe379bc569651": 30,
         "7b50904e7a8c4023": 27,
         "0b2fc82e852a7218": 16,
         "945d689f52c5c542": 9,
         "b5aca04ae392ceab": 18
       },
-      "lastCheckedAt": "2026-09-09T08:59:06.144Z",
-      "lastSuccessfulCheckAt": "2026-09-09T08:59:06.144Z",
+      "lastCheckedAt": "2026-09-09T09:09:14.963Z",
+      "lastSuccessfulCheckAt": "2026-09-09T09:09:14.963Z",
       "error": null
     },
     {
@@ -582,7 +582,7 @@
       "outcome": "updated",
       "snapshot": {
         "year": 2027,
-        "sourceAt": "2026-09-09T17:50:00+09:00",
+        "sourceAt": "2026-09-09T18:00:00+09:00",
         "isFinal": false,
         "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio30170741.html",
         "track": "논술(논술우수자)",
@@ -594,8 +594,8 @@
             "college": "",
             "note": "",
             "seats": 70,
-            "applicants": 215,
-            "ratio": 3.07
+            "applicants": 218,
+            "ratio": 3.11
           },
           {
             "id": "3fed0b30989437ce",
@@ -604,8 +604,8 @@
             "college": "",
             "note": "",
             "seats": 31,
-            "applicants": 111,
-            "ratio": 3.58
+            "applicants": 114,
+            "ratio": 3.68
           },
           {
             "id": "312a331ea3df2784",
@@ -634,8 +634,8 @@
             "college": "",
             "note": "",
             "seats": 25,
-            "applicants": 83,
-            "ratio": 3.32
+            "applicants": 84,
+            "ratio": 3.36
           },
           {
             "id": "6f05eb5ffcc81691",
@@ -650,23 +650,23 @@
         ],
         "total": {
           "seats": 200,
-          "applicants": 711,
-          "ratio": 3.56
+          "applicants": 718,
+          "ratio": 3.59
         },
-        "contentHash": "d1a9f81a34ade1d5beb6215ce2efc6f64c356b51f2edd48b061aa8b5a7be2021",
-        "collectedAt": "2026-09-09T08:59:06.144Z"
+        "contentHash": "cfb76da50cf39f905dd0a3f38cc3243eb18f0d7b87898d4aa50f0d12e412fa0f",
+        "collectedAt": "2026-09-09T09:09:14.964Z"
       },
-      "previousSourceAt": "2026-09-09T17:40:00+09:00",
+      "previousSourceAt": "2026-09-09T17:50:00+09:00",
       "previousApplicants": {
-        "cce0224b263faa5f": 213,
-        "3fed0b30989437ce": 110,
-        "312a331ea3df2784": 134,
+        "cce0224b263faa5f": 215,
+        "3fed0b30989437ce": 111,
+        "312a331ea3df2784": 137,
         "19676aeff2897216": 136,
         "11f78fd6141120f6": 83,
-        "6f05eb5ffcc81691": 27
+        "6f05eb5ffcc81691": 29
       },
-      "lastCheckedAt": "2026-09-09T08:59:06.144Z",
-      "lastSuccessfulCheckAt": "2026-09-09T08:59:06.144Z",
+      "lastCheckedAt": "2026-09-09T09:09:14.964Z",
+      "lastSuccessfulCheckAt": "2026-09-09T09:09:14.964Z",
       "error": null
     },
     {
@@ -688,7 +688,7 @@
       "outcome": "updated",
       "snapshot": {
         "year": 2027,
-        "sourceAt": "2026-09-09T17:50:00+09:00",
+        "sourceAt": "2026-09-09T18:00:00+09:00",
         "isFinal": false,
         "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
         "track": "논술 전형",
@@ -700,8 +700,8 @@
             "college": "인문계열",
             "note": "",
             "seats": 40,
-            "applicants": 660,
-            "ratio": 16.5
+            "applicants": 667,
+            "ratio": 16.68
           },
           {
             "id": "27e4157add2aa819",
@@ -710,8 +710,8 @@
             "college": "인문계열",
             "note": "",
             "seats": 16,
-            "applicants": 80,
-            "ratio": 5
+            "applicants": 81,
+            "ratio": 5.06
           },
           {
             "id": "59eb0d5c9d0b272c",
@@ -720,8 +720,8 @@
             "college": "인문계열",
             "note": "",
             "seats": 14,
-            "applicants": 80,
-            "ratio": 5.71
+            "applicants": 81,
+            "ratio": 5.79
           },
           {
             "id": "f69a91919bba3a67",
@@ -750,8 +750,8 @@
             "college": "인문계열",
             "note": "",
             "seats": 8,
-            "applicants": 167,
-            "ratio": 20.88
+            "applicants": 168,
+            "ratio": 21
           },
           {
             "id": "a258590adabcab14",
@@ -770,8 +770,8 @@
             "college": "인문계열",
             "note": "",
             "seats": 13,
-            "applicants": 79,
-            "ratio": 6.08
+            "applicants": 80,
+            "ratio": 6.15
           },
           {
             "id": "0d827896e97ef4b8",
@@ -790,8 +790,8 @@
             "college": "인문계열",
             "note": "",
             "seats": 15,
-            "applicants": 78,
-            "ratio": 5.2
+            "applicants": 81,
+            "ratio": 5.4
           },
           {
             "id": "74e6f64e798a8a65",
@@ -800,8 +800,8 @@
             "college": "인문계열",
             "note": "",
             "seats": 10,
-            "applicants": 159,
-            "ratio": 15.9
+            "applicants": 161,
+            "ratio": 16.1
           },
           {
             "id": "cd93bd82710e81f0",
@@ -810,8 +810,8 @@
             "college": "인문계열",
             "note": "",
             "seats": 12,
-            "applicants": 94,
-            "ratio": 7.83
+            "applicants": 95,
+            "ratio": 7.92
           },
           {
             "id": "9566316790eaf422",
@@ -820,8 +820,8 @@
             "college": "인문계열",
             "note": "",
             "seats": 73,
-            "applicants": 561,
-            "ratio": 7.68
+            "applicants": 567,
+            "ratio": 7.77
           },
           {
             "id": "a2dccea1b20238a3",
@@ -830,8 +830,8 @@
             "college": "인문계열",
             "note": "",
             "seats": 46,
-            "applicants": 349,
-            "ratio": 7.59
+            "applicants": 353,
+            "ratio": 7.67
           },
           {
             "id": "f1148e0ed27f44b6",
@@ -840,8 +840,8 @@
             "college": "자연계열",
             "note": "",
             "seats": 21,
-            "applicants": 124,
-            "ratio": 5.9
+            "applicants": 126,
+            "ratio": 6
           },
           {
             "id": "d8ed3f97a3a44c24",
@@ -850,8 +850,8 @@
             "college": "자연계열",
             "note": "",
             "seats": 20,
-            "applicants": 175,
-            "ratio": 8.75
+            "applicants": 177,
+            "ratio": 8.85
           },
           {
             "id": "3f9872b2c87ed7be",
@@ -870,8 +870,8 @@
             "college": "자연계열",
             "note": "",
             "seats": 59,
-            "applicants": 282,
-            "ratio": 4.78
+            "applicants": 284,
+            "ratio": 4.81
           },
           {
             "id": "51edfbab5743f5b2",
@@ -880,8 +880,8 @@
             "college": "자연계열",
             "note": "",
             "seats": 56,
-            "applicants": 437,
-            "ratio": 7.8
+            "applicants": 440,
+            "ratio": 7.86
           },
           {
             "id": "344f0c404ba7f1b7",
@@ -980,8 +980,8 @@
             "college": "자연계열",
             "note": "",
             "seats": 73,
-            "applicants": 507,
-            "ratio": 6.95
+            "applicants": 513,
+            "ratio": 7.03
           },
           {
             "id": "9972103bd40a1f1f",
@@ -1000,8 +1000,8 @@
             "college": "자연계열",
             "note": "",
             "seats": 31,
-            "applicants": 142,
-            "ratio": 4.58
+            "applicants": 143,
+            "ratio": 4.61
           },
           {
             "id": "9f9af143bbdc970f",
@@ -1010,8 +1010,8 @@
             "college": "자연계열",
             "note": "",
             "seats": 46,
-            "applicants": 253,
-            "ratio": 5.5
+            "applicants": 255,
+            "ratio": 5.54
           },
           {
             "id": "8e43d643057c4a87",
@@ -1030,8 +1030,8 @@
             "college": "자연계열",
             "note": "",
             "seats": 18,
-            "applicants": 67,
-            "ratio": 3.72
+            "applicants": 69,
+            "ratio": 3.83
           },
           {
             "id": "67ea6cbe1db2a7b9",
@@ -1040,8 +1040,8 @@
             "college": "자연계열",
             "note": "",
             "seats": 20,
-            "applicants": 154,
-            "ratio": 7.7
+            "applicants": 156,
+            "ratio": 7.8
           },
           {
             "id": "4fa7ea27a26d8c7c",
@@ -1050,8 +1050,8 @@
             "college": "자연계열",
             "note": "",
             "seats": 18,
-            "applicants": 39,
-            "ratio": 2.17
+            "applicants": 41,
+            "ratio": 2.28
           },
           {
             "id": "a825b9c17ed2a0cf",
@@ -1060,8 +1060,8 @@
             "college": "자연계열",
             "note": "",
             "seats": 14,
-            "applicants": 35,
-            "ratio": 2.5
+            "applicants": 37,
+            "ratio": 2.64
           },
           {
             "id": "a42c28c0c3936bd6",
@@ -1070,8 +1070,8 @@
             "college": "자연계열",
             "note": "",
             "seats": 77,
-            "applicants": 1192,
-            "ratio": 15.48
+            "applicants": 1201,
+            "ratio": 15.6
           },
           {
             "id": "750324fc7e9e200b",
@@ -1100,8 +1100,8 @@
             "college": "자연계열",
             "note": "",
             "seats": 9,
-            "applicants": 119,
-            "ratio": 13.22
+            "applicants": 123,
+            "ratio": 13.67
           },
           {
             "id": "db83d79f1e37bb15",
@@ -1110,8 +1110,8 @@
             "college": "자연계열",
             "note": "",
             "seats": 9,
-            "applicants": 170,
-            "ratio": 18.89
+            "applicants": 172,
+            "ratio": 19.11
           },
           {
             "id": "4b46b798942dc2e0",
@@ -1120,8 +1120,8 @@
             "college": "자연계열",
             "note": "",
             "seats": 13,
-            "applicants": 72,
-            "ratio": 5.54
+            "applicants": 74,
+            "ratio": 5.69
           },
           {
             "id": "1b05452c84488f31",
@@ -1130,8 +1130,8 @@
             "college": "자연계열",
             "note": "",
             "seats": 6,
-            "applicants": 1260,
-            "ratio": 210
+            "applicants": 1264,
+            "ratio": 210.67
           },
           {
             "id": "ee97b0de24b069c8",
@@ -1140,8 +1140,8 @@
             "college": "자연계열",
             "note": "",
             "seats": 7,
-            "applicants": 708,
-            "ratio": 101.14
+            "applicants": 709,
+            "ratio": 101.29
           },
           {
             "id": "28e719814cc3c769",
@@ -1160,70 +1160,70 @@
             "college": "자연계열",
             "note": "",
             "seats": 29,
-            "applicants": 170,
-            "ratio": 5.86
+            "applicants": 171,
+            "ratio": 5.9
           }
         ],
         "total": {
           "seats": 1036,
-          "applicants": 10237,
-          "ratio": 9.88
+          "applicants": 10313,
+          "ratio": 9.95
         },
-        "contentHash": "4d9665544e0999be0081844001457d7cb68ab18f2e747443d0152a8bead43003",
-        "collectedAt": "2026-09-09T08:59:06.144Z"
+        "contentHash": "e9c9391f8cd6ec11013a03c6298f86d1aa194a9828355b259fbae0d10e00a473",
+        "collectedAt": "2026-09-09T09:09:14.964Z"
       },
-      "previousSourceAt": "2026-09-09T17:40:00+09:00",
+      "previousSourceAt": "2026-09-09T17:50:00+09:00",
       "previousApplicants": {
-        "1a8c32e8978b71d1": 658,
+        "1a8c32e8978b71d1": 660,
         "27e4157add2aa819": 80,
-        "59eb0d5c9d0b272c": 78,
+        "59eb0d5c9d0b272c": 80,
         "f69a91919bba3a67": 58,
-        "bbb68e4094dbfa8d": 129,
-        "ad6d3814c8193f33": 162,
+        "bbb68e4094dbfa8d": 130,
+        "ad6d3814c8193f33": 167,
         "a258590adabcab14": 119,
         "976657d8ab2e4873": 79,
         "0d827896e97ef4b8": 96,
         "82596bd1f7a7c0c4": 78,
-        "74e6f64e798a8a65": 158,
+        "74e6f64e798a8a65": 159,
         "cd93bd82710e81f0": 94,
-        "9566316790eaf422": 556,
-        "a2dccea1b20238a3": 347,
+        "9566316790eaf422": 561,
+        "a2dccea1b20238a3": 349,
         "f1148e0ed27f44b6": 124,
-        "d8ed3f97a3a44c24": 173,
+        "d8ed3f97a3a44c24": 175,
         "3f9872b2c87ed7be": 63,
-        "843f1f4ad49fab93": 280,
-        "51edfbab5743f5b2": 433,
-        "344f0c404ba7f1b7": 36,
-        "31a73fd9a66a4e99": 64,
-        "4a06edbd25664ba4": 77,
+        "843f1f4ad49fab93": 282,
+        "51edfbab5743f5b2": 437,
+        "344f0c404ba7f1b7": 37,
+        "31a73fd9a66a4e99": 66,
+        "4a06edbd25664ba4": 78,
         "83454ee40d901be0": 44,
         "9975142a39dab7e3": 62,
-        "8e2e9339de1a48bf": 56,
+        "8e2e9339de1a48bf": 57,
         "ed68df6d5207963b": 115,
         "73ea3212c41d35af": 39,
         "5dc022d391c0ca2e": 71,
-        "6f0f2bd1826306cf": 499,
-        "9972103bd40a1f1f": 83,
-        "1329569be99c329c": 139,
-        "9f9af143bbdc970f": 250,
+        "6f0f2bd1826306cf": 507,
+        "9972103bd40a1f1f": 84,
+        "1329569be99c329c": 142,
+        "9f9af143bbdc970f": 253,
         "8e43d643057c4a87": 53,
-        "742f7bbfb91c1a72": 65,
+        "742f7bbfb91c1a72": 67,
         "67ea6cbe1db2a7b9": 154,
         "4fa7ea27a26d8c7c": 39,
         "a825b9c17ed2a0cf": 35,
-        "a42c28c0c3936bd6": 1188,
+        "a42c28c0c3936bd6": 1192,
         "750324fc7e9e200b": 41,
         "8e9685445b6ff650": 68,
-        "a3a9121d625dd159": 118,
-        "db83d79f1e37bb15": 168,
+        "a3a9121d625dd159": 119,
+        "db83d79f1e37bb15": 170,
         "4b46b798942dc2e0": 72,
-        "1b05452c84488f31": 1256,
-        "ee97b0de24b069c8": 702,
-        "28e719814cc3c769": 742,
-        "d21d878a3e74c5f3": 169
+        "1b05452c84488f31": 1260,
+        "ee97b0de24b069c8": 708,
+        "28e719814cc3c769": 743,
+        "d21d878a3e74c5f3": 170
       },
-      "lastCheckedAt": "2026-09-09T08:59:06.144Z",
-      "lastSuccessfulCheckAt": "2026-09-09T08:59:06.144Z",
+      "lastCheckedAt": "2026-09-09T09:09:14.964Z",
+      "lastSuccessfulCheckAt": "2026-09-09T09:09:14.964Z",
       "error": null
     },
     {
@@ -1245,7 +1245,7 @@
       "outcome": "updated",
       "snapshot": {
         "year": 2027,
-        "sourceAt": "2026-09-09T17:50:00+09:00",
+        "sourceAt": "2026-09-09T18:00:00+09:00",
         "isFinal": false,
         "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10760741.html",
         "track": "논술우수자전형",
@@ -1257,8 +1257,8 @@
             "college": "",
             "note": "",
             "seats": 12,
-            "applicants": 454,
-            "ratio": 37.83
+            "applicants": 459,
+            "ratio": 38.25
           },
           {
             "id": "fade7019606a4c85",
@@ -1267,8 +1267,8 @@
             "college": "",
             "note": "",
             "seats": 5,
-            "applicants": 1052,
-            "ratio": 210.4
+            "applicants": 1055,
+            "ratio": 211
           },
           {
             "id": "55294da72e03c39f",
@@ -1277,8 +1277,8 @@
             "college": "",
             "note": "",
             "seats": 33,
-            "applicants": 202,
-            "ratio": 6.12
+            "applicants": 203,
+            "ratio": 6.15
           },
           {
             "id": "13d716e28b9f4582",
@@ -1297,8 +1297,8 @@
             "college": "",
             "note": "",
             "seats": 8,
-            "applicants": 33,
-            "ratio": 4.13
+            "applicants": 34,
+            "ratio": 4.25
           },
           {
             "id": "72485b6a3c9f9b12",
@@ -1307,8 +1307,8 @@
             "college": "",
             "note": "",
             "seats": 8,
-            "applicants": 22,
-            "ratio": 2.75
+            "applicants": 23,
+            "ratio": 2.88
           },
           {
             "id": "7e507ccaddda3045",
@@ -1317,8 +1317,8 @@
             "college": "",
             "note": "",
             "seats": 17,
-            "applicants": 144,
-            "ratio": 8.47
+            "applicants": 146,
+            "ratio": 8.59
           },
           {
             "id": "a9568dea830bbac9",
@@ -1347,8 +1347,8 @@
             "college": "",
             "note": "",
             "seats": 8,
-            "applicants": 43,
-            "ratio": 5.38
+            "applicants": 44,
+            "ratio": 5.5
           },
           {
             "id": "af616e8d2a58a193",
@@ -1367,8 +1367,8 @@
             "college": "",
             "note": "",
             "seats": 6,
-            "applicants": 115,
-            "ratio": 19.17
+            "applicants": 117,
+            "ratio": 19.5
           },
           {
             "id": "ab9000ccdaed9617",
@@ -1447,8 +1447,8 @@
             "college": "",
             "note": "",
             "seats": 15,
-            "applicants": 34,
-            "ratio": 2.27
+            "applicants": 36,
+            "ratio": 2.4
           },
           {
             "id": "c9121cebd7d11814",
@@ -1467,45 +1467,45 @@
             "college": "",
             "note": "",
             "seats": 10,
-            "applicants": 60,
-            "ratio": 6
+            "applicants": 61,
+            "ratio": 6.1
           }
         ],
         "total": {
           "seats": 277,
-          "applicants": 2739,
-          "ratio": 9.89
+          "applicants": 2758,
+          "ratio": 9.96
         },
-        "contentHash": "1a0a96bd5d795ccda52b7f30adc1018573f9967285e5591a91dbdf4a32316610",
-        "collectedAt": "2026-09-09T08:59:06.145Z"
+        "contentHash": "2f46104f846cf63fcf9700495a5d87feb75cb97628bc24aa9e41eefdaf0dc827",
+        "collectedAt": "2026-09-09T09:09:14.964Z"
       },
-      "previousSourceAt": "2026-09-09T17:40:00+09:00",
+      "previousSourceAt": "2026-09-09T17:50:00+09:00",
       "previousApplicants": {
-        "7d6cfb27e2fce23e": 450,
-        "fade7019606a4c85": 1050,
-        "55294da72e03c39f": 200,
+        "7d6cfb27e2fce23e": 454,
+        "fade7019606a4c85": 1052,
+        "55294da72e03c39f": 202,
         "13d716e28b9f4582": 31,
         "e94e52fd8fbfa735": 33,
-        "72485b6a3c9f9b12": 21,
-        "7e507ccaddda3045": 142,
+        "72485b6a3c9f9b12": 22,
+        "7e507ccaddda3045": 144,
         "a9568dea830bbac9": 22,
         "256e76ea5706b314": 32,
         "6a3ea71ebb08d793": 43,
-        "af616e8d2a58a193": 205,
-        "a5916fb3d256e77f": 114,
+        "af616e8d2a58a193": 207,
+        "a5916fb3d256e77f": 115,
         "ab9000ccdaed9617": 16,
         "2e9d5696d3078ed4": 32,
-        "b7c602992eca89c3": 43,
-        "f99dc8b611edaedd": 73,
+        "b7c602992eca89c3": 44,
+        "f99dc8b611edaedd": 75,
         "36ea3f9298931af1": 22,
-        "12057b576fc95349": 60,
+        "12057b576fc95349": 61,
         "e4464bcb2253b317": 18,
-        "ee473afccbe1121d": 33,
+        "ee473afccbe1121d": 34,
         "c9121cebd7d11814": 20,
-        "b064454e6860dec6": 59
+        "b064454e6860dec6": 60
       },
-      "lastCheckedAt": "2026-09-09T08:59:06.145Z",
-      "lastSuccessfulCheckAt": "2026-09-09T08:59:06.145Z",
+      "lastCheckedAt": "2026-09-09T09:09:14.964Z",
+      "lastSuccessfulCheckAt": "2026-09-09T09:09:14.964Z",
       "error": null
     },
     {
@@ -1527,7 +1527,7 @@
       "outcome": "updated",
       "snapshot": {
         "year": 2027,
-        "sourceAt": "2026-09-09T17:50:00+09:00",
+        "sourceAt": "2026-09-09T18:00:00+09:00",
         "isFinal": false,
         "sourceUrl": "https://ratio.uwayapply.com/Sl5KTThXclc4OUpmJSY6Jko3ZlRm",
         "track": "[정원내]논술위주(논술전형)",
@@ -1539,8 +1539,8 @@
             "college": "",
             "note": "",
             "seats": 29,
-            "applicants": 91,
-            "ratio": 3.14
+            "applicants": 93,
+            "ratio": 3.21
           },
           {
             "id": "cb05d91d136ac82c",
@@ -1549,8 +1549,8 @@
             "college": "인문사회계",
             "note": "",
             "seats": 28,
-            "applicants": 42,
-            "ratio": 1.5
+            "applicants": 43,
+            "ratio": 1.54
           },
           {
             "id": "03406c1b8046e0aa",
@@ -1559,8 +1559,8 @@
             "college": "인문사회계",
             "note": "",
             "seats": 32,
-            "applicants": 48,
-            "ratio": 1.5
+            "applicants": 50,
+            "ratio": 1.56
           },
           {
             "id": "2ec8992cc419ae6f",
@@ -1579,8 +1579,8 @@
             "college": "인문사회계",
             "note": "",
             "seats": 30,
-            "applicants": 56,
-            "ratio": 1.87
+            "applicants": 58,
+            "ratio": 1.93
           },
           {
             "id": "11409c3ed045fc9b",
@@ -1619,8 +1619,8 @@
             "college": "공학계",
             "note": "",
             "seats": 24,
-            "applicants": 35,
-            "ratio": 1.46
+            "applicants": 36,
+            "ratio": 1.5
           },
           {
             "id": "d13d32cbc996d95d",
@@ -1695,17 +1695,17 @@
         ],
         "total": {
           "seats": 309,
-          "applicants": 448,
-          "ratio": 1.45
+          "applicants": 456,
+          "ratio": 1.48
         },
-        "contentHash": "cea69d2b14af2625591a9a890bbb9386851fe0248f760d7729f427c529e667fd",
-        "collectedAt": "2026-09-09T08:59:06.145Z"
+        "contentHash": "d64d70d2ef8788205a6fc7726da6a5f0c83c2c98cc2bbfd1debe972ebe59a686",
+        "collectedAt": "2026-09-09T09:09:14.965Z"
       },
-      "previousSourceAt": "2026-09-09T17:40:00+09:00",
+      "previousSourceAt": "2026-09-09T17:50:00+09:00",
       "previousApplicants": {
         "5919c93d4be4c420": 91,
         "cb05d91d136ac82c": 42,
-        "03406c1b8046e0aa": 46,
+        "03406c1b8046e0aa": 48,
         "2ec8992cc419ae6f": 27,
         "6c966f1130b0b819": 56,
         "11409c3ed045fc9b": 18,
@@ -1720,8 +1720,8 @@
         "13c32998c87b2aef": 10,
         "b530fd6cb46b022c": 8
       },
-      "lastCheckedAt": "2026-09-09T08:59:06.145Z",
-      "lastSuccessfulCheckAt": "2026-09-09T08:59:06.145Z",
+      "lastCheckedAt": "2026-09-09T09:09:14.965Z",
+      "lastSuccessfulCheckAt": "2026-09-09T09:09:14.965Z",
       "error": null
     },
     {
@@ -1843,8 +1843,8 @@
         "75108c53ddbf5513": 11,
         "4dc0ffe1ff75a12c": 11
       },
-      "lastCheckedAt": "2026-09-09T08:59:06.145Z",
-      "lastSuccessfulCheckAt": "2026-09-09T08:59:06.145Z",
+      "lastCheckedAt": "2026-09-09T09:09:14.965Z",
+      "lastSuccessfulCheckAt": "2026-09-09T09:09:14.965Z",
       "error": null
     },
     {
@@ -1866,7 +1866,7 @@
       "outcome": "updated",
       "snapshot": {
         "year": 2027,
-        "sourceAt": "2026-09-09T17:50:00+09:00",
+        "sourceAt": "2026-09-09T18:00:00+09:00",
         "isFinal": false,
         "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio11630451.html",
         "track": "논술",
@@ -2018,8 +2018,8 @@
             "college": "인문",
             "note": "",
             "seats": 8,
-            "applicants": 16,
-            "ratio": 2
+            "applicants": 17,
+            "ratio": 2.13
           },
           {
             "id": "c63a14668bdfb33c",
@@ -2104,13 +2104,13 @@
         ],
         "total": {
           "seats": 231,
-          "applicants": 204,
-          "ratio": 0.88
+          "applicants": 205,
+          "ratio": 0.89
         },
-        "contentHash": "039126972bb3f310326a7e28e8114c067a8bfd933fa05a8949e0973cd8fda466",
-        "collectedAt": "2026-09-09T08:59:06.146Z"
+        "contentHash": "d640f21a7b391396b151143286cfc20bbd9a92dafc1dca1fc174fff5b919f974",
+        "collectedAt": "2026-09-09T09:09:14.965Z"
       },
-      "previousSourceAt": "2026-09-09T17:40:00+09:00",
+      "previousSourceAt": "2026-09-09T17:50:00+09:00",
       "previousApplicants": {
         "386768ac5800d507": 43,
         "291ecf6e5c9a872a": 2,
@@ -2136,8 +2136,8 @@
         "1a15a1aaa201efed": 47,
         "1a9adb4670269924": 12
       },
-      "lastCheckedAt": "2026-09-09T08:59:06.146Z",
-      "lastSuccessfulCheckAt": "2026-09-09T08:59:06.146Z",
+      "lastCheckedAt": "2026-09-09T09:09:14.965Z",
+      "lastSuccessfulCheckAt": "2026-09-09T09:09:14.965Z",
       "error": null
     },
     {
@@ -2704,8 +2704,8 @@
         "6032a29639fd4629": 21,
         "a640423300bae943": 13
       },
-      "lastCheckedAt": "2026-09-09T08:59:06.146Z",
-      "lastSuccessfulCheckAt": "2026-09-09T08:59:06.146Z",
+      "lastCheckedAt": "2026-09-09T09:09:14.966Z",
+      "lastSuccessfulCheckAt": "2026-09-09T09:09:14.966Z",
       "error": null
     },
     {
@@ -2725,10 +2725,10 @@
       "intervalMinutes": 10,
       "cutoffAt": "2026-09-11T14:00:00+09:00",
       "closeAt": "2026-09-11T17:00:00+09:00",
-      "outcome": "unchanged",
+      "outcome": "updated",
       "snapshot": {
         "year": 2027,
-        "sourceAt": "2026-09-09T17:00:00+09:00",
+        "sourceAt": "2026-09-09T18:00:00+09:00",
         "isFinal": false,
         "sourceUrl": "https://ratio.uwayapply.com/Sl5KZiVgJldhYkpmJSY6Jko3ZlRm",
         "track": "논술[논술우수자전형]",
@@ -2740,8 +2740,8 @@
             "college": "",
             "note": "",
             "seats": 87,
-            "applicants": 74,
-            "ratio": 0.85
+            "applicants": 78,
+            "ratio": 0.9
           },
           {
             "id": "6d41dfe3c0c5d7f5",
@@ -2750,8 +2750,8 @@
             "college": "",
             "note": "",
             "seats": 53,
-            "applicants": 22,
-            "ratio": 0.42
+            "applicants": 23,
+            "ratio": 0.43
           },
           {
             "id": "4b52eea3d3363556",
@@ -2806,24 +2806,24 @@
         ],
         "total": {
           "seats": 182,
-          "applicants": 113,
-          "ratio": 0.62
+          "applicants": 118,
+          "ratio": 0.65
         },
-        "contentHash": "29843230b346c5140942105ae7b2be3eb59ebc7309465038db13e8657616dd77",
-        "collectedAt": "2026-09-09T08:08:25.061Z"
+        "contentHash": "4ca476cdb692754ae120523d8ec7f4fb61149c0ea06770af11aba98896b72668",
+        "collectedAt": "2026-09-09T09:09:14.966Z"
       },
-      "previousSourceAt": "2026-09-09T16:00:00+09:00",
+      "previousSourceAt": "2026-09-09T17:00:00+09:00",
       "previousApplicants": {
-        "b9b921a5e01f785c": 72,
-        "6d41dfe3c0c5d7f5": 21,
+        "b9b921a5e01f785c": 74,
+        "6d41dfe3c0c5d7f5": 22,
         "4b52eea3d3363556": 1,
-        "3ebaec7c7a616924": 2,
+        "3ebaec7c7a616924": 3,
         "cb8c6af773d8fa11": 3,
         "f46dea9d31dfb2d3": 4,
         "9bdaae2a4dfa2911": 6
       },
-      "lastCheckedAt": "2026-09-09T08:59:06.146Z",
-      "lastSuccessfulCheckAt": "2026-09-09T08:59:06.146Z",
+      "lastCheckedAt": "2026-09-09T09:09:14.966Z",
+      "lastSuccessfulCheckAt": "2026-09-09T09:09:14.966Z",
       "error": null
     },
     {
@@ -3060,8 +3060,8 @@
         "3f13424abcaab6e0": 75,
         "2df5c5338d26bb93": 119
       },
-      "lastCheckedAt": "2026-09-09T08:59:06.146Z",
-      "lastSuccessfulCheckAt": "2026-09-09T08:59:06.146Z",
+      "lastCheckedAt": "2026-09-09T09:09:14.966Z",
+      "lastSuccessfulCheckAt": "2026-09-09T09:09:14.966Z",
       "error": null
     },
     {
@@ -3083,7 +3083,7 @@
       "outcome": "updated",
       "snapshot": {
         "year": 2027,
-        "sourceAt": "2026-09-09T17:50:00+09:00",
+        "sourceAt": "2026-09-09T18:00:00+09:00",
         "isFinal": false,
         "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio11540991.html",
         "track": "논술우수자 전형",
@@ -3115,8 +3115,8 @@
             "college": "",
             "note": "",
             "seats": 15,
-            "applicants": 146,
-            "ratio": 9.73
+            "applicants": 147,
+            "ratio": 9.8
           },
           {
             "id": "cdecee6477c1bf86",
@@ -3125,8 +3125,8 @@
             "college": "",
             "note": "",
             "seats": 19,
-            "applicants": 250,
-            "ratio": 13.16
+            "applicants": 253,
+            "ratio": 13.32
           },
           {
             "id": "141352502a2c456d",
@@ -3135,8 +3135,8 @@
             "college": "",
             "note": "",
             "seats": 11,
-            "applicants": 327,
-            "ratio": 29.73
+            "applicants": 329,
+            "ratio": 29.91
           },
           {
             "id": "a920a40f4eb8f9dd",
@@ -3145,8 +3145,8 @@
             "college": "",
             "note": "",
             "seats": 22,
-            "applicants": 74,
-            "ratio": 3.36
+            "applicants": 75,
+            "ratio": 3.41
           },
           {
             "id": "184abd3c9ecb1c48",
@@ -3155,8 +3155,8 @@
             "college": "",
             "note": "",
             "seats": 20,
-            "applicants": 230,
-            "ratio": 11.5
+            "applicants": 232,
+            "ratio": 11.6
           },
           {
             "id": "ad6506d789217466",
@@ -3165,31 +3165,31 @@
             "college": "",
             "note": "",
             "seats": 7,
-            "applicants": 72,
-            "ratio": 10.29
+            "applicants": 73,
+            "ratio": 10.43
           }
         ],
         "total": {
           "seats": 198,
-          "applicants": 1463,
-          "ratio": 7.39
+          "applicants": 1473,
+          "ratio": 7.44
         },
-        "contentHash": "291f906b9d5ed30d920fa70b1d1d58d1e0dfbe2363234527dc6f7b3bea959e58",
-        "collectedAt": "2026-09-09T08:59:06.147Z"
+        "contentHash": "9cce157c37be5b856bb662335cec594e5c640f606c228249e615019c6431ba08",
+        "collectedAt": "2026-09-09T09:09:14.967Z"
       },
-      "previousSourceAt": "2026-09-09T17:40:00+09:00",
+      "previousSourceAt": "2026-09-09T17:50:00+09:00",
       "previousApplicants": {
-        "e4f5992903ade0ac": 224,
-        "8db3e0acd5718693": 136,
-        "af6a3a7d36676f4e": 144,
-        "cdecee6477c1bf86": 249,
-        "141352502a2c456d": 325,
+        "e4f5992903ade0ac": 227,
+        "8db3e0acd5718693": 137,
+        "af6a3a7d36676f4e": 146,
+        "cdecee6477c1bf86": 250,
+        "141352502a2c456d": 327,
         "a920a40f4eb8f9dd": 74,
-        "184abd3c9ecb1c48": 229,
+        "184abd3c9ecb1c48": 230,
         "ad6506d789217466": 72
       },
-      "lastCheckedAt": "2026-09-09T08:59:06.147Z",
-      "lastSuccessfulCheckAt": "2026-09-09T08:59:06.147Z",
+      "lastCheckedAt": "2026-09-09T09:09:14.967Z",
+      "lastSuccessfulCheckAt": "2026-09-09T09:09:14.967Z",
       "error": null
     }
   ]
