@@ -3,8 +3,9 @@ name: Collect and publish dashboard
 on:
   workflow_dispatch:
   schedule:
-    # Offset from the busy beginning of each hour. GitHub may delay scheduled runs.
-    - cron: '3-59/10 * * * *'
+    # Explicit ten-minute slots; changing this expression re-registers the schedule.
+    # GitHub may delay or drop scheduled events, even when this workflow is active.
+    - cron: '1,11,21,31,41,51 * * * *'
   push:
     branches: [main, master]
     paths:
