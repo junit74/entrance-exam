@@ -48,6 +48,24 @@ npm run publish:watch  # 시작 시와 이후 약 10분마다 수집하고 게�
 
 macOS에서 잠들지 않게 실행하려면 `caffeinate -i npm run publish:watch`를 사용합니다. 종료는 `Ctrl+C`이며 컴퓨터 재시작 후에는 다시 실행해야 합니다. `npm start`는 로컬 화면용이고, 공개 사이트 자동 갱신은 `publish:watch`가 담당합니다.
 
+### macOS 자동 재시작
+
+계속 운영하려면 기존 `npm start`와 `publish:watch`를 `Ctrl+C`로 종료한 뒤 아래 명령으로 서비스를 설치합니다.
+
+```sh
+npm run service:install  # 최초 설치 및 즉시 시작
+npm run service:status   # 서버·게시·잠자기 방지 프로세스 상태
+npm run service:stop     # 모두 중지하고 로그인 시 자동 실행도 해제
+npm run service:start    # 다시 시작하고 로그인 시 자동 실행 복구
+npm run service:uninstall # 서비스 설정 제거 (수집 데이터와 로그 보존)
+```
+
+macOS `launchd`가 로컬 서버와 10분 주기 GitHub 게시 프로세스를 각각 감시합니다. 프로세스가 종료되면 재시작하며, 연속 종료 시 실행 간격을 10초로 제한합니다. 터미널을 닫아도 실행되고, 재부팅 후 사용자 로그인 시 자동으로 시작합니다. `caffeinate -i`도 별도 서비스로 실행하여 화면은 꺼져도 자동 잠자기는 방지합니다. 덮개를 닫거나 직접 잠자기를 선택한 경우, 전원이 꺼진 동안에는 수집할 수 없습니다.
+
+설치 시 현재 Node 실행 경로와 프로젝트 경로를 저장합니다. 프로젝트를 이동하거나 Node 설치 경로를 바꾸면 다시 설치하세요. `PORT`, `DATA_DIR`, `PUBLISH_WORKSPACE`, `PUBLISH_REMOTE`를 지정하려면 설치 명령 앞에 설정합니다. 서비스 설치 후에는 수동 실행 명령을 중복 실행하지 마세요. 의도적으로 중지할 때는 프로세스 종료 대신 `service:stop`을 사용해야 합니다.
+
+설정 파일은 `~/Library/LaunchAgents/kr.entrance-exam.*.plist`, 로그는 `~/Library/Logs/entrance-exam/`의 `server.log`, `publisher.log` 및 각각의 `.error.log`에 저장합니다. 프로세스 재시작은 네트워크 차단이나 Git 충돌까지 해결하지 않으므로 게시 로그도 확인해야 합니다.
+
 게시 작업 폴더는 `tmp/pages-publisher`이며 개발 중인 작업 트리를 자동 커밋하지 않습니다. `PUBLISH_WORKSPACE`와 `PUBLISH_REMOTE`로 별도 경로·원격 주소를 지정할 수 있습니다. 게시 폴더에서 미완료 변경이나 원격 커밋 충돌을 발견하면 파일을 보존하고 중단합니다. 해당 폴더의 Git 상태를 확인한 뒤 해결해야 합니다.
 
 저장소의 **Settings → Secrets and variables → Actions → Variables**에 `COLLECTION_MODE=local`을 설정했습니다. 이 모드에서 Actions는 게시된 자료를 배포하고 클라우드 직접 수집은 건너뜁니다. 예약 이벤트도 배포하지 않습니다. 해당 변수를 제거하면 아래의 GitHub 직접 수집 방식으로 동작하지만, 진학어플라이의 접속 제한이 해소되어야 설정된 대학 모두 갱신할 수 있습니다.

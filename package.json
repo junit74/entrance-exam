@@ -9,6 +9,11 @@
     "collect": "node src/collect.mjs",
     "publish": "node scripts/publish.mjs",
     "publish:watch": "node scripts/publish.mjs --watch",
+    "service:install": "node scripts/service.mjs install",
+    "service:start": "node scripts/service.mjs start",
+    "service:stop": "node scripts/service.mjs stop",
+    "service:status": "node scripts/service.mjs status",
+    "service:uninstall": "node scripts/service.mjs uninstall",
     "build": "node scripts/build.mjs",
     "test": "node --test test/*.test.mjs",
     "check": "node --check public/app.js && node --test test/*.test.mjs && node scripts/build.mjs"
