@@ -10,8 +10,8 @@
     "publish": "node scripts/publish.mjs",
     "publish:watch": "node scripts/publish.mjs --watch",
     "build": "node scripts/build.mjs",
-    "test": "node --test",
-    "check": "node --check public/app.js && node --test && node scripts/build.mjs"
+    "test": "node --test test/*.test.mjs",
+    "check": "node --check public/app.js && node --test test/*.test.mjs && node scripts/build.mjs"
   },
   "dependencies": { "cheerio": "1.2.0" }
 }

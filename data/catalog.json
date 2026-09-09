@@ -6,7 +6,7 @@
     "kyonggi": {
       "minimum": {
         "text": "논술전형 수능최저학력기준 없음.",
-        "sourceUrl": "https://enter.kyonggi.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=130&CONTENTS_NO=2&TYPE_CODE=C0601"
+        "sourceUrl": "https://enter.kyonggi.ac.kr/ajaxfile/CMN_SVC/FileView.do?GBN=X12&SITE_NO=2&MENU_NO=120&CONTENTS_NO=1&TYPE_CODE=C0601"
       }
     },
     "suwon": {
@@ -96,9 +96,11 @@
     },
     "2577dd9194e5c34a": {
       "name": "경영공학대학",
-      "category": "mixed",
+      "category": "humanities",
       "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970461.html",
-      "note": "공학 외 전공이 포함될 수 있습니다. 선택 가능한 전공과 제한은 공식 모집요강에서 확인하세요."
+      "note": "선택전공은 경영·글로벌비즈니스·회계·경제금융·호텔관광외식경영입니다.",
+      "classificationSourceUrl": "https://www.suwon.ac.kr/index.html?menuno=774",
+      "classificationGuideUrl": "https://ipsi.suwon.ac.kr/upload_data/guide/1787878393_6045.pdf"
     },
     "746f331363687f9f": {
       "name": "바이오공학과",
@@ -117,8 +119,11 @@
     },
     "d6f09677d0613130": {
       "name": "도시부동산학과",
-      "category": "humanities",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970461.html"
+      "category": "mixed",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970461.html",
+      "note": "도시계획·부동산 융합 모집단위입니다. 학교는 공학계열로 분류하며, 전공소개에는 도시공학과 부동산학을 함께 안내합니다.",
+      "classificationSourceUrl": "https://www.suwon.ac.kr/index.html?menuno=2546",
+      "classificationGuideUrl": "https://ipsi.suwon.ac.kr/upload_data/guide/1787878393_6045.pdf"
     },
     "3da822dd190ec82c": {
       "name": "기계공학부",
@@ -218,7 +223,8 @@
     "27124333d85ee8ea": {
       "name": "공학융합자율전공",
       "category": "engineering",
-      "sourceUrl": "https://ratio.uwayapply.com/Sl5KfExgMDhgfWE5SmYlJjomSjdmVGY="
+      "sourceUrl": "https://ratio.uwayapply.com/Sl5KfExgMDhgfWE5SmYlJjomSjdmVGY=",
+      "note": "해당 계열 안에서 전공을 선택합니다. 전공 배정에는 정원 및 성적 등의 조건이 적용되므로 2027 모집요강 29쪽을 확인하세요."
     },
     "cb843ec2fa581ad5": {
       "name": "전기·전자·통신공학부 · 전기공학전공",
@@ -248,7 +254,8 @@
     "4affe379bc569651": {
       "name": "ICT융합자율전공",
       "category": "engineering",
-      "sourceUrl": "https://ratio.uwayapply.com/Sl5KfExgMDhgfWE5SmYlJjomSjdmVGY="
+      "sourceUrl": "https://ratio.uwayapply.com/Sl5KfExgMDhgfWE5SmYlJjomSjdmVGY=",
+      "note": "해당 계열 안에서 전공을 선택합니다. 전공 배정에는 정원 및 성적 등의 조건이 적용되므로 2027 모집요강 29쪽을 확인하세요."
     },
     "7b50904e7a8c4023": {
       "name": "경영학부 · 융합경영전공",
@@ -268,7 +275,8 @@
     "b5aca04ae392ceab": {
       "name": "사회융합자율전공",
       "category": "humanities",
-      "sourceUrl": "https://ratio.uwayapply.com/Sl5KfExgMDhgfWE5SmYlJjomSjdmVGY="
+      "sourceUrl": "https://ratio.uwayapply.com/Sl5KfExgMDhgfWE5SmYlJjomSjdmVGY=",
+      "note": "해당 계열 안에서 전공을 선택합니다. 전공 배정에는 정원 및 성적 등의 조건이 적용되므로 2027 모집요강 29쪽을 확인하세요."
     },
     "cce0224b263faa5f": {
       "name": "자유전공학부",
@@ -279,7 +287,16 @@
     "3fed0b30989437ce": {
       "name": "AI융합 자율전공",
       "category": "engineering",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio30170741.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio30170741.html",
+      "historicalNames": {
+        "2025": "SW 자율전공",
+        "2026": "SW 자율전공"
+      },
+      "historicalNameSources": {
+        "2025": "https://iphak.tukorea.ac.kr/bbs/filedown.php?bbsid=guide&file_seq=2027&save_file_nm=guide_20260907185426_2035.pdf",
+        "2026": "https://iphak.tukorea.ac.kr/bbs/filedown.php?bbsid=guide&file_seq=2027&save_file_nm=guide_20260907185426_2035.pdf"
+      },
+      "historicalNote": "2027학년도에 SW자율전공에서 AI융합 자율전공으로 명칭이 변경되었습니다."
     },
     "312a331ea3df2784": {
       "name": "IT반도체융합 자율전공",
@@ -299,17 +316,40 @@
     "6f05eb5ffcc81691": {
       "name": "경영학부 경영 자율전공",
       "category": "humanities",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio30170741.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio30170741.html",
+      "historicalNames": {
+        "2025": "경영 자율전공",
+        "2026": "경영 자율전공"
+      },
+      "historicalNameSources": {
+        "2025": "https://iphak.tukorea.ac.kr/bbs/filedown.php?bbsid=guide&file_seq=2027&save_file_nm=guide_20260907185426_2035.pdf",
+        "2026": "https://iphak.tukorea.ac.kr/bbs/filedown.php?bbsid=guide&file_seq=2027&save_file_nm=guide_20260907185426_2035.pdf"
+      },
+      "historicalNote": "과거 경영 자율전공은 현재와 같은 경영학부 소속 모집단위입니다."
     },
     "1a8c32e8978b71d1": {
       "name": "경영학과",
       "category": "humanities",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "historicalNames": {
+        "2024": "경영학부"
+      },
+      "historicalNameSources": {
+        "2024": "https://admission.gachon.ac.kr/upload/BBS0011/20240621133138BPBQBZ.XLSX"
+      },
+      "historicalNote": "입학처는 2025학년도 명칭 변경을 경영학부 → 경영학과로 안내합니다. 과거 표에는 당시 명칭을 함께 표시합니다."
     },
     "27e4157add2aa819": {
       "name": "회계세무학과",
       "category": "humanities",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "historicalNames": {
+        "2024": "회계세무학전공"
+      },
+      "historicalNameSources": {
+        "2024": "https://admission.gachon.ac.kr/upload/BBS0011/20240621133138BPBQBZ.XLSX"
+      },
+      "historicalNote": "입학처는 2025학년도 명칭 변경을 회계세무학전공 → 회계세무학과로 안내합니다. 과거 표에는 당시 명칭을 함께 표시합니다."
     },
     "59eb0d5c9d0b272c": {
       "name": "관광경영학과",
@@ -413,8 +453,10 @@
     },
     "83454ee40d901be0": {
       "name": "바이오나노학과",
-      "category": "natural",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "category": "engineering",
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "classificationSourceUrl": "https://www.gachon.ac.kr/regltn/kor/2/15/synapView.do",
+      "note": "공식 학칙에서 공학사 학위 및 공학계열로 분류한 모집단위입니다."
     },
     "9975142a39dab7e3": {
       "name": "식품생명공학과",
@@ -434,7 +476,14 @@
     "73ea3212c41d35af": {
       "name": "반도체물리학과",
       "category": "natural",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "historicalNames": {
+        "2024": "물리학과"
+      },
+      "historicalNameSources": {
+        "2024": "https://admission.gachon.ac.kr/upload/BBS0011/20240621133138BPBQBZ.XLSX"
+      },
+      "historicalNote": "입학처는 2025학년도 명칭 변경을 물리학과 → 반도체물리학과로 안내합니다. 과거 표에는 당시 명칭을 함께 표시합니다."
     },
     "5dc022d391c0ca2e": {
       "name": "화학과",
@@ -443,9 +492,11 @@
     },
     "6f0f2bd1826306cf": {
       "name": "반도체대학",
-      "category": "mixed",
+      "category": "engineering",
       "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
-      "note": "공학 외 전공이 포함될 수 있습니다. 선택 가능한 전공과 제한은 공식 모집요강에서 확인하세요."
+      "note": "논술 모집단위는 전자공학과·반도체공학과로 구성된 반도체대학입니다.",
+      "classificationSourceUrl": "https://admission.gachon.ac.kr/upload/BBS0021/20260901154909TB3M9B.PDF",
+      "classificationSourcePage": 40
     },
     "9972103bd40a1f1f": {
       "name": "시스템반도체학과",
@@ -455,12 +506,26 @@
     "1329569be99c329c": {
       "name": "컴퓨터공학과",
       "category": "engineering",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "historicalNames": {
+        "2024": "컴퓨터공학전공"
+      },
+      "historicalNameSources": {
+        "2024": "https://admission.gachon.ac.kr/upload/BBS0011/20240621133138BPBQBZ.XLSX"
+      },
+      "historicalNote": "입학처는 2025학년도 명칭 변경을 컴퓨터공학전공 → 컴퓨터공학과로 안내합니다. 과거 표에는 당시 명칭을 함께 표시합니다."
     },
     "9f9af143bbdc970f": {
       "name": "인공지능학과",
       "category": "engineering",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "historicalNames": {
+        "2024": "인공지능전공"
+      },
+      "historicalNameSources": {
+        "2024": "https://admission.gachon.ac.kr/upload/BBS0011/20240621133138BPBQBZ.XLSX"
+      },
+      "historicalNote": "입학처는 2025학년도 명칭 변경을 인공지능전공 → 인공지능학과로 안내합니다. 과거 표에는 당시 명칭을 함께 표시합니다."
     },
     "8e43d643057c4a87": {
       "name": "인공지능시스템학과",
@@ -470,7 +535,18 @@
     "742f7bbfb91c1a72": {
       "name": "정보보호학과",
       "category": "engineering",
-      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html"
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
+      "historicalNames": {
+        "2026": "스마트보안학과",
+        "2025": "스마트보안학과",
+        "2024": "스마트보안전공"
+      },
+      "historicalNameSources": {
+        "2026": "https://admission.gachon.ac.kr/common/downLoad.asp?strFileName=2026%C7%D0%B3%E2%B5%B5%BC%F6%BD%C3%C0%D4%BD%C3%B0%E1%B0%FA.xlsx&strRealFileName=/upload/BBS0011/20260722104540Q5AZW2.XLSX",
+        "2025": "https://admission.gachon.ac.kr/common/downLoad.asp?strFileName=2025%C7%D0%B3%E2%B5%B5%20%BC%F6%BD%C3%20%C0%D4%BD%C3%B0%E1%B0%FA.xlsx&strRealFileName=/upload/BBS0011/20250511175238EG2MNZ.XLSX",
+        "2024": "https://admission.gachon.ac.kr/common/downLoad.asp?strFileName=%B0%A1%C3%B5%B4%EB%C7%D0%B1%B3_2024%C7%D0%B3%E2%B5%B5_%BC%F6%BD%C3_%C0%D4%BD%C3%B0%E1%B0%FA.xlsx&strRealFileName=/upload/BBS0011/20240621133138BPBQBZ.XLSX"
+      },
+      "historicalNote": "입학처의 명칭 변경 안내에 따라 스마트보안전공·스마트보안학과의 과거 자료를 연결했습니다."
     },
     "67ea6cbe1db2a7b9": {
       "name": "전기공학과",

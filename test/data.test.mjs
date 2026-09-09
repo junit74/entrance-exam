@@ -35,3 +35,14 @@ test('all collected essay units have reviewed categories; school minimums includ
  assert.match(catalog.units[find('gachon','바이오로직스학과')].minimumText,/2개 영역/);
  assert.match(catalog.units[find('sahmyook','약학과')].minimumText,/3개 영역/);
 });
+
+test('historical name links resolve uniquely within the school and include official evidence',()=>{
+ for(const school of latest.schools)for(const current of school.snapshot.rows){
+  const unit=catalog.units[current.id];
+  for(const [year,name] of Object.entries(unit.historicalNames||{})){
+   const matches=historical.schools[school.id][year].rows.filter(row=>row.name.replace(/\s/g,'')===name.replace(/\s/g,'')&&(!row.campus||row.campus===current.campus));
+   assert.equal(matches.length,1,`${school.id} ${current.name} ${year}: ambiguous or missing historical unit`);
+   assert.match(unit.historicalNameSources?.[year]||'',/^https:\/\//,`${school.id} ${current.name} ${year}: source required`);
+  }
+ }
+});
