@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "year": 2027,
-  "generatedAt": "2026-09-09T21:40:20.569Z",
+  "generatedAt": "2026-09-09T21:50:29.993Z",
   "schools": [
     {
       "id": "kyonggi",
@@ -22,7 +22,7 @@
       "outcome": "updated",
       "snapshot": {
         "year": 2027,
-        "sourceAt": "2026-09-10T06:40:00+09:00",
+        "sourceAt": "2026-09-10T06:50:00+09:00",
         "isFinal": false,
         "sourceUrl": "https://ratio.uwayapply.com/Sl5KJXJyV2FiOUpmJSY6Jko3ZlRm",
         "track": "논술(논술우수자전형)",
@@ -44,8 +44,8 @@
             "college": "자유교양대학",
             "note": "자유전공학부(수원, 서울)으로 선발된 학생은 2학년 진급 시 수원 및 서울캠퍼스에 개설된 학과(학부, 전공)중에서 자유롭게 선택하며, 전공 선택 후에도 변경 가능함 (단, 유아교육과, 예술체육대학 소속 모집단위, AI컴퓨터공학부, 연기학과, 애니메이션학과, 실용음악학과는 선택할 수 없음)",
             "seats": 92,
-            "applicants": 1012,
-            "ratio": 11
+            "applicants": 1014,
+            "ratio": 11.02
           },
           {
             "id": "6a9518615b2ac4d8",
@@ -70,21 +70,21 @@
         ],
         "total": {
           "seats": 239,
-          "applicants": 3469,
-          "ratio": 14.51
+          "applicants": 3471,
+          "ratio": 14.52
         },
-        "contentHash": "70bafda98a69c4dd09be6a653a8de00e2a19a0e73ede321fe3fc6f8822a698ab",
-        "collectedAt": "2026-09-09T21:40:20.373Z"
+        "contentHash": "a69b84e41772b0be4d223b43412934777eb597b72e97c417e8978f505c553948",
+        "collectedAt": "2026-09-09T21:50:29.793Z"
       },
-      "previousSourceAt": "2026-09-10T06:30:00+09:00",
+      "previousSourceAt": "2026-09-10T06:40:00+09:00",
       "previousApplicants": {
-        "8a29f30e4e7b5fa4": 1726,
+        "8a29f30e4e7b5fa4": 1727,
         "55e97acadfc48060": 1012,
         "6a9518615b2ac4d8": 631,
         "58e407e017eba44d": 99
       },
-      "lastCheckedAt": "2026-09-09T21:40:20.373Z",
-      "lastSuccessfulCheckAt": "2026-09-09T21:40:20.373Z",
+      "lastCheckedAt": "2026-09-09T21:50:29.793Z",
+      "lastSuccessfulCheckAt": "2026-09-09T21:50:29.793Z",
       "error": null
     },
     {
@@ -106,7 +106,7 @@
       "outcome": "updated",
       "snapshot": {
         "year": 2027,
-        "sourceAt": "2026-09-10T06:30:00+09:00",
+        "sourceAt": "2026-09-10T06:40:00+09:00",
         "isFinal": false,
         "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10970461.html",
         "track": "교과논술전형",
@@ -308,9 +308,9 @@
           "ratio": 5.76
         },
         "contentHash": "4c8b9db077853ebc56f3795e2e68320539e8eaccc8ec0a3b8ba72c31a852f40a",
-        "collectedAt": "2026-09-09T21:40:20.374Z"
+        "collectedAt": "2026-09-09T21:50:29.795Z"
       },
-      "previousSourceAt": "2026-09-10T06:20:00+09:00",
+      "previousSourceAt": "2026-09-10T06:30:00+09:00",
       "previousApplicants": {
         "db9122cf6c3f536e": 469,
         "2577dd9194e5c34a": 361,
@@ -323,7 +323,7 @@
         "a14cc2fe69520cfe": 245,
         "eba189c831ebfd75": 108,
         "450792704c0e7de6": 31,
-        "171ef1e784c83e7f": 98,
+        "171ef1e784c83e7f": 99,
         "eb3dde52c4da0e3e": 71,
         "dc1ed0939a5bd9d0": 20,
         "1d8b9b10df8b4ec5": 589,
@@ -332,8 +332,8 @@
         "690ddc9b15be9262": 35,
         "ec833ccb2ab66d15": 22
       },
-      "lastCheckedAt": "2026-09-09T21:40:20.374Z",
-      "lastSuccessfulCheckAt": "2026-09-09T21:40:20.374Z",
+      "lastCheckedAt": "2026-09-09T21:50:29.795Z",
+      "lastSuccessfulCheckAt": "2026-09-09T21:50:29.795Z",
       "error": null
     },
     {
@@ -355,7 +355,7 @@
       "outcome": "updated",
       "snapshot": {
         "year": 2027,
-        "sourceAt": "2026-09-10T06:40:00+09:00",
+        "sourceAt": "2026-09-10T06:50:00+09:00",
         "isFinal": false,
         "sourceUrl": "https://ratio.uwayapply.com/Sl5KfExgMDhgfWE5SmYlJjomSjdmVGY=",
         "track": "논술전형",
@@ -537,9 +537,9 @@
           "ratio": 8.27
         },
         "contentHash": "5430b30a5c31ac896980685c032b86383a7e2b552ae67c520caf95b1b99fc2f3",
-        "collectedAt": "2026-09-09T21:40:20.375Z"
+        "collectedAt": "2026-09-09T21:50:29.796Z"
       },
-      "previousSourceAt": "2026-09-10T06:30:00+09:00",
+      "previousSourceAt": "2026-09-10T06:40:00+09:00",
       "previousApplicants": {
         "a0b81d6d583b87df": 257,
         "0d70fa76f8ab00bc": 204,
@@ -559,8 +559,8 @@
         "945d689f52c5c542": 14,
         "b5aca04ae392ceab": 39
       },
-      "lastCheckedAt": "2026-09-09T21:40:20.375Z",
-      "lastSuccessfulCheckAt": "2026-09-09T21:40:20.375Z",
+      "lastCheckedAt": "2026-09-09T21:50:29.796Z",
+      "lastSuccessfulCheckAt": "2026-09-09T21:50:29.796Z",
       "error": null
     },
     {
@@ -582,7 +582,7 @@
       "outcome": "updated",
       "snapshot": {
         "year": 2027,
-        "sourceAt": "2026-09-10T06:30:00+09:00",
+        "sourceAt": "2026-09-10T06:40:00+09:00",
         "isFinal": false,
         "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio30170741.html",
         "track": "논술(논술우수자)",
@@ -654,9 +654,9 @@
           "ratio": 6.6
         },
         "contentHash": "1be47f53c1b676a3ee2918dd0584914ce5e4196a70bff37e80e33bf5ec0c1526",
-        "collectedAt": "2026-09-09T21:40:20.375Z"
+        "collectedAt": "2026-09-09T21:50:29.796Z"
       },
-      "previousSourceAt": "2026-09-10T06:20:00+09:00",
+      "previousSourceAt": "2026-09-10T06:30:00+09:00",
       "previousApplicants": {
         "cce0224b263faa5f": 417,
         "3fed0b30989437ce": 199,
@@ -665,8 +665,8 @@
         "11f78fd6141120f6": 142,
         "6f05eb5ffcc81691": 55
       },
-      "lastCheckedAt": "2026-09-09T21:40:20.375Z",
-      "lastSuccessfulCheckAt": "2026-09-09T21:40:20.375Z",
+      "lastCheckedAt": "2026-09-09T21:50:29.796Z",
+      "lastSuccessfulCheckAt": "2026-09-09T21:50:29.796Z",
       "error": null
     },
     {
@@ -688,7 +688,7 @@
       "outcome": "updated",
       "snapshot": {
         "year": 2027,
-        "sourceAt": "2026-09-10T06:30:00+09:00",
+        "sourceAt": "2026-09-10T06:40:00+09:00",
         "isFinal": false,
         "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10190711.html",
         "track": "논술 전형",
@@ -700,8 +700,8 @@
             "college": "인문계열",
             "note": "",
             "seats": 40,
-            "applicants": 1106,
-            "ratio": 27.65
+            "applicants": 1107,
+            "ratio": 27.68
           },
           {
             "id": "27e4157add2aa819",
@@ -830,8 +830,8 @@
             "college": "인문계열",
             "note": "",
             "seats": 46,
-            "applicants": 609,
-            "ratio": 13.24
+            "applicants": 610,
+            "ratio": 13.26
           },
           {
             "id": "f1148e0ed27f44b6",
@@ -1000,8 +1000,8 @@
             "college": "자연계열",
             "note": "",
             "seats": 31,
-            "applicants": 261,
-            "ratio": 8.42
+            "applicants": 262,
+            "ratio": 8.45
           },
           {
             "id": "9f9af143bbdc970f",
@@ -1130,8 +1130,8 @@
             "college": "자연계열",
             "note": "",
             "seats": 6,
-            "applicants": 1607,
-            "ratio": 267.83
+            "applicants": 1608,
+            "ratio": 268
           },
           {
             "id": "ee97b0de24b069c8",
@@ -1166,13 +1166,13 @@
         ],
         "total": {
           "seats": 1036,
-          "applicants": 16295,
+          "applicants": 16299,
           "ratio": 15.73
         },
-        "contentHash": "922e857a66aede30ba273d3955d9484a818f5fee15086ba27e3a347c14d5dbb3",
-        "collectedAt": "2026-09-09T21:40:20.376Z"
+        "contentHash": "00ce1b4b25c088d45dfffe605569fec55d38dbd4ac23d8ea3f60930852babcd0",
+        "collectedAt": "2026-09-09T21:50:29.796Z"
       },
-      "previousSourceAt": "2026-09-10T06:20:00+09:00",
+      "previousSourceAt": "2026-09-10T06:30:00+09:00",
       "previousApplicants": {
         "1a8c32e8978b71d1": 1106,
         "27e4157add2aa819": 149,
@@ -1186,7 +1186,7 @@
         "82596bd1f7a7c0c4": 146,
         "74e6f64e798a8a65": 241,
         "cd93bd82710e81f0": 162,
-        "9566316790eaf422": 983,
+        "9566316790eaf422": 984,
         "a2dccea1b20238a3": 609,
         "f1148e0ed27f44b6": 202,
         "d8ed3f97a3a44c24": 300,
@@ -1198,7 +1198,7 @@
         "4a06edbd25664ba4": 136,
         "83454ee40d901be0": 87,
         "9975142a39dab7e3": 127,
-        "8e2e9339de1a48bf": 92,
+        "8e2e9339de1a48bf": 93,
         "ed68df6d5207963b": 197,
         "73ea3212c41d35af": 72,
         "5dc022d391c0ca2e": 103,
@@ -1222,8 +1222,8 @@
         "28e719814cc3c769": 1001,
         "d21d878a3e74c5f3": 305
       },
-      "lastCheckedAt": "2026-09-09T21:40:20.376Z",
-      "lastSuccessfulCheckAt": "2026-09-09T21:40:20.376Z",
+      "lastCheckedAt": "2026-09-09T21:50:29.796Z",
+      "lastSuccessfulCheckAt": "2026-09-09T21:50:29.796Z",
       "error": null
     },
     {
@@ -1245,7 +1245,7 @@
       "outcome": "updated",
       "snapshot": {
         "year": 2027,
-        "sourceAt": "2026-09-10T06:30:00+09:00",
+        "sourceAt": "2026-09-10T06:40:00+09:00",
         "isFinal": false,
         "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10760741.html",
         "track": "논술우수자전형",
@@ -1267,8 +1267,8 @@
             "college": "",
             "note": "",
             "seats": 5,
-            "applicants": 1435,
-            "ratio": 287
+            "applicants": 1436,
+            "ratio": 287.2
           },
           {
             "id": "55294da72e03c39f",
@@ -1473,16 +1473,16 @@
         ],
         "total": {
           "seats": 277,
-          "applicants": 4381,
+          "applicants": 4382,
           "ratio": 15.82
         },
-        "contentHash": "371863d70c714eeadc8a0a514f2f7b690680da90a956864e1d8ae3373e494d28",
-        "collectedAt": "2026-09-09T21:40:20.376Z"
+        "contentHash": "59b4824ab9beb531e7a569c9c452d77f6278c01e1381d838d219acb0f7a96d73",
+        "collectedAt": "2026-09-09T21:50:29.797Z"
       },
-      "previousSourceAt": "2026-09-10T06:20:00+09:00",
+      "previousSourceAt": "2026-09-10T06:30:00+09:00",
       "previousApplicants": {
         "7d6cfb27e2fce23e": 700,
-        "fade7019606a4c85": 1434,
+        "fade7019606a4c85": 1435,
         "55294da72e03c39f": 358,
         "13d716e28b9f4582": 69,
         "e94e52fd8fbfa735": 54,
@@ -1504,8 +1504,8 @@
         "c9121cebd7d11814": 36,
         "b064454e6860dec6": 101
       },
-      "lastCheckedAt": "2026-09-09T21:40:20.376Z",
-      "lastSuccessfulCheckAt": "2026-09-09T21:40:20.376Z",
+      "lastCheckedAt": "2026-09-09T21:50:29.797Z",
+      "lastSuccessfulCheckAt": "2026-09-09T21:50:29.797Z",
       "error": null
     },
     {
@@ -1527,7 +1527,7 @@
       "outcome": "updated",
       "snapshot": {
         "year": 2027,
-        "sourceAt": "2026-09-10T06:40:00+09:00",
+        "sourceAt": "2026-09-10T06:50:00+09:00",
         "isFinal": false,
         "sourceUrl": "https://ratio.uwayapply.com/Sl5KTThXclc4OUpmJSY6Jko3ZlRm",
         "track": "[정원내]논술위주(논술전형)",
@@ -1699,9 +1699,9 @@
           "ratio": 2.69
         },
         "contentHash": "9f766860c9beb8b8b11a82eed707d924910dedf8c60529a107257caae63a1ccf",
-        "collectedAt": "2026-09-09T21:40:20.377Z"
+        "collectedAt": "2026-09-09T21:50:29.797Z"
       },
-      "previousSourceAt": "2026-09-10T06:30:00+09:00",
+      "previousSourceAt": "2026-09-10T06:40:00+09:00",
       "previousApplicants": {
         "5919c93d4be4c420": 167,
         "cb05d91d136ac82c": 81,
@@ -1720,8 +1720,8 @@
         "13c32998c87b2aef": 18,
         "b530fd6cb46b022c": 15
       },
-      "lastCheckedAt": "2026-09-09T21:40:20.377Z",
-      "lastSuccessfulCheckAt": "2026-09-09T21:40:20.377Z",
+      "lastCheckedAt": "2026-09-09T21:50:29.797Z",
+      "lastSuccessfulCheckAt": "2026-09-09T21:50:29.797Z",
       "error": null
     },
     {
@@ -1843,8 +1843,8 @@
         "75108c53ddbf5513": 11,
         "4dc0ffe1ff75a12c": 11
       },
-      "lastCheckedAt": "2026-09-09T21:40:20.377Z",
-      "lastSuccessfulCheckAt": "2026-09-09T21:40:20.377Z",
+      "lastCheckedAt": "2026-09-09T21:50:29.797Z",
+      "lastSuccessfulCheckAt": "2026-09-09T21:50:29.797Z",
       "error": null
     },
     {
@@ -1866,7 +1866,7 @@
       "outcome": "updated",
       "snapshot": {
         "year": 2027,
-        "sourceAt": "2026-09-10T06:30:00+09:00",
+        "sourceAt": "2026-09-10T06:40:00+09:00",
         "isFinal": false,
         "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio11630451.html",
         "track": "논술",
@@ -2108,9 +2108,9 @@
           "ratio": 1.59
         },
         "contentHash": "b8b54183cb2bc2c4541c4988a181626547b19885f9374ae6272239e6dde4a597",
-        "collectedAt": "2026-09-09T21:40:20.377Z"
+        "collectedAt": "2026-09-09T21:50:29.797Z"
       },
-      "previousSourceAt": "2026-09-10T06:20:00+09:00",
+      "previousSourceAt": "2026-09-10T06:30:00+09:00",
       "previousApplicants": {
         "386768ac5800d507": 81,
         "291ecf6e5c9a872a": 5,
@@ -2136,8 +2136,8 @@
         "1a15a1aaa201efed": 83,
         "1a9adb4670269924": 24
       },
-      "lastCheckedAt": "2026-09-09T21:40:20.377Z",
-      "lastSuccessfulCheckAt": "2026-09-09T21:40:20.377Z",
+      "lastCheckedAt": "2026-09-09T21:50:29.797Z",
+      "lastSuccessfulCheckAt": "2026-09-09T21:50:29.797Z",
       "error": null
     },
     {
@@ -2704,8 +2704,8 @@
         "6032a29639fd4629": 21,
         "a640423300bae943": 13
       },
-      "lastCheckedAt": "2026-09-09T21:40:20.377Z",
-      "lastSuccessfulCheckAt": "2026-09-09T21:40:20.377Z",
+      "lastCheckedAt": "2026-09-09T21:50:29.798Z",
+      "lastSuccessfulCheckAt": "2026-09-09T21:50:29.798Z",
       "error": null
     },
     {
@@ -2822,8 +2822,8 @@
         "f46dea9d31dfb2d3": 4,
         "9bdaae2a4dfa2911": 7
       },
-      "lastCheckedAt": "2026-09-09T21:40:20.378Z",
-      "lastSuccessfulCheckAt": "2026-09-09T21:40:20.378Z",
+      "lastCheckedAt": "2026-09-09T21:50:29.798Z",
+      "lastSuccessfulCheckAt": "2026-09-09T21:50:29.798Z",
       "error": null
     },
     {
@@ -3060,8 +3060,8 @@
         "3f13424abcaab6e0": 75,
         "2df5c5338d26bb93": 119
       },
-      "lastCheckedAt": "2026-09-09T21:40:20.378Z",
-      "lastSuccessfulCheckAt": "2026-09-09T21:40:20.378Z",
+      "lastCheckedAt": "2026-09-09T21:50:29.798Z",
+      "lastSuccessfulCheckAt": "2026-09-09T21:50:29.798Z",
       "error": null
     },
     {
@@ -3083,7 +3083,7 @@
       "outcome": "updated",
       "snapshot": {
         "year": 2027,
-        "sourceAt": "2026-09-10T06:30:00+09:00",
+        "sourceAt": "2026-09-10T06:40:00+09:00",
         "isFinal": false,
         "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio11540991.html",
         "track": "논술우수자 전형",
@@ -3175,21 +3175,21 @@
           "ratio": 12.08
         },
         "contentHash": "4bcf80fb8e9c8bcb05fc9c69178502507e126a755dc7ad4da6c5c32e7c360513",
-        "collectedAt": "2026-09-09T21:40:20.378Z"
+        "collectedAt": "2026-09-09T21:50:29.798Z"
       },
-      "previousSourceAt": "2026-09-10T06:20:00+09:00",
+      "previousSourceAt": "2026-09-10T06:30:00+09:00",
       "previousApplicants": {
         "e4f5992903ade0ac": 381,
         "8db3e0acd5718693": 246,
-        "af6a3a7d36676f4e": 251,
-        "cdecee6477c1bf86": 411,
+        "af6a3a7d36676f4e": 252,
+        "cdecee6477c1bf86": 412,
         "141352502a2c456d": 462,
         "a920a40f4eb8f9dd": 125,
         "184abd3c9ecb1c48": 393,
         "ad6506d789217466": 120
       },
-      "lastCheckedAt": "2026-09-09T21:40:20.378Z",
-      "lastSuccessfulCheckAt": "2026-09-09T21:40:20.378Z",
+      "lastCheckedAt": "2026-09-09T21:50:29.798Z",
+      "lastSuccessfulCheckAt": "2026-09-09T21:50:29.798Z",
       "error": null
     }
   ]
