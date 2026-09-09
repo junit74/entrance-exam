@@ -105,3 +105,26 @@ test('exam scopes preserve track and medical exceptions independently of dashboa
  assert.ok(scope('ajou','의학과').includes('생명과학Ⅱ'));
  assert.ok(!scope('ajou','약학과').includes('생명과학Ⅱ'));
 });
+
+test('unit exam formats resolve shared subjects to the official track and question counts',()=>{
+ const group=(school,name)=>catalog.schools[school].essayExam.groups.find(g=>g.units.includes(name));
+ const cases=[
+  ['kangnam','인공지능융합공학부','국어 3문항 + 수학 7문항'],
+  ['kangnam','부동산건설학부','국어 3문항 + 수학 7문항'],
+  ['kangnam','자유전공학부','국어 5문항 + 수학 5문항'],
+  ['kangnam','교육학과','국어 8문항 + 수학 2문항'],
+  ['suwon','아동가족복지학과','국어 5문항 + 수학 10문항'],
+  ['suwon','아트앤엔터테인먼트학부 디지털콘텐츠','국어 10문항 + 수학 5문항'],
+  ['gachon','금융·빅데이터학부','국어 5문항 + 수학 8문항'],
+  ['gachon','응용통계학과','국어 8문항 + 수학 5문항'],
+  ['sahmyook','창의융합자유전공학부','국어 8문항 + 수학 5문항'],
+  ['sahmyook','미래융합자유전공학부','국어 5문항 + 수학 8문항'],
+  ['hanshin','자유전공학부','국어 10문항 + 수학 5문항'],
+  ['hanshin','AI시스템반도체학','국어 5문항 + 수학 10문항'],
+ ];
+ for(const [school,name,format] of cases)assert.equal(group(school,name).format,format,`${school}: ${name}`);
+ for(const school of ['kangnam','suwon','gachon','sahmyook','hanshin']){
+  assert.ok(catalog.schools[school].essayExam.unitSourceUrl);
+  for(const g of catalog.schools[school].essayExam.groups)assert.ok(!g.format.includes(' / '),`${school}: only one question count per group`);
+ }
+});
