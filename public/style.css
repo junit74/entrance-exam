@@ -49,3 +49,6 @@ main{margin-left:230px;padding:0 38px;max-width:1900px}.topbar{height:83px;displ
 .ratio-legend-item i{width:7px;height:7px;border-radius:50%;background:var(--ratio-ink)}
 .ratio-legend p{font-size:11px;color:#647669;line-height:1.6;margin:0}
 @media(max-width:620px){.ratio-legend{padding:0 16px 14px;gap:9px}.ratio-legend-item{font-size:10px;padding:5px 7px}.ratio-legend p{font-size:10px}.ratio-badge{min-width:70px;padding:6px 8px}}
+
+/* Center the ratio heading over its colored value badge. */
+th.ratio-column,td.ratio-column{text-align:center}
