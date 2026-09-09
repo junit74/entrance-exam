@@ -7,6 +7,7 @@
   "scripts": {
     "start": "node src/server.mjs",
     "collect": "node src/collect.mjs",
+    "collect:browser": "node scripts/collect-browser.mjs",
     "publish": "node scripts/publish.mjs",
     "publish:watch": "node scripts/publish.mjs --watch",
     "service:install": "node scripts/service.mjs install",

@@ -1,0 +1,36 @@
+name: Verify browser collection
+on:
+  workflow_dispatch:
+  push:
+    branches: [fix/scrapling-production]
+    paths: ['scripts/**', 'test/**', 'requirements-crawler.txt', 'package*.json', '.github/workflows/verify-collection.yml']
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements-crawler.txt
+      - run: npm ci
+      - run: npm test
+      - run: |
+          python -m pip install -r requirements-crawler.txt
+          scrapling install
+      - run: xvfb-run -a npm run collect:browser
+      - run: npm run build
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: verified-browser-data
+          path: data/
+          retention-days: 3
