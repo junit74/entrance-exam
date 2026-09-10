@@ -44,7 +44,7 @@ export function parseRatio(html,school,{allowUndatedFinal=false}={}) {
   const timeText=clean($('#RatioTime').text()) || clean($('body').text()).slice(0,1800);
   const sourceAt=parseSourceTime(timeText);
   // Instructions saying a final result WILL be published do not mean final.
-  const isFinal=/최종\s*(경쟁률\s*)?마감\s*현황(?:입니다|\s|$)/.test(timeText) || /최종\s*경쟁률\s*현황입니다/.test(timeText);
+  const isFinal=/^최종\s*현황$/.test(clean($('#ID_DateStr').text())) || /최종\s*(경쟁률\s*)?마감\s*현황(?:입니다|\s|$)/.test(timeText) || /최종\s*경쟁률\s*현황입니다/.test(timeText);
   if(!sourceAt && !(isFinal && allowUndatedFinal))throw Error(isFinal?'최종 현황의 발표 일시 없음: 검토 필요':'자료 기준 일시 확인 불가');
   const candidates=[];
   $('table').each((_,el)=>{

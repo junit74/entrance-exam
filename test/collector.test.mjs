@@ -9,7 +9,7 @@ import {parseRatio,parseSourceTime} from '../src/parser.mjs';
 import {saveSnapshot,readJSON,withLock} from '../src/store.mjs';
 import {collect} from '../src/collect.mjs';
 const fixtures=new Map(await Promise.all(schools.map(async s=>[s.id,await readFile(new URL(`./fixtures/${s.id}.html`,import.meta.url),'utf8')])));
-const expected={kyonggi:[4,239],suwon:[19,434],koreatech:[17,150],tukorea:[6,200],gachon:[47,1036],sahmyook:[22,277],kangnam:[16,309],caudavinci:[7,48],hanshin:[23,231],inha:[48,457],yonseim:[7,182],ajou:[18,182],kau:[8,198]};
+const expected={kyonggi:[4,239],suwon:[19,434],koreatech:[17,150],tukorea:[6,200],gachon:[47,1036],sahmyook:[22,277],kangnam:[16,309],caudavinci:[7,48],hanshin:[23,231],inha:[48,457],yonseim:[7,182],ajou:[18,182],kau:[8,198],kusejong:[29,308]};
 for(const school of schools)test(`${school.name}: official essay table only, expanded spans and reconciled totals`,()=>{
  const p=parseRatio(fixtures.get(school.id),school);assert.equal(p.rows.length,expected[school.id][0]);assert.equal(p.total.seats,expected[school.id][1]);assert.equal(p.year,2027);
  assert.equal(p.rows.reduce((a,r)=>a+r.applicants,0),p.total.applicants);assert.equal(p.isFinal,false);
@@ -87,3 +87,20 @@ test('Davinci totals exclude Seoul only after validating the entire official ess
  assert.throws(()=>parseRatio($.html(),school),/검증|합계/);
  assert.throws(()=>parseRatio(html.replaceAll('캠퍼스','소재지'),school),/캠퍼스/);
 });
+
+test('Korea Sejong keeps regional pharmacy separate and recognizes an explicit undated Uway final',()=>temporary(async dir=>{
+ const school=schools.find(s=>s.id==='kusejong');
+ const current=parseRatio(fixtures.get(school.id),school);
+ assert.equal(current.rows.filter(r=>r.name==='약학과').length,1);
+ assert.deepEqual(current.total,{seats:308,applicants:1623,ratio:5.27});
+ assert.equal(current.isFinal,false,'a future final announcement is not a final result');
+ const historicalHtml=await readFile(new URL('./fixtures/kusejong-final-2026.html',import.meta.url),'utf8');
+ const final=parseRatio(historicalHtml,{...school,year:2026},{allowUndatedFinal:true});
+ assert.equal(final.isFinal,true);assert.equal(final.sourceAt,null);
+ assert.deepEqual(final.total,{seats:318,applicants:2820,ratio:8.87});
+ const checked='2026-09-12T00:00:00Z';
+ await saveSnapshot(dir,school,current,checked);
+ const result=await saveSnapshot(dir,school,{...final,year:2027},checked);
+ assert.equal(result.outcome,'review','an undated final must not overwrite dated interim history');
+ assert.equal(result.snapshot.sourceAt,current.sourceAt);
+}));

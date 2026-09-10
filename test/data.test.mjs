@@ -128,3 +128,29 @@ test('unit exam formats resolve shared subjects to the official track and questi
   for(const g of catalog.schools[school].essayExam.groups)assert.ok(!g.format.includes(' / '),`${school}: only one question count per group`);
  }
 });
+
+test('Korea Sejong preserves pharmacy scope, free-major minimums and three years of general-track history',()=>{
+ const school=latest.schools.find(s=>s.id==='kusejong'),exam=catalog.schools.kusejong.essayExam;
+ const group=name=>exam.groups.find(g=>g.units.includes(name));
+ assert.equal(exam.durationMinutes,120);
+ assert.deepEqual(group('컴퓨터소프트웨어학과').subjects,['수학','수학Ⅰ','수학Ⅱ','미적분']);
+ assert.equal(group('컴퓨터소프트웨어학과').format,'6문제 내외');
+ assert.deepEqual(group('첨단융합신약학과').subjects,group('컴퓨터소프트웨어학과').subjects);
+ assert.ok(group('약학과').subjects.includes('확률과 통계'));
+ assert.ok(!group('약학과').subjects.includes('기하'));
+ assert.equal(group('약학과').format,'3문제 내외(문제별 소문항 있음)');
+ assert.deepEqual(group('자유전공학부(글로벌비즈니스)').subjects,['국어','사회','도덕']);
+ const unit=name=>catalog.units[school.snapshot.rows.find(r=>r.name===name).id];
+ assert.match(unit('자유전공학부(과학기술)').minimumText,/1개 영역 3등급/);
+ assert.match(unit('첨단융합신약학과').minimumText,/2개 영역 등급 합 6/);
+ assert.match(unit('약학과').minimumText,/3개 영역 등급 합 5/);
+ assert.equal(school.snapshot.rows.filter(r=>catalog.units[r.id].category!=='natural').length,25);
+ for(const [year,count,seats,applicants] of [[2024,24,374,3716],[2025,26,242,3051],[2026,29,318,2820]]){
+  const rows=historical.schools.kusejong[year].rows;
+  assert.equal(rows.length,count);
+  assert.deepEqual(rows.reduce((a,r)=>[a[0]+r.seats,a[1]+r.applicants],[0,0]),[seats,applicants]);
+  for(const r of rows){assert.equal(r.track,'논술(일반전형)');assert.ok(Math.abs(r.ratio-r.applicants/r.seats)<.011);assert.equal(r.reserveRank,null);assert.equal(r.additionalAdmissions,null);}
+  if(year<2026)assert.ok(!rows.some(r=>r.name.startsWith('자유전공학부')),'new majors must not inherit another major history');
+ }
+ assert.equal(unit('컴퓨터소프트웨어학과').historicalNames[2025],'컴퓨터융합소프트웨어학과');
+});
