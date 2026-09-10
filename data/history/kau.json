@@ -19106,6 +19106,102 @@
       },
       "contentHash": "145465be7876fdba4ff2b9dd005f400231fecb69f59a911a0780aafa404b36be",
       "collectedAt": "2026-09-10T14:04:15.042Z"
+    },
+    {
+      "year": 2027,
+      "sourceAt": "2026-09-10T23:10:00+09:00",
+      "isFinal": false,
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio11540991.html",
+      "track": "논술우수자 전형",
+      "rows": [
+        {
+          "id": "e4f5992903ade0ac",
+          "name": "공과대학",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 51,
+          "applicants": 600,
+          "ratio": 11.76
+        },
+        {
+          "id": "8db3e0acd5718693",
+          "name": "AI융합대학",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 53,
+          "applicants": 445,
+          "ratio": 8.4
+        },
+        {
+          "id": "af6a3a7d36676f4e",
+          "name": "항공·경영대학(이학적성)",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 15,
+          "applicants": 392,
+          "ratio": 26.13
+        },
+        {
+          "id": "cdecee6477c1bf86",
+          "name": "항공·경영대학(사회적성)",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 19,
+          "applicants": 639,
+          "ratio": 33.63
+        },
+        {
+          "id": "141352502a2c456d",
+          "name": "항공운항학과",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 11,
+          "applicants": 673,
+          "ratio": 61.18
+        },
+        {
+          "id": "a920a40f4eb8f9dd",
+          "name": "자유전공학부(공학적성)",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 22,
+          "applicants": 212,
+          "ratio": 9.64
+        },
+        {
+          "id": "184abd3c9ecb1c48",
+          "name": "자유전공학부(이학적성)",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 20,
+          "applicants": 666,
+          "ratio": 33.3
+        },
+        {
+          "id": "ad6506d789217466",
+          "name": "자유전공학부(사회적성)",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 7,
+          "applicants": 211,
+          "ratio": 30.14
+        }
+      ],
+      "total": {
+        "seats": 198,
+        "applicants": 3838,
+        "ratio": 19.38
+      },
+      "contentHash": "81057c003b0cc0e07c621fbcc0471a0b2a6c03bb772edbdde02bb446a273c4a7",
+      "collectedAt": "2026-09-10T14:14:22.975Z"
     }
   ]
 }
