@@ -16266,6 +16266,82 @@
       },
       "contentHash": "f718d93e23e580d384d5e99bdc8a24dbccbfe7c56a164605015e383b30550074",
       "collectedAt": "2026-09-10T14:44:51.247Z"
+    },
+    {
+      "year": 2027,
+      "sourceAt": "2026-09-10T23:50:00+09:00",
+      "isFinal": false,
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio30170741.html",
+      "track": "논술(논술우수자)",
+      "rows": [
+        {
+          "id": "cce0224b263faa5f",
+          "name": "자유전공학부",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 70,
+          "applicants": 975,
+          "ratio": 13.93
+        },
+        {
+          "id": "3fed0b30989437ce",
+          "name": "AI융합 자율전공",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 31,
+          "applicants": 406,
+          "ratio": 13.1
+        },
+        {
+          "id": "312a331ea3df2784",
+          "name": "IT반도체융합 자율전공",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 26,
+          "applicants": 468,
+          "ratio": 18
+        },
+        {
+          "id": "19676aeff2897216",
+          "name": "스마트기계융합 자율전공",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 33,
+          "applicants": 485,
+          "ratio": 14.7
+        },
+        {
+          "id": "11f78fd6141120f6",
+          "name": "첨단융합 자율전공",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 25,
+          "applicants": 311,
+          "ratio": 12.44
+        },
+        {
+          "id": "6f05eb5ffcc81691",
+          "name": "경영학부 경영 자율전공",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 15,
+          "applicants": 129,
+          "ratio": 8.6
+        }
+      ],
+      "total": {
+        "seats": 200,
+        "applicants": 2774,
+        "ratio": 13.87
+      },
+      "contentHash": "0e1122c70686819c21dae9b2e0af934f2aa4cc7dfcb812a0d272b710e87cbaad",
+      "collectedAt": "2026-09-10T15:00:18.057Z"
     }
   ]
 }
