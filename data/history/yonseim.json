@@ -2066,6 +2066,92 @@
       },
       "contentHash": "ef60ea197f9f4de28a91ab7cb3ab6f162627612861215305db3427fba8f28ab1",
       "collectedAt": "2026-09-10T03:04:43.726Z"
+    },
+    {
+      "year": 2027,
+      "sourceAt": "2026-09-10T13:00:00+09:00",
+      "isFinal": false,
+      "sourceUrl": "https://ratio.uwayapply.com/Sl5KZiVgJldhYkpmJSY6Jko3ZlRm",
+      "track": "논술[논술우수자전형]",
+      "rows": [
+        {
+          "id": "b9b921a5e01f785c",
+          "name": "자율융합계열(인문)",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 87,
+          "applicants": 141,
+          "ratio": 1.62
+        },
+        {
+          "id": "6d41dfe3c0c5d7f5",
+          "name": "자율융합계열(자연)",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 53,
+          "applicants": 35,
+          "ratio": 0.66
+        },
+        {
+          "id": "4b52eea3d3363556",
+          "name": "기후에너지시스템공학부",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 5,
+          "applicants": 2,
+          "ratio": 0.4
+        },
+        {
+          "id": "3ebaec7c7a616924",
+          "name": "의공학부",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 5,
+          "applicants": 4,
+          "ratio": 0.8
+        },
+        {
+          "id": "cb8c6af773d8fa11",
+          "name": "AI반도체학부",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 5,
+          "applicants": 4,
+          "ratio": 0.8
+        },
+        {
+          "id": "f46dea9d31dfb2d3",
+          "name": "데이터사이언스학부",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 7,
+          "applicants": 4,
+          "ratio": 0.57
+        },
+        {
+          "id": "9bdaae2a4dfa2911",
+          "name": "소프트웨어학부",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 20,
+          "applicants": 7,
+          "ratio": 0.35
+        }
+      ],
+      "total": {
+        "seats": 182,
+        "applicants": 197,
+        "ratio": 1.08
+      },
+      "contentHash": "8992db8b10a2a71e8bb227417d6b13e3536e7a60e837ee2234f627ba2bc77699",
+      "collectedAt": "2026-09-10T04:05:34.457Z"
     }
   ]
 }
