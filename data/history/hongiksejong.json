@@ -294,6 +294,152 @@
       },
       "contentHash": "aabc822782d029b53d047f52a350ffb076e66174c6fe343da298c5f9dd6e36ca",
       "collectedAt": "2026-09-11T04:01:13.375Z"
+    },
+    {
+      "year": 2027,
+      "sourceAt": "2026-09-11T16:00:00+09:00",
+      "isFinal": false,
+      "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio11720892.html",
+      "track": "논술전형",
+      "rows": [
+        {
+          "id": "4d987269e6cfd543",
+          "name": "세종캠퍼스자율전공(자연·예능)",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 31,
+          "applicants": 408,
+          "ratio": 13.16
+        },
+        {
+          "id": "bb1d9ed91bcad4cc",
+          "name": "세종캠퍼스자율전공(인문·예능)",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 31,
+          "applicants": 526,
+          "ratio": 16.97
+        },
+        {
+          "id": "e393dad4a13e6f51",
+          "name": "AID융합과학기술대학자율전공",
+          "campus": "",
+          "college": "AID융합과학기술대학",
+          "note": "",
+          "seats": 10,
+          "applicants": 85,
+          "ratio": 8.5
+        },
+        {
+          "id": "53e4870268dd6185",
+          "name": "전자전기융합공학과",
+          "campus": "",
+          "college": "AID융합과학기술대학",
+          "note": "",
+          "seats": 11,
+          "applicants": 111,
+          "ratio": 10.09
+        },
+        {
+          "id": "6af715522161a71b",
+          "name": "소프트웨어융합학과",
+          "campus": "",
+          "college": "AID융합과학기술대학",
+          "note": "",
+          "seats": 14,
+          "applicants": 119,
+          "ratio": 8.5
+        },
+        {
+          "id": "195bf6d69ac27de7",
+          "name": "나노반도체공학과",
+          "campus": "",
+          "college": "AID융합과학기술대학",
+          "note": "",
+          "seats": 9,
+          "applicants": 72,
+          "ratio": 8
+        },
+        {
+          "id": "94e5da86f30bc363",
+          "name": "건축공학부",
+          "campus": "",
+          "college": "AID융합과학기술대학",
+          "note": "",
+          "seats": 12,
+          "applicants": 140,
+          "ratio": 11.67
+        },
+        {
+          "id": "04fb38018f2c511a",
+          "name": "AI기계융합공학과",
+          "campus": "",
+          "college": "AID융합과학기술대학",
+          "note": "",
+          "seats": 10,
+          "applicants": 79,
+          "ratio": 7.9
+        },
+        {
+          "id": "ee1093cc2f83facb",
+          "name": "조선해양모빌리티공학과",
+          "campus": "",
+          "college": "AID융합과학기술대학",
+          "note": "",
+          "seats": 7,
+          "applicants": 56,
+          "ratio": 8
+        },
+        {
+          "id": "563d98c5606e1f10",
+          "name": "바이오화학융합공학과",
+          "campus": "",
+          "college": "AID융합과학기술대학",
+          "note": "",
+          "seats": 9,
+          "applicants": 76,
+          "ratio": 8.44
+        },
+        {
+          "id": "929f499ef40dba86",
+          "name": "게임학부 게임소프트웨어전공(공학계)",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 7,
+          "applicants": 42,
+          "ratio": 6
+        },
+        {
+          "id": "eb4cc1d20d4f2611",
+          "name": "상경학부",
+          "campus": "",
+          "college": "상경대학",
+          "note": "",
+          "seats": 30,
+          "applicants": 317,
+          "ratio": 10.57
+        },
+        {
+          "id": "8e9f075fffdc2564",
+          "name": "광고홍보학부",
+          "campus": "",
+          "college": "",
+          "note": "",
+          "seats": 14,
+          "applicants": 157,
+          "ratio": 11.21
+        }
+      ],
+      "total": {
+        "seats": 195,
+        "applicants": 2188,
+        "ratio": 11.22
+      },
+      "contentHash": "c06f24dc6c5a37cf02ecbcaa5e346d4abee5d39eeb25e432e156a13094f01f89",
+      "collectedAt": "2026-09-11T07:03:35.974Z"
     }
   ]
 }
