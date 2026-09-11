@@ -147,3 +147,14 @@
 확인한 경쟁률 원문에는 충원 인원·예비번호가 없습니다. 2025 입시결과 표의 충원합격순위 열은 학생부교과·학생부종합에 해당하므로 논술 자료로 가져오지 않습니다. 해당 값은 0으로 채우지 않고 미확인으로 보존합니다.
 
 유웨이의 명시적인 `ID_DateStr: 최종현황` 표기를 최종 자료로 인식하도록 보완했습니다. 날짜 없는 최종 자료는 기존처럼 검토 대상으로 보관하여, 발표 시각이 있는 이력을 임의로 덮어쓰지 않습니다. 과거 3개년 최종 결과는 별도로 검증한 정적 자료이며 신규 시간별 이력은 추가 시점부터 쌓입니다.
+
+## 홍익대학교 세종캠퍼스 추가 (2026-09-11 확인)
+
+- [입학처 경쟁률 공지](https://www.hongik.ac.kr/kr/admission/notice-admission.do?articleNo=156446&mode=view)가 연결한 [2027 세종 원문](https://addon.jinhakapply.com/RatioV1/RatioH/Ratio11720892.html)의 논술전형 13개 모집단위·195명을 수집합니다. 서울 원문과 학교명이 같으므로 서비스명이 `수시모집(세종캠퍼스)`인지도 검증합니다.
+- 학교는 10:00부터 3시간 단위로 발표하며 9월 11일 16:00까지 공개, 접수는 18:00 마감입니다. 로컬 수집기는 기존처럼 약 10분마다 확인하고 더 최신 발표만 이력에 추가합니다. 최초 확인은 9월 11일 10:00 자료이며 이전 시간별 자료를 임의로 만들지 않습니다.
+- [2027 공식 모집요강](https://www.hongik.ac.kr/kr/admission/recruitment.do?mode=download&articleNo=152315&attachNo=91150#page=102) 인쇄 100~101쪽(PDF102~103)을 전체 페이지로 대조했습니다. 세종은 모두 70분입니다. 자연계 10개 모집단위는 수학Ⅰ·수학Ⅱ, 서술형 7문항이며 선택과목 미적분·기하·확률과 통계는 출제 범위에 없습니다. 인문계 3개는 별도 국어·사회 통합교과형으로 제시문 약 15개, 제시문당 하위 2문항, 선택형·단답형·단문형입니다.
+- 수능최저는 국어·수학·영어·탐구(사회/과학 최상위 1과목) 중 1개 영역 4등급 이내, 한국사 응시 필수입니다. 서울캠퍼스의 시험시간·출제범위·최저를 섞지 않습니다.
+- 공학 9개·캠퍼스자율전공(복합) 2개·인문 2개로 분류했습니다. 캠퍼스자율전공은 응시 유형과 입학 후 선택 전공을 구분하며 같은 모집요강 PDF129~130의 전공 선택 안내를 확인했습니다. [공식 위치 안내](https://www.hongik.ac.kr/kr/introduction/directions-sejong.do)를 근거로 세종 조치원을 표시합니다.
+- [입학처 과거 경쟁률](https://www.hongik.ac.kr/kr/admission/competition-rate.do)의 세종 링크를 통해 [2024](https://addon.jinhakapply.com/RatioV1/RatioH/Ratio11720352.html), [2025](https://addon.jinhakapply.com/RatioV1/RatioH/Ratio11720522.html), [2026](https://addon.jinhakapply.com/RatioV1/RatioH/Ratio11720712.html) 각 10개 모집단위를 확인했습니다. 모집/지원 합계는 각각 122/1,094, 122/854, 120/1,350입니다.
+- 추가합격 자료는 [2024 공식 결과 PDF5~6](https://www.hongik.ac.kr/kr/admission/entrance-point.do?mode=download&articleNo=99146&attachNo=52271#page=5), [2025 PDF3](https://www.hongik.ac.kr/kr/admission/entrance-point.do?mode=download&articleNo=137765&attachNo=80965#page=3), [2026 결과 게시물 ZIP 내 PDF3](https://www.hongik.ac.kr/kr/admission/entrance-point.do?mode=view&articleNo=152834)의 표를 시각적으로 확인했습니다. 30개 행의 모집·지원·경쟁률을 원문과 대조한 뒤 공개된 추가합격률(추가합격인원÷모집인원×100)을 그대로 저장했습니다. 실질경쟁률과 혼동하거나 인원·예비번호로 환산하지 않습니다.
+- 5개 학과의 명칭 변경은 [2026 모집요강 인쇄70쪽(PDF72)](https://www.hongik.ac.kr/kr/admission/recruitment.do?articleNo=137200&attachNo=82961&mode=download#page=72)을 근거로 과거 명칭을 연결했습니다. 2027 신설 인문 논술 3개 모집단위에는 2024~2026 타 전형 결과를 붙이지 않습니다.

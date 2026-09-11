@@ -9,6 +9,30 @@ const historical=await read('historical'),catalog=await read('catalog');
 // remain collectable and appear as unclassified until their catalog is reviewed.
 const latest={schools:await Promise.all(schools.map(async s=>({...s,snapshot:parseRatio(await readFile(new URL(`./fixtures/${s.id}.html`,import.meta.url),'utf8'),s)})))};
 const totals={kyonggi:{2026:[239,8193],2025:[239,7773],2024:[167,3483]},suwon:{2026:[441,7568],2025:[455,6008],2024:[450,6215]},koreatech:{2026:[150,2686],2025:[173,2114],2024:[170,2192]},tukorea:{2026:[280,3410],2025:[290,2790],2024:[295,2463]},gachon:{2026:[1009,41940],2025:[1012,44042],2024:[964,33868]},sahmyook:{2026:[154,7962],2025:[127,5380],2024:[134,5663]}};
+test('Hongik Sejong separates new humanities from mathematics and preserves published additional-admission rates',()=>{
+ const s=catalog.schools.hongiksejong,exam=s.essayExam;
+ assert.equal(exam.durationMinutes,70);
+ assert.deepEqual(exam.groups[0].subjects,['수학Ⅰ','수학Ⅱ']);
+ assert.equal(exam.groups[0].format,'서술형 7문항');
+ assert.equal(exam.groups[0].units.length,10);
+ assert.deepEqual(exam.groups[1].units,['세종캠퍼스자율전공(인문·예능)','상경학부','광고홍보학부']);
+ assert.ok(!exam.groups[1].subjects.some(v=>v.includes('수학')));
+ assert.match(s.minimum.text,/1개 영역 4등급/);
+ assert.match(s.minimum.text,/한국사 응시 필수/);
+ for(const [year,seats,applicants] of [[2024,122,1094],[2025,122,854],[2026,120,1350]]){
+  const rows=historical.schools.hongiksejong[year].rows;
+  assert.equal(rows.length,10);
+  assert.deepEqual(rows.reduce((a,r)=>[a[0]+r.seats,a[1]+r.applicants],[0,0]),[seats,applicants]);
+  for(const r of rows){
+   assert.equal(r.track,'논술전형');
+   assert.ok(!exam.groups[1].units.includes(r.name),'new humanities must not inherit another track history');
+   assert.equal(r.additionalAdmissions,null);assert.equal(r.reserveRank,null);
+   assert.ok(Number.isFinite(r.additionalAdmissionRate)&&r.reserveSourceUrl);
+   assert.equal(r.admissionText,`추가합격률 ${r.additionalAdmissionRate.toFixed(2)}%`);
+  }
+ }
+ assert.equal(historical.schools.hongiksejong[2026].rows.find(r=>r.name==='나노반도체공학과').additionalAdmissionRate,111.11,'use additional-admission rate, not effective competition ratio');
+});
 test('historical rows reconcile against published year totals and preserve reserve ranks',()=>{
  for(const [school,years] of Object.entries(totals))for(const [year,expected] of Object.entries(years)){
   const entry=historical.schools[school][year],rows=entry.rows;

@@ -41,6 +41,7 @@ export function parseRatio(html,school,{allowUndatedFinal=false}={}) {
   if(year!==school.year)throw Error(`학년도 불일치 (${year||'확인 불가'})`);
   const title=clean($('title').text());
   if(!title.includes(school.sourceName||school.name))throw Error('학교명 불일치');
+  if(school.sourceService&&compact($('#TitleService').text())!==compact(school.sourceService))throw Error('모집 캠퍼스 또는 서비스 불일치');
   const timeText=clean($('#RatioTime').text()) || clean($('body').text()).slice(0,1800);
   const sourceAt=parseSourceTime(timeText);
   // Instructions saying a final result WILL be published do not mean final.

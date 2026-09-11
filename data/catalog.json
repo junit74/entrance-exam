@@ -1064,6 +1064,80 @@
         ],
         "verifiedAt": "2026-09-10"
       }
+    },
+    "hongiksejong": {
+      "minimum": {
+        "text": "국어·수학·영어·탐구(사회/과학, 최상위 1과목) 중 1개 영역 4등급 이내. 한국사 응시 필수.",
+        "sourceUrl": "https://www.hongik.ac.kr/kr/admission/recruitment.do?mode=download&articleNo=152315&attachNo=91150#page=103"
+      },
+      "location": {
+        "label": "세종 조치원",
+        "description": "세종특별자치시 조치원읍 세종로 2639",
+        "sourceUrl": "https://www.hongik.ac.kr/kr/introduction/directions-sejong.do"
+      },
+      "essayExam": {
+        "year": 2027,
+        "durationMinutes": 70,
+        "sourceUrl": "https://www.hongik.ac.kr/kr/admission/recruitment.do?mode=download&articleNo=152315&attachNo=91150#page=103",
+        "sourceLabel": "2027 공식 모집요강 · 100~101쪽 ↗",
+        "unitSourceUrl": "https://www.hongik.ac.kr/kr/admission/recruitment.do?mode=download&articleNo=152315&attachNo=91150#page=102",
+        "unitSourceLabel": "모집단위별 논술 유형 근거 ↗",
+        "verifiedAt": "2026-09-11",
+        "groups": [
+          {
+            "label": "자연계 수리논술",
+            "subjects": [
+              "수학Ⅰ",
+              "수학Ⅱ"
+            ],
+            "units": [
+              "세종캠퍼스자율전공(자연·예능)",
+              "AID융합과학기술대학자율전공",
+              "전자전기융합공학과",
+              "소프트웨어융합학과",
+              "나노반도체공학과",
+              "건축공학부",
+              "AI기계융합공학과",
+              "조선해양모빌리티공학과",
+              "바이오화학융합공학과",
+              "게임학부 게임소프트웨어전공(공학계)"
+            ],
+            "appliesTo": "세종캠퍼스자율전공(자연·예능) · AID융합과학기술대학자율전공 · 전자전기융합공학과 · 소프트웨어융합학과 · 나노반도체공학과 · 건축공학부 · AI기계융합공학과 · 조선해양모빌리티공학과 · 바이오화학융합공학과 · 게임학부 게임소프트웨어전공(공학계)",
+            "format": "서술형 7문항",
+            "note": "교과서 등을 변형한 서술형 질문이며, 문항별 지정된 답안란(노트 형식)에 작성합니다.",
+            "detailNote": "교과서 등을 변형한 서술형 질문이며, 문항별 지정된 답안란(노트 형식)에 작성합니다."
+          },
+          {
+            "label": "인문계 통합교과형 논술",
+            "subjects": [
+              "국어",
+              "화법과 작문",
+              "독서",
+              "언어와 매체",
+              "문학",
+              "통합사회",
+              "한국지리",
+              "세계지리",
+              "세계사",
+              "동아시아사",
+              "경제",
+              "정치와 법",
+              "사회·문화",
+              "생활과 윤리",
+              "윤리와 사상"
+            ],
+            "units": [
+              "세종캠퍼스자율전공(인문·예능)",
+              "상경학부",
+              "광고홍보학부"
+            ],
+            "appliesTo": "세종캠퍼스자율전공(인문·예능) · 상경학부 · 광고홍보학부",
+            "format": "제시문 약 15개 · 제시문당 하위 2문항",
+            "note": "선택형·단답형·단문형 문항으로, 문항별 지정된 답안란(노트 형식)에 작성합니다.",
+            "detailNote": "선택형·단답형·단문형 문항으로, 문항별 지정된 답안란(노트 형식)에 작성합니다."
+          }
+        ]
+      }
     }
   },
   "units": {
@@ -2733,6 +2807,122 @@
       "classificationSourceUrl": "https://oku.korea.ac.kr/attach/202605/1780045234886_0.pdf#page=16",
       "minimumText": "국어·수학·영어·탐구(상위 1과목) 중 2개 영역 등급 합 6 이내. 국어·수학·영어·탐구 2과목·한국사에 모두 응시해야 하며, 수학 선택과목 제한은 없고 탐구는 사회/과학 혼합도 가능. 제2외국어/한문으로 탐구 영역을 대체할 수 없습니다.",
       "note": "논술(일반전형) 기준. 별도 지원자격이 필요한 논술(지역인재전형)은 합산하지 않습니다."
+    },
+    "4d987269e6cfd543": {
+      "category": "mixed",
+      "classificationSourceUrl": "https://www.hongik.ac.kr/kr/admission/recruitment.do?mode=download&articleNo=152315&attachNo=91150#page=129",
+      "minimumText": "국어·수학·영어·탐구(사회/과학, 최상위 1과목) 중 1개 영역 4등급 이내. 한국사 응시 필수.",
+      "note": "자연·예능과 인문·예능은 논술 응시 유형입니다. 입학 후 세종캠퍼스 내 전공 선택이 가능하며 공학·인문·예능 전공을 포함합니다. 세부 학사 규정은 공식 자료를 확인하세요."
+    },
+    "bb1d9ed91bcad4cc": {
+      "category": "mixed",
+      "classificationSourceUrl": "https://www.hongik.ac.kr/kr/admission/recruitment.do?mode=download&articleNo=152315&attachNo=91150#page=129",
+      "minimumText": "국어·수학·영어·탐구(사회/과학, 최상위 1과목) 중 1개 영역 4등급 이내. 한국사 응시 필수.",
+      "note": "자연·예능과 인문·예능은 논술 응시 유형입니다. 입학 후 세종캠퍼스 내 전공 선택이 가능하며 공학·인문·예능 전공을 포함합니다. 세부 학사 규정은 공식 자료를 확인하세요.",
+      "historicalNote": "2027학년도에 세종캠퍼스 인문계 논술전형이 신설되어, 2024~2026학년도 논술 비교 자료가 없습니다."
+    },
+    "e393dad4a13e6f51": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://www.hongik.ac.kr/kr/admission/recruitment.do?mode=download&articleNo=152315&attachNo=91150#page=130",
+      "minimumText": "국어·수학·영어·탐구(사회/과학, 최상위 1과목) 중 1개 영역 4등급 이내. 한국사 응시 필수.",
+      "note": "AID융합과학기술대학 내 학과·전공에서 선택합니다.",
+      "historicalNames": {
+        "2024": "과학기술대학자율전공",
+        "2025": "과학기술대학자율전공"
+      },
+      "historicalNameSources": {
+        "2024": "https://www.hongik.ac.kr/kr/admission/recruitment.do?articleNo=137200&attachNo=82961&mode=download#page=72",
+        "2025": "https://www.hongik.ac.kr/kr/admission/recruitment.do?articleNo=137200&attachNo=82961&mode=download#page=72"
+      },
+      "historicalNote": "2026학년도에 과학기술대학자율전공에서 AID융합과학기술대학자율전공(으)로 명칭이 변경되었습니다. 과거 표에는 당시 명칭을 표시합니다."
+    },
+    "53e4870268dd6185": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://www.hongik.ac.kr/kr/admission/recruitment.do?mode=download&articleNo=152315&attachNo=91150#page=102",
+      "minimumText": "국어·수학·영어·탐구(사회/과학, 최상위 1과목) 중 1개 영역 4등급 이내. 한국사 응시 필수."
+    },
+    "6af715522161a71b": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://www.hongik.ac.kr/kr/admission/recruitment.do?mode=download&articleNo=152315&attachNo=91150#page=102",
+      "minimumText": "국어·수학·영어·탐구(사회/과학, 최상위 1과목) 중 1개 영역 4등급 이내. 한국사 응시 필수."
+    },
+    "195bf6d69ac27de7": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://www.hongik.ac.kr/kr/admission/recruitment.do?mode=download&articleNo=152315&attachNo=91150#page=102",
+      "minimumText": "국어·수학·영어·탐구(사회/과학, 최상위 1과목) 중 1개 영역 4등급 이내. 한국사 응시 필수.",
+      "historicalNames": {
+        "2024": "나노신소재학과",
+        "2025": "나노신소재학과"
+      },
+      "historicalNameSources": {
+        "2024": "https://www.hongik.ac.kr/kr/admission/recruitment.do?articleNo=137200&attachNo=82961&mode=download#page=72",
+        "2025": "https://www.hongik.ac.kr/kr/admission/recruitment.do?articleNo=137200&attachNo=82961&mode=download#page=72"
+      },
+      "historicalNote": "2026학년도에 나노신소재학과에서 나노반도체공학과(으)로 명칭이 변경되었습니다. 과거 표에는 당시 명칭을 표시합니다."
+    },
+    "94e5da86f30bc363": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://www.hongik.ac.kr/kr/admission/recruitment.do?mode=download&articleNo=152315&attachNo=91150#page=102",
+      "minimumText": "국어·수학·영어·탐구(사회/과학, 최상위 1과목) 중 1개 영역 4등급 이내. 한국사 응시 필수."
+    },
+    "04fb38018f2c511a": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://www.hongik.ac.kr/kr/admission/recruitment.do?mode=download&articleNo=152315&attachNo=91150#page=102",
+      "minimumText": "국어·수학·영어·탐구(사회/과학, 최상위 1과목) 중 1개 영역 4등급 이내. 한국사 응시 필수.",
+      "historicalNames": {
+        "2024": "기계정보공학과",
+        "2025": "기계정보공학과"
+      },
+      "historicalNameSources": {
+        "2024": "https://www.hongik.ac.kr/kr/admission/recruitment.do?articleNo=137200&attachNo=82961&mode=download#page=72",
+        "2025": "https://www.hongik.ac.kr/kr/admission/recruitment.do?articleNo=137200&attachNo=82961&mode=download#page=72"
+      },
+      "historicalNote": "2026학년도에 기계정보공학과에서 AI기계융합공학과(으)로 명칭이 변경되었습니다. 과거 표에는 당시 명칭을 표시합니다."
+    },
+    "ee1093cc2f83facb": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://www.hongik.ac.kr/kr/admission/recruitment.do?mode=download&articleNo=152315&attachNo=91150#page=102",
+      "minimumText": "국어·수학·영어·탐구(사회/과학, 최상위 1과목) 중 1개 영역 4등급 이내. 한국사 응시 필수.",
+      "historicalNames": {
+        "2024": "조선해양공학과",
+        "2025": "조선해양공학과"
+      },
+      "historicalNameSources": {
+        "2024": "https://www.hongik.ac.kr/kr/admission/recruitment.do?articleNo=137200&attachNo=82961&mode=download#page=72",
+        "2025": "https://www.hongik.ac.kr/kr/admission/recruitment.do?articleNo=137200&attachNo=82961&mode=download#page=72"
+      },
+      "historicalNote": "2026학년도에 조선해양공학과에서 조선해양모빌리티공학과(으)로 명칭이 변경되었습니다. 과거 표에는 당시 명칭을 표시합니다."
+    },
+    "563d98c5606e1f10": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://www.hongik.ac.kr/kr/admission/recruitment.do?mode=download&articleNo=152315&attachNo=91150#page=102",
+      "minimumText": "국어·수학·영어·탐구(사회/과학, 최상위 1과목) 중 1개 영역 4등급 이내. 한국사 응시 필수.",
+      "historicalNames": {
+        "2024": "바이오화학공학과",
+        "2025": "바이오화학공학과"
+      },
+      "historicalNameSources": {
+        "2024": "https://www.hongik.ac.kr/kr/admission/recruitment.do?articleNo=137200&attachNo=82961&mode=download#page=72",
+        "2025": "https://www.hongik.ac.kr/kr/admission/recruitment.do?articleNo=137200&attachNo=82961&mode=download#page=72"
+      },
+      "historicalNote": "2026학년도에 바이오화학공학과에서 바이오화학융합공학과(으)로 명칭이 변경되었습니다. 과거 표에는 당시 명칭을 표시합니다."
+    },
+    "929f499ef40dba86": {
+      "category": "engineering",
+      "classificationSourceUrl": "https://www.hongik.ac.kr/kr/admission/recruitment.do?mode=download&articleNo=152315&attachNo=91150#page=102",
+      "minimumText": "국어·수학·영어·탐구(사회/과학, 최상위 1과목) 중 1개 영역 4등급 이내. 한국사 응시 필수."
+    },
+    "eb4cc1d20d4f2611": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://www.hongik.ac.kr/kr/admission/recruitment.do?mode=download&articleNo=152315&attachNo=91150#page=102",
+      "minimumText": "국어·수학·영어·탐구(사회/과학, 최상위 1과목) 중 1개 영역 4등급 이내. 한국사 응시 필수.",
+      "historicalNote": "2027학년도에 세종캠퍼스 인문계 논술전형이 신설되어, 2024~2026학년도 논술 비교 자료가 없습니다."
+    },
+    "8e9f075fffdc2564": {
+      "category": "humanities",
+      "classificationSourceUrl": "https://www.hongik.ac.kr/kr/admission/recruitment.do?mode=download&articleNo=152315&attachNo=91150#page=102",
+      "minimumText": "국어·수학·영어·탐구(사회/과학, 최상위 1과목) 중 1개 영역 4등급 이내. 한국사 응시 필수.",
+      "historicalNote": "2027학년도에 세종캠퍼스 인문계 논술전형이 신설되어, 2024~2026학년도 논술 비교 자료가 없습니다."
     }
   }
 }

@@ -9,7 +9,7 @@ import {parseRatio,parseSourceTime} from '../src/parser.mjs';
 import {saveSnapshot,readJSON,withLock} from '../src/store.mjs';
 import {collect} from '../src/collect.mjs';
 const fixtures=new Map(await Promise.all(schools.map(async s=>[s.id,await readFile(new URL(`./fixtures/${s.id}.html`,import.meta.url),'utf8')])));
-const expected={kyonggi:[4,239],suwon:[19,434],koreatech:[17,150],tukorea:[6,200],gachon:[47,1036],sahmyook:[22,277],kangnam:[16,309],caudavinci:[7,48],hanshin:[23,231],inha:[48,457],yonseim:[7,182],ajou:[18,182],kau:[8,198],kusejong:[29,308]};
+const expected={kyonggi:[4,239],suwon:[19,434],koreatech:[17,150],tukorea:[6,200],gachon:[47,1036],sahmyook:[22,277],kangnam:[16,309],caudavinci:[7,48],hanshin:[23,231],inha:[48,457],yonseim:[7,182],ajou:[18,182],kau:[8,198],kusejong:[29,308],hongiksejong:[13,195]};
 for(const school of schools)test(`${school.name}: official essay table only, expanded spans and reconciled totals`,()=>{
  const p=parseRatio(fixtures.get(school.id),school);assert.equal(p.rows.length,expected[school.id][0]);assert.equal(p.total.seats,expected[school.id][1]);assert.equal(p.year,2027);
  assert.equal(p.rows.reduce((a,r)=>a+r.applicants,0),p.total.applicants);assert.equal(p.isFinal,false);
@@ -104,3 +104,13 @@ test('Korea Sejong keeps regional pharmacy separate and recognizes an explicit u
  assert.equal(result.outcome,'review','an undated final must not overwrite dated interim history');
  assert.equal(result.snapshot.sourceAt,current.sourceAt);
 }));
+
+
+test('Hongik Sejong rejects the Seoul service and preserves its full essay table',()=>{
+ const school=schools.find(s=>s.id==='hongiksejong'),html=fixtures.get(school.id),p=parseRatio(html,school);
+ assert.deepEqual(p.total,{seats:195,applicants:1654,ratio:8.48});
+ assert.ok(p.rows.some(r=>r.name==='세종캠퍼스자율전공(인문·예능)'));
+ assert.ok(!p.rows.some(r=>r.name.includes('서울')));
+ assert.throws(()=>parseRatio(html.replace('수시모집(세종캠퍼스)','수시모집(서울캠퍼스)'),school),/캠퍼스/);
+ assert.throws(()=>parseRatio(html.replace('id="TitleService"','id="MissingTitle"'),school),/캠퍼스/);
+});
