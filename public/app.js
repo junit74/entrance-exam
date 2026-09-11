@@ -18,7 +18,7 @@ function isApplied(r){return state.catalog.units?.[r.id]?.applicationStatus==='s
 function appliedBadge(r){return isApplied(r)?'<span class="applied-badge"><span aria-hidden="true">✓</span> 지원 완료</span>':'';}
 function region(s,r){const location=state.catalog.schools?.[s.id]?.location;return (r&&state.catalog.units?.[r.id]?.location?.label)||(r&&location?.campuses?.[r.campus])||location?.label||'지역 확인 중';}
 function allRows(){return state.data.schools.flatMap(s=>(s.snapshot?.rows||[]).map(r=>({...r,school:s,category:category(r)})));}
-function visibleRows(){return allRows().filter(r=>r.category!=='natural'&&(!state.school||r.school.id===state.school)&&(!state.favoritesOnly||favorites.has(r.id))&&(!state.appliedOnly||isApplied(r))&&(state.category==='all'||r.category===state.category)&&state.query.toLowerCase().split(/\s+/).every(q=>(r.name+' '+r.school.name+' '+r.campus+' '+region(r.school,r)).toLowerCase().includes(q))).sort((a,b)=>{
+function visibleRows(){return allRows().filter(r=>r.category!=='natural'&&(!state.school||r.school.id===state.school)&&((!state.favoritesOnly&&!state.appliedOnly)||(state.favoritesOnly&&favorites.has(r.id))||(state.appliedOnly&&isApplied(r)))&&(state.category==='all'||r.category===state.category)&&state.query.toLowerCase().split(/\s+/).every(q=>(r.name+' '+r.school.name+' '+r.campus+' '+region(r.school,r)).toLowerCase().includes(q))).sort((a,b)=>{
   if(state.sort==='priority')return rank[a.category]-rank[b.category]||a.ratio-b.ratio||a.name.localeCompare(b.name,'ko');
   if(state.sort==='high')return b.ratio-a.ratio;
   if(state.sort==='seats')return b.seats-a.seats;
