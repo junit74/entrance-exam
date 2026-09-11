@@ -77,3 +77,11 @@ th.ratio-column,td.ratio-column{text-align:center}
 .applied-row:hover{background:#eaf0fb}
 .applied-row>td:first-child{box-shadow:inset 3px 0 #607fba}
 .detail-top .applied-badge{margin-top:8px}
+
+.school-card-applied{background:#f3f6fd;border-color:#829dca;box-shadow:inset 0 3px #607fba}
+.school-card-applied:hover{background:#eaf0fb;border-color:#607fba}
+.card-application{min-height:24px;margin-top:8px}
+/* Keep every observed value and hit target; dense markers must not cover the line. */
+.line-chart .line{stroke-width:3;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.line-chart .point-dot-muted{opacity:0}
+.chart-point:hover .point-dot,.chart-point.active .point-dot,.chart-point:focus-visible .point-dot{opacity:1}
