@@ -1,3 +1,4 @@
+import {SharedFavorites} from './favorites.js';
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const nf=new Intl.NumberFormat('ko-KR');
@@ -7,8 +8,13 @@ const time=(s,full=false)=>s?new Intl.DateTimeFormat('ko-KR',{timeZone:'Asia/Seo
 const hour=s=>s?new Intl.DateTimeFormat('ko-KR',{timeZone:'Asia/Seoul',hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date(s)):'—';
 const categories={engineering:'공학',mixed:'자유·융합',humanities:'인문·사회',health:'의약·보건',other:'기타',unknown:'분류 확인 중',natural:'자연과학'};
 const rank={engineering:0,mixed:1,humanities:2,health:3,other:4,unknown:5,natural:9};
-let favorites;
-try{favorites=new Set(JSON.parse(localStorage.getItem('essay-favorites')||'[]'));}catch{favorites=new Set();}
+let favorites=new Set(),favoriteStatus='loading';
+let favoriteStorage;try{favoriteStorage=localStorage;}catch{}
+const sharedFavorites=new SharedFavorites({storage:favoriteStorage,onChange:ids=>{favorites=ids;if(state.data)renderFiltered();},onStatus:status=>{favoriteStatus=status;renderFavoriteStatus();}});
+function renderFavoriteStatus(){
+ const node=$('#favorites-status');if(node){node.textContent={loading:'공유 목록 연결 중',ready:'모두 함께 쓰는 관심 목록',saving:'공유 목록 저장 중',error:'공유 연결 지연 · 다시 시도'}[favoriteStatus];node.dataset.status=favoriteStatus;}
+ document.querySelectorAll('[data-star]').forEach(b=>{b.disabled=!sharedFavorites.ready||sharedFavorites.busy;});
+}
 const state={data:null,catalog:{},historical:{},runtime:{mode:'pages-local'},school:null,query:'',category:'all',sort:'low',favoritesOnly:false,appliedOnly:false,historyYear:2026,historyCache:new Map()};
 let loading=false,detailGeneration=0;
 function toast(text){$('#toast').textContent=text;$('#toast').classList.add('show');clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('#toast').classList.remove('show'),3000);}
@@ -132,11 +138,11 @@ function render(){
   let intro='';
   if(s){const t=s.snapshot?.total,st=status(s);intro=`<div class="stats-row"><div class="stats-box"><p>논술 전체 경쟁률</p><strong>${rate(t?.ratio)}<small>: 1</small></strong></div><div class="stats-box"><p>논술 전체 모집인원</p><strong>${num(t?.seats)}<small>명</small></strong></div><div class="stats-box"><p>논술 전체 지원인원</p><strong>${num(t?.applicants)}<small>명</small></strong></div></div><div class="info-grid">${examInfo(s)}<div class="info-card"><h2>발표 및 수집 현황 <span class="pill ${st.warning?'orange':'green'}">${st.label}</span></h2><p>자료 기준 <strong>${time(s.snapshot?.sourceAt,true)}</strong><br>마지막 확인 ${time(s.lastCheckedAt,true)}<br>${esc(s.publicationSchedule||'10분 단위 발표.')}<br>9월 11일 경쟁률 공개 ${s.cutoff}까지 · 접수 마감 ${s.close}</p>${s.error?`<p>${esc(s.error)} · 기존 확인 자료를 유지합니다.</p>`:''}${s.outcome==='review'?'<p>같은 기준 시각 또는 발표 시각이 없는 원문 변경을 감지했습니다. 최신 여부를 확인할 수 없어 기존 수치를 유지합니다.</p>':''}${sourceLink(s.url)}</div></div>`;}
   else intro=schoolCards()+`<div class="notice"><span class="notice-icon">i</span><span><strong>발표 시각까지 함께 확인하세요.</strong> 카드에는 논술 전체 경쟁률을, 아래 표와 그래프에는 자연과학을 제외한 현황을 표시합니다.${failed.length?` <strong>${failed.map(s=>s.shortName).join('·')} 확인 지연 또는 오류</strong> · 마지막 정상 자료를 유지합니다.`:''}</span></div>`;
-  $('#app').innerHTML=head+intro+(s?essayExamInfo(s):'')+`<div id="summary">${summary(rows)}</div><section class="panel"><div class="panel-head"><div class="table-heading"><h2>모집단위 비교</h2><span class="count" id="row-count">${rows.length}</span></div><span class="pill">☆ 관심 모집단위 저장</span></div>${filterControls()}<div id="current-table">${currentTable(rows)}</div><div class="table-bottom"><span>모집단위를 눌러 시간별 추이 · 과거 경쟁률 · 충원 정보를 확인하세요.</span><span>출처: 진학어플라이 · 유웨이</span></div></section>`+(s?`<div id="school-history">${historyTable(s)}</div>`:'');
+  $('#app').innerHTML=head+intro+(s?essayExamInfo(s):'')+`<div id="summary">${summary(rows)}</div><section class="panel"><div class="panel-head comparison-head"><div class="table-heading"><h2>모집단위 비교</h2><span class="count" id="row-count">${rows.length}</span></div><button class="pill shared-favorites-status" id="favorites-status" data-sync-favorites aria-live="polite" title="방문자 모두가 같은 관심 목록을 보고 수정합니다. 누르면 다시 연결합니다.">공유 목록 연결 중</button></div>${filterControls()}<div id="current-table">${currentTable(rows)}</div><div class="table-bottom"><span>모집단위를 눌러 시간별 추이 · 과거 경쟁률 · 충원 정보를 확인하세요.</span><span>출처: 진학어플라이 · 유웨이</span></div></section>`+(s?`<div id="school-history">${historyTable(s)}</div>`:'');
   document.title=`${s?s.shortName+' · ':''}논술 나침반 · 2027`;
   hideChartTooltip();updateSummaryTrend();
 }
-function renderFiltered(){const rows=visibleRows();$('#summary').innerHTML=summary(rows);$('#row-count').textContent=rows.length;$('#current-table').innerHTML=currentTable(rows);hideChartTooltip();updateSummaryTrend();}
+function renderFiltered(){const rows=visibleRows();$('#summary').innerHTML=summary(rows);$('#row-count').textContent=rows.length;$('#current-table').innerHTML=currentTable(rows);hideChartTooltip();updateSummaryTrend();renderFavoriteStatus();}
 function lookupHistorical(r,year){const data=state.historical.schools?.[r.school.id]?.[year],unit=state.catalog.units?.[r.id];if(!data||unit?.historicalExcludeYears?.includes(year))return null;const name=unit?.historicalNames?.[year]||r.name;const matches=data.rows?.filter(h=>h.name.replace(/\s/g,'')===name.replace(/\s/g,'')&&(!h.campus||h.campus===r.campus))||[];return matches.length===1?matches[0]:null;}
 function lineChart(points,options={}){return trendChart([{name:options.name||'경쟁률',color:options.color||'#668e58',points}],options);}
 function trendChart(series,{years=false}={}){
@@ -214,16 +220,17 @@ async function load({initial=false}={}){
     if(!Array.isArray(data.schools))throw Error('경쟁률 데이터 형식이 올바르지 않습니다.');
     Object.assign(state,{data,catalog,historical,runtime});
     for(const [id,entry] of state.historyCache)if(entry.error)state.historyCache.delete(id);
-    $('#runtime-label').textContent=runtime.mode==='local'?'로컬 수집 서버':'로컬 수집 · Pages 게시';render();
+    $('#runtime-label').textContent=runtime.mode==='local'?'로컬 수집 서버':'로컬 수집 · Pages 게시';render();renderFavoriteStatus();sharedFavorites.sync(new Set(Object.keys(catalog.units||{})));
     if(!initial)toast('저장된 최신 자료를 읽었습니다.');
   }catch(e){if(!state.data)$('#app').innerHTML=`<div class="error-box"><strong>자료를 불러오지 못했습니다.</strong><p>${esc(e.message)}</p><p>초기 수집과 사이트 배포가 완료되었는지 확인해 주세요.</p><button class="button" data-retry>다시 읽기</button></div>`;else toast('자료를 다시 읽지 못했습니다. 기존 화면을 유지합니다.');}
   finally{loading=false;$('#reload').disabled=false;}
 }
-function route(){const match=location.hash.match(/^#school\/([a-z]+)$/);state.school=match?.[1]||null;if(state.data&&!state.data.schools.some(s=>s.id===state.school))state.school=null;state.query='';state.category='all';render();}
+function route(){const match=location.hash.match(/^#school\/([a-z]+)$/);state.school=match?.[1]||null;if(state.data&&!state.data.schools.some(s=>s.id===state.school))state.school=null;state.query='';state.category='all';render();renderFavoriteStatus();}
 document.addEventListener('input',e=>{if(e.target.id==='search'){state.query=e.target.value;renderFiltered();}});
 document.addEventListener('change',e=>{if(e.target.id==='category')state.category=e.target.value;else if(e.target.id==='sort')state.sort=e.target.value;else if(e.target.id==='favorites-only')state.favoritesOnly=e.target.checked;else if(e.target.id==='applied-only')state.appliedOnly=e.target.checked;else return;renderFiltered();});
 document.addEventListener('click',e=>{
-  const star=e.target.closest('[data-star]');if(star){const id=star.dataset.star;favorites.has(id)?favorites.delete(id):favorites.add(id);try{localStorage.setItem('essay-favorites',JSON.stringify([...favorites]));}catch{toast('이 브라우저에서는 관심 목록을 저장할 수 없습니다.');}renderFiltered();return;}
+  if(e.target.closest('[data-sync-favorites]')){sharedFavorites.sync(new Set(Object.keys(state.catalog.units||{})));return;}
+  const star=e.target.closest('[data-star]');if(star){const id=star.dataset.star;sharedFavorites.set(id,!favorites.has(id)).then(ok=>{if(!ok)toast('공유 저장을 확인하지 못했습니다. 다시 시도해 주세요.');});return;}
   const detail=e.target.closest('[data-detail]');if(detail){openDetail(detail.dataset.detail);return;}
   if(e.target.closest('[data-close]'))$('#detail').close();
   const year=e.target.closest('[data-year]');if(year){state.historyYear=Number(year.dataset.year);const s=state.data.schools.find(s=>s.id===state.school);$('#school-history').innerHTML=historyTable(s);}
@@ -235,3 +242,7 @@ $('#reload').addEventListener('click',()=>load());
 window.addEventListener('hashchange',()=>{route();window.scrollTo(0,0);});
 state.school=location.hash.match(/^#school\/([a-z]+)$/)?.[1]||null;
 load({initial:true});setInterval(()=>{if(!document.hidden&&!$('#detail').open&&!$('#search')?.matches(':focus'))load({initial:true});},60_000);
+
+setInterval(()=>{if(!document.hidden&&state.data)sharedFavorites.sync(new Set(Object.keys(state.catalog.units||{})));},5000);
+window.addEventListener('focus',()=>{if(state.data)sharedFavorites.sync(new Set(Object.keys(state.catalog.units||{})));});
+document.addEventListener('visibilitychange',()=>{if(!document.hidden&&state.data)sharedFavorites.sync(new Set(Object.keys(state.catalog.units||{})));});

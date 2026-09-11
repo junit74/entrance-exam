@@ -85,3 +85,7 @@ th.ratio-column,td.ratio-column{text-align:center}
 .line-chart .line{stroke-width:3;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
 .line-chart .point-dot-muted{opacity:0}
 .chart-point:hover .point-dot,.chart-point.active .point-dot,.chart-point:focus-visible .point-dot{opacity:1}
+
+.shared-favorites-status{font:inherit;font-size:12px;cursor:pointer;text-align:center}.shared-favorites-status[data-status="error"]{color:#945720;background:#fff3de;border-color:#ead0a7}
+
+.comparison-head{flex-wrap:wrap;gap:12px}
