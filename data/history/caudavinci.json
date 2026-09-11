@@ -452,6 +452,96 @@
       },
       "contentHash": "89b7596e387ede7b844abdd69a2924fde6fc62ce00d4ea1c95ee637c49587b2d",
       "collectedAt": "2026-09-11T01:09:10.345Z"
+    },
+    {
+      "year": 2027,
+      "sourceAt": "2026-09-11T14:00:00+09:00",
+      "isFinal": false,
+      "sourceUrl": "https://ratio.uwayapply.com/Sl5KOjhMSmYlJjomSjdmVGY=",
+      "track": "논술(일반형)",
+      "rows": [
+        {
+          "id": "d0c79f334bfd3771",
+          "name": "첨단소재공학과",
+          "campus": "다빈치",
+          "college": "공과대학",
+          "note": "",
+          "seats": 7,
+          "applicants": 73,
+          "ratio": 10.43
+        },
+        {
+          "id": "9dd1b1468e9f48d7",
+          "name": "생명자원공학부 · 동물생명공학",
+          "campus": "다빈치",
+          "college": "생명공학대학",
+          "note": "",
+          "seats": 6,
+          "applicants": 38,
+          "ratio": 6.33
+        },
+        {
+          "id": "461b9c5926c25ce1",
+          "name": "생명자원공학부 · 식물생명공학",
+          "campus": "다빈치",
+          "college": "생명공학대학",
+          "note": "",
+          "seats": 6,
+          "applicants": 35,
+          "ratio": 5.83
+        },
+        {
+          "id": "e91a7bd2aacee85b",
+          "name": "식품공학부 · 식품공학",
+          "campus": "다빈치",
+          "college": "생명공학대학",
+          "note": "",
+          "seats": 7,
+          "applicants": 35,
+          "ratio": 5
+        },
+        {
+          "id": "31ad5471bcb8ad0d",
+          "name": "식품공학부 · 식품영양학",
+          "campus": "다빈치",
+          "college": "생명공학대학",
+          "note": "",
+          "seats": 6,
+          "applicants": 27,
+          "ratio": 4.5
+        },
+        {
+          "id": "75108c53ddbf5513",
+          "name": "시스템생명공학과",
+          "campus": "다빈치",
+          "college": "생명공학대학",
+          "note": "",
+          "seats": 6,
+          "applicants": 60,
+          "ratio": 10
+        },
+        {
+          "id": "4dc0ffe1ff75a12c",
+          "name": "예술공학부",
+          "campus": "다빈치",
+          "college": "예술공학대학",
+          "note": "",
+          "seats": 10,
+          "applicants": 55,
+          "ratio": 5.5
+        }
+      ],
+      "total": {
+        "seats": 48,
+        "applicants": 323,
+        "ratio": 6.73
+      },
+      "sourceTotal": {
+        "seats": 403,
+        "applicants": 31136
+      },
+      "contentHash": "362e386808af0d55d1ade044d16aa04272da67ab6ec088e4c092712ca03f6ea8",
+      "collectedAt": "2026-09-11T05:01:53.755Z"
     }
   ]
 }
