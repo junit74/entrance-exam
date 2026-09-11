@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "year": 2027,
-  "generatedAt": "2026-09-11T05:42:28.354Z",
+  "generatedAt": "2026-09-11T05:52:37.828Z",
   "schools": [
     {
       "id": "kyonggi",
@@ -83,8 +83,8 @@
         "6a9518615b2ac4d8": 1521,
         "58e407e017eba44d": 258
       },
-      "lastCheckedAt": "2026-09-11T05:42:28.053Z",
-      "lastSuccessfulCheckAt": "2026-09-11T05:42:28.053Z",
+      "lastCheckedAt": "2026-09-11T05:52:37.596Z",
+      "lastSuccessfulCheckAt": "2026-09-11T05:52:37.596Z",
       "error": null
     },
     {
@@ -332,8 +332,8 @@
         "690ddc9b15be9262": 101,
         "ec833ccb2ab66d15": 99
       },
-      "lastCheckedAt": "2026-09-11T05:42:28.055Z",
-      "lastSuccessfulCheckAt": "2026-09-11T05:42:28.055Z",
+      "lastCheckedAt": "2026-09-11T05:52:37.598Z",
+      "lastSuccessfulCheckAt": "2026-09-11T05:52:37.598Z",
       "error": null
     },
     {
@@ -355,7 +355,7 @@
       "outcome": "updated",
       "snapshot": {
         "year": 2027,
-        "sourceAt": "2026-09-11T14:40:00+09:00",
+        "sourceAt": "2026-09-11T14:50:00+09:00",
         "isFinal": false,
         "sourceUrl": "https://ratio.uwayapply.com/Sl5KfExgMDhgfWE5SmYlJjomSjdmVGY=",
         "track": "논술전형",
@@ -367,8 +367,8 @@
             "college": "",
             "note": "",
             "seats": 19,
-            "applicants": 671,
-            "ratio": 35.32
+            "applicants": 674,
+            "ratio": 35.47
           },
           {
             "id": "0d70fa76f8ab00bc",
@@ -377,8 +377,8 @@
             "college": "",
             "note": "",
             "seats": 17,
-            "applicants": 550,
-            "ratio": 32.35
+            "applicants": 552,
+            "ratio": 32.47
           },
           {
             "id": "34fdbe326df51013",
@@ -387,8 +387,8 @@
             "college": "",
             "note": "",
             "seats": 9,
-            "applicants": 175,
-            "ratio": 19.44
+            "applicants": 176,
+            "ratio": 19.56
           },
           {
             "id": "04de93a4c297243a",
@@ -407,8 +407,8 @@
             "college": "",
             "note": "",
             "seats": 5,
-            "applicants": 137,
-            "ratio": 27.4
+            "applicants": 138,
+            "ratio": 27.6
           },
           {
             "id": "ce2b4d71096d4389",
@@ -417,8 +417,8 @@
             "college": "",
             "note": "",
             "seats": 5,
-            "applicants": 127,
-            "ratio": 25.4
+            "applicants": 128,
+            "ratio": 25.6
           },
           {
             "id": "27124333d85ee8ea",
@@ -427,8 +427,8 @@
             "college": "",
             "note": "",
             "seats": 12,
-            "applicants": 368,
-            "ratio": 30.67
+            "applicants": 369,
+            "ratio": 30.75
           },
           {
             "id": "cb843ec2fa581ad5",
@@ -457,8 +457,8 @@
             "college": "",
             "note": "",
             "seats": 6,
-            "applicants": 111,
-            "ratio": 18.5
+            "applicants": 113,
+            "ratio": 18.83
           },
           {
             "id": "f5b232711ad38d7d",
@@ -477,8 +477,8 @@
             "college": "",
             "note": "",
             "seats": 16,
-            "applicants": 309,
-            "ratio": 19.31
+            "applicants": 311,
+            "ratio": 19.44
           },
           {
             "id": "4affe379bc569651",
@@ -527,40 +527,40 @@
             "college": "",
             "note": "",
             "seats": 8,
-            "applicants": 115,
-            "ratio": 14.38
+            "applicants": 116,
+            "ratio": 14.5
           }
         ],
         "total": {
           "seats": 150,
-          "applicants": 3696,
-          "ratio": 24.64
+          "applicants": 3710,
+          "ratio": 24.73
         },
-        "contentHash": "f68301918be2c9f4c5431e8e6b40a44a89bbaabf8c6b806fdad5c54e469d6197",
-        "collectedAt": "2026-09-11T05:42:28.056Z"
+        "contentHash": "e18b4f0cf2692b4a66cf6c18d15a68171c0398f17105d3fe0b37d381f5a22a40",
+        "collectedAt": "2026-09-11T05:52:37.599Z"
       },
-      "previousSourceAt": "2026-09-11T14:30:00+09:00",
+      "previousSourceAt": "2026-09-11T14:40:00+09:00",
       "previousApplicants": {
-        "a0b81d6d583b87df": 669,
-        "0d70fa76f8ab00bc": 544,
+        "a0b81d6d583b87df": 671,
+        "0d70fa76f8ab00bc": 550,
         "34fdbe326df51013": 175,
-        "04de93a4c297243a": 191,
-        "70bb80b77050ddd9": 135,
-        "ce2b4d71096d4389": 126,
-        "27124333d85ee8ea": 367,
+        "04de93a4c297243a": 194,
+        "70bb80b77050ddd9": 137,
+        "ce2b4d71096d4389": 127,
+        "27124333d85ee8ea": 368,
         "cb843ec2fa581ad5": 147,
-        "f3969a839a8db858": 191,
-        "cf2963a2334dd631": 108,
-        "f5b232711ad38d7d": 122,
-        "a193cc781aa206b4": 304,
-        "4affe379bc569651": 161,
-        "7b50904e7a8c4023": 138,
-        "0b2fc82e852a7218": 117,
-        "945d689f52c5c542": 49,
-        "b5aca04ae392ceab": 114
+        "f3969a839a8db858": 194,
+        "cf2963a2334dd631": 111,
+        "f5b232711ad38d7d": 123,
+        "a193cc781aa206b4": 309,
+        "4affe379bc569651": 165,
+        "7b50904e7a8c4023": 140,
+        "0b2fc82e852a7218": 118,
+        "945d689f52c5c542": 52,
+        "b5aca04ae392ceab": 115
       },
-      "lastCheckedAt": "2026-09-11T05:42:28.056Z",
-      "lastSuccessfulCheckAt": "2026-09-11T05:42:28.056Z",
+      "lastCheckedAt": "2026-09-11T05:52:37.599Z",
+      "lastSuccessfulCheckAt": "2026-09-11T05:52:37.599Z",
       "error": null
     },
     {
@@ -665,8 +665,8 @@
         "11f78fd6141120f6": 434,
         "6f05eb5ffcc81691": 179
       },
-      "lastCheckedAt": "2026-09-11T05:42:28.056Z",
-      "lastSuccessfulCheckAt": "2026-09-11T05:42:28.056Z",
+      "lastCheckedAt": "2026-09-11T05:52:37.599Z",
+      "lastSuccessfulCheckAt": "2026-09-11T05:52:37.599Z",
       "error": null
     },
     {
@@ -1222,8 +1222,8 @@
         "28e719814cc3c769": 1706,
         "d21d878a3e74c5f3": 695
       },
-      "lastCheckedAt": "2026-09-11T05:42:28.056Z",
-      "lastSuccessfulCheckAt": "2026-09-11T05:42:28.056Z",
+      "lastCheckedAt": "2026-09-11T05:52:37.599Z",
+      "lastSuccessfulCheckAt": "2026-09-11T05:52:37.599Z",
       "error": null
     },
     {
@@ -1245,7 +1245,7 @@
       "outcome": "updated",
       "snapshot": {
         "year": 2027,
-        "sourceAt": "2026-09-11T14:40:00+09:00",
+        "sourceAt": "2026-09-11T14:50:00+09:00",
         "isFinal": false,
         "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio10760741.html",
         "track": "논술우수자전형",
@@ -1257,8 +1257,8 @@
             "college": "",
             "note": "",
             "seats": 12,
-            "applicants": 1438,
-            "ratio": 119.83
+            "applicants": 1444,
+            "ratio": 120.33
           },
           {
             "id": "fade7019606a4c85",
@@ -1267,8 +1267,8 @@
             "college": "",
             "note": "",
             "seats": 5,
-            "applicants": 2572,
-            "ratio": 514.4
+            "applicants": 2580,
+            "ratio": 516
           },
           {
             "id": "55294da72e03c39f",
@@ -1277,8 +1277,8 @@
             "college": "",
             "note": "",
             "seats": 33,
-            "applicants": 1106,
-            "ratio": 33.52
+            "applicants": 1108,
+            "ratio": 33.58
           },
           {
             "id": "13d716e28b9f4582",
@@ -1287,8 +1287,8 @@
             "college": "",
             "note": "",
             "seats": 12,
-            "applicants": 283,
-            "ratio": 23.58
+            "applicants": 285,
+            "ratio": 23.75
           },
           {
             "id": "e94e52fd8fbfa735",
@@ -1297,8 +1297,8 @@
             "college": "",
             "note": "",
             "seats": 8,
-            "applicants": 195,
-            "ratio": 24.38
+            "applicants": 196,
+            "ratio": 24.5
           },
           {
             "id": "72485b6a3c9f9b12",
@@ -1307,8 +1307,8 @@
             "college": "",
             "note": "",
             "seats": 8,
-            "applicants": 190,
-            "ratio": 23.75
+            "applicants": 191,
+            "ratio": 23.88
           },
           {
             "id": "7e507ccaddda3045",
@@ -1317,8 +1317,8 @@
             "college": "",
             "note": "",
             "seats": 17,
-            "applicants": 681,
-            "ratio": 40.06
+            "applicants": 687,
+            "ratio": 40.41
           },
           {
             "id": "a9568dea830bbac9",
@@ -1327,8 +1327,8 @@
             "college": "",
             "note": "",
             "seats": 6,
-            "applicants": 137,
-            "ratio": 22.83
+            "applicants": 139,
+            "ratio": 23.17
           },
           {
             "id": "256e76ea5706b314",
@@ -1357,8 +1357,8 @@
             "college": "",
             "note": "",
             "seats": 50,
-            "applicants": 1345,
-            "ratio": 26.9
+            "applicants": 1353,
+            "ratio": 27.06
           },
           {
             "id": "a5916fb3d256e77f",
@@ -1367,8 +1367,8 @@
             "college": "",
             "note": "",
             "seats": 6,
-            "applicants": 454,
-            "ratio": 75.67
+            "applicants": 458,
+            "ratio": 76.33
           },
           {
             "id": "ab9000ccdaed9617",
@@ -1377,8 +1377,8 @@
             "college": "",
             "note": "",
             "seats": 6,
-            "applicants": 132,
-            "ratio": 22
+            "applicants": 133,
+            "ratio": 22.17
           },
           {
             "id": "2e9d5696d3078ed4",
@@ -1397,8 +1397,8 @@
             "college": "",
             "note": "",
             "seats": 13,
-            "applicants": 296,
-            "ratio": 22.77
+            "applicants": 297,
+            "ratio": 22.85
           },
           {
             "id": "f99dc8b611edaedd",
@@ -1407,8 +1407,8 @@
             "college": "",
             "note": "",
             "seats": 18,
-            "applicants": 457,
-            "ratio": 25.39
+            "applicants": 462,
+            "ratio": 25.67
           },
           {
             "id": "36ea3f9298931af1",
@@ -1417,8 +1417,8 @@
             "college": "",
             "note": "",
             "seats": 6,
-            "applicants": 145,
-            "ratio": 24.17
+            "applicants": 146,
+            "ratio": 24.33
           },
           {
             "id": "12057b576fc95349",
@@ -1427,8 +1427,8 @@
             "college": "",
             "note": "",
             "seats": 17,
-            "applicants": 395,
-            "ratio": 23.24
+            "applicants": 400,
+            "ratio": 23.53
           },
           {
             "id": "e4464bcb2253b317",
@@ -1437,8 +1437,8 @@
             "college": "",
             "note": "",
             "seats": 6,
-            "applicants": 118,
-            "ratio": 19.67
+            "applicants": 119,
+            "ratio": 19.83
           },
           {
             "id": "ee473afccbe1121d",
@@ -1447,8 +1447,8 @@
             "college": "",
             "note": "",
             "seats": 15,
-            "applicants": 224,
-            "ratio": 14.93
+            "applicants": 230,
+            "ratio": 15.33
           },
           {
             "id": "c9121cebd7d11814",
@@ -1457,8 +1457,8 @@
             "college": "",
             "note": "",
             "seats": 6,
-            "applicants": 134,
-            "ratio": 22.33
+            "applicants": 135,
+            "ratio": 22.5
           },
           {
             "id": "b064454e6860dec6",
@@ -1467,45 +1467,45 @@
             "college": "",
             "note": "",
             "seats": 10,
-            "applicants": 263,
-            "ratio": 26.3
+            "applicants": 265,
+            "ratio": 26.5
           }
         ],
         "total": {
           "seats": 277,
-          "applicants": 11148,
-          "ratio": 40.25
+          "applicants": 11211,
+          "ratio": 40.47
         },
-        "contentHash": "db406d08d4189597cbc9cd94a727e71cc6579c59fb0c0d024a5b9929e8991e7c",
-        "collectedAt": "2026-09-11T05:42:28.057Z"
+        "contentHash": "350be564c824a4bd5772da86dd7a4fe705fceac600405b681c5c7dbb49e7d2d0",
+        "collectedAt": "2026-09-11T05:52:37.600Z"
       },
-      "previousSourceAt": "2026-09-11T14:30:00+09:00",
+      "previousSourceAt": "2026-09-11T14:40:00+09:00",
       "previousApplicants": {
-        "7d6cfb27e2fce23e": 1434,
-        "fade7019606a4c85": 2556,
-        "55294da72e03c39f": 1096,
-        "13d716e28b9f4582": 282,
-        "e94e52fd8fbfa735": 193,
-        "72485b6a3c9f9b12": 189,
-        "7e507ccaddda3045": 675,
-        "a9568dea830bbac9": 136,
-        "256e76ea5706b314": 166,
-        "6a3ea71ebb08d793": 214,
-        "af616e8d2a58a193": 1338,
-        "a5916fb3d256e77f": 450,
-        "ab9000ccdaed9617": 131,
+        "7d6cfb27e2fce23e": 1438,
+        "fade7019606a4c85": 2572,
+        "55294da72e03c39f": 1106,
+        "13d716e28b9f4582": 283,
+        "e94e52fd8fbfa735": 195,
+        "72485b6a3c9f9b12": 190,
+        "7e507ccaddda3045": 681,
+        "a9568dea830bbac9": 137,
+        "256e76ea5706b314": 170,
+        "6a3ea71ebb08d793": 217,
+        "af616e8d2a58a193": 1345,
+        "a5916fb3d256e77f": 454,
+        "ab9000ccdaed9617": 132,
         "2e9d5696d3078ed4": 196,
-        "b7c602992eca89c3": 294,
-        "f99dc8b611edaedd": 455,
-        "36ea3f9298931af1": 143,
-        "12057b576fc95349": 390,
-        "e4464bcb2253b317": 117,
+        "b7c602992eca89c3": 296,
+        "f99dc8b611edaedd": 457,
+        "36ea3f9298931af1": 145,
+        "12057b576fc95349": 395,
+        "e4464bcb2253b317": 118,
         "ee473afccbe1121d": 224,
-        "c9121cebd7d11814": 133,
-        "b064454e6860dec6": 261
+        "c9121cebd7d11814": 134,
+        "b064454e6860dec6": 263
       },
-      "lastCheckedAt": "2026-09-11T05:42:28.057Z",
-      "lastSuccessfulCheckAt": "2026-09-11T05:42:28.057Z",
+      "lastCheckedAt": "2026-09-11T05:52:37.600Z",
+      "lastSuccessfulCheckAt": "2026-09-11T05:52:37.600Z",
       "error": null
     },
     {
@@ -1720,8 +1720,8 @@
         "13c32998c87b2aef": 91,
         "b530fd6cb46b022c": 55
       },
-      "lastCheckedAt": "2026-09-11T05:42:28.057Z",
-      "lastSuccessfulCheckAt": "2026-09-11T05:42:28.057Z",
+      "lastCheckedAt": "2026-09-11T05:52:37.600Z",
+      "lastSuccessfulCheckAt": "2026-09-11T05:52:37.600Z",
       "error": null
     },
     {
@@ -1843,8 +1843,8 @@
         "75108c53ddbf5513": 57,
         "4dc0ffe1ff75a12c": 50
       },
-      "lastCheckedAt": "2026-09-11T05:42:28.057Z",
-      "lastSuccessfulCheckAt": "2026-09-11T05:42:28.057Z",
+      "lastCheckedAt": "2026-09-11T05:52:37.600Z",
+      "lastSuccessfulCheckAt": "2026-09-11T05:52:37.600Z",
       "error": null
     },
     {
@@ -2136,8 +2136,8 @@
         "1a15a1aaa201efed": 278,
         "1a9adb4670269924": 70
       },
-      "lastCheckedAt": "2026-09-11T05:42:28.057Z",
-      "lastSuccessfulCheckAt": "2026-09-11T05:42:28.057Z",
+      "lastCheckedAt": "2026-09-11T05:52:37.601Z",
+      "lastSuccessfulCheckAt": "2026-09-11T05:52:37.601Z",
       "error": null
     },
     {
@@ -2704,8 +2704,8 @@
         "6032a29639fd4629": 78,
         "a640423300bae943": 52
       },
-      "lastCheckedAt": "2026-09-11T05:42:28.058Z",
-      "lastSuccessfulCheckAt": "2026-09-11T05:42:28.058Z",
+      "lastCheckedAt": "2026-09-11T05:52:37.601Z",
+      "lastSuccessfulCheckAt": "2026-09-11T05:52:37.601Z",
       "error": null
     },
     {
@@ -2822,8 +2822,8 @@
         "f46dea9d31dfb2d3": 6,
         "9bdaae2a4dfa2911": 16
       },
-      "lastCheckedAt": "2026-09-11T05:42:28.058Z",
-      "lastSuccessfulCheckAt": "2026-09-11T05:42:28.058Z",
+      "lastCheckedAt": "2026-09-11T05:52:37.601Z",
+      "lastSuccessfulCheckAt": "2026-09-11T05:52:37.601Z",
       "error": null
     },
     {
@@ -3060,8 +3060,8 @@
         "3f13424abcaab6e0": 333,
         "2df5c5338d26bb93": 423
       },
-      "lastCheckedAt": "2026-09-11T05:42:28.058Z",
-      "lastSuccessfulCheckAt": "2026-09-11T05:42:28.058Z",
+      "lastCheckedAt": "2026-09-11T05:52:37.602Z",
+      "lastSuccessfulCheckAt": "2026-09-11T05:52:37.602Z",
       "error": null
     },
     {
@@ -3083,7 +3083,7 @@
       "outcome": "updated",
       "snapshot": {
         "year": 2027,
-        "sourceAt": "2026-09-11T14:40:00+09:00",
+        "sourceAt": "2026-09-11T14:50:00+09:00",
         "isFinal": false,
         "sourceUrl": "https://addon.jinhakapply.com/RatioV1/RatioH/Ratio11540991.html",
         "track": "논술우수자 전형",
@@ -3095,8 +3095,8 @@
             "college": "",
             "note": "",
             "seats": 51,
-            "applicants": 890,
-            "ratio": 17.45
+            "applicants": 893,
+            "ratio": 17.51
           },
           {
             "id": "8db3e0acd5718693",
@@ -3105,8 +3105,8 @@
             "college": "",
             "note": "",
             "seats": 53,
-            "applicants": 744,
-            "ratio": 14.04
+            "applicants": 750,
+            "ratio": 14.15
           },
           {
             "id": "af6a3a7d36676f4e",
@@ -3115,8 +3115,8 @@
             "college": "",
             "note": "",
             "seats": 15,
-            "applicants": 615,
-            "ratio": 41
+            "applicants": 622,
+            "ratio": 41.47
           },
           {
             "id": "cdecee6477c1bf86",
@@ -3125,8 +3125,8 @@
             "college": "",
             "note": "",
             "seats": 19,
-            "applicants": 978,
-            "ratio": 51.47
+            "applicants": 983,
+            "ratio": 51.74
           },
           {
             "id": "141352502a2c456d",
@@ -3135,8 +3135,8 @@
             "college": "",
             "note": "",
             "seats": 11,
-            "applicants": 903,
-            "ratio": 82.09
+            "applicants": 907,
+            "ratio": 82.45
           },
           {
             "id": "a920a40f4eb8f9dd",
@@ -3145,8 +3145,8 @@
             "college": "",
             "note": "",
             "seats": 22,
-            "applicants": 340,
-            "ratio": 15.45
+            "applicants": 343,
+            "ratio": 15.59
           },
           {
             "id": "184abd3c9ecb1c48",
@@ -3155,8 +3155,8 @@
             "college": "",
             "note": "",
             "seats": 20,
-            "applicants": 1019,
-            "ratio": 50.95
+            "applicants": 1026,
+            "ratio": 51.3
           },
           {
             "id": "ad6506d789217466",
@@ -3165,31 +3165,31 @@
             "college": "",
             "note": "",
             "seats": 7,
-            "applicants": 319,
-            "ratio": 45.57
+            "applicants": 323,
+            "ratio": 46.14
           }
         ],
         "total": {
           "seats": 198,
-          "applicants": 5808,
-          "ratio": 29.33
+          "applicants": 5847,
+          "ratio": 29.53
         },
-        "contentHash": "44c72436864beb68e4fd30e69db5e25bc91438014c0a51375fd5c21170bd2d3c",
-        "collectedAt": "2026-09-11T05:42:28.058Z"
+        "contentHash": "fc4a3bb26ea1dbef6a70c511d16bda59594080022b0a0562748e6149c2cd513d",
+        "collectedAt": "2026-09-11T05:52:37.602Z"
       },
-      "previousSourceAt": "2026-09-11T14:30:00+09:00",
+      "previousSourceAt": "2026-09-11T14:40:00+09:00",
       "previousApplicants": {
-        "e4f5992903ade0ac": 882,
-        "8db3e0acd5718693": 739,
-        "af6a3a7d36676f4e": 611,
-        "cdecee6477c1bf86": 974,
-        "141352502a2c456d": 899,
-        "a920a40f4eb8f9dd": 337,
-        "184abd3c9ecb1c48": 1009,
-        "ad6506d789217466": 318
+        "e4f5992903ade0ac": 890,
+        "8db3e0acd5718693": 744,
+        "af6a3a7d36676f4e": 615,
+        "cdecee6477c1bf86": 978,
+        "141352502a2c456d": 903,
+        "a920a40f4eb8f9dd": 340,
+        "184abd3c9ecb1c48": 1019,
+        "ad6506d789217466": 319
       },
-      "lastCheckedAt": "2026-09-11T05:42:28.058Z",
-      "lastSuccessfulCheckAt": "2026-09-11T05:42:28.058Z",
+      "lastCheckedAt": "2026-09-11T05:52:37.602Z",
+      "lastSuccessfulCheckAt": "2026-09-11T05:52:37.602Z",
       "error": null
     },
     {
@@ -3548,8 +3548,8 @@
         "515544ed4c15287d": 78,
         "03b3b85496cb8f4a": 16
       },
-      "lastCheckedAt": "2026-09-11T05:42:28.059Z",
-      "lastSuccessfulCheckAt": "2026-09-11T05:42:28.059Z",
+      "lastCheckedAt": "2026-09-11T05:52:37.602Z",
+      "lastSuccessfulCheckAt": "2026-09-11T05:52:37.602Z",
       "error": null
     },
     {
@@ -3733,8 +3733,8 @@
         "eb4cc1d20d4f2611": 230,
         "8e9f075fffdc2564": 109
       },
-      "lastCheckedAt": "2026-09-11T05:42:28.059Z",
-      "lastSuccessfulCheckAt": "2026-09-11T05:42:28.059Z",
+      "lastCheckedAt": "2026-09-11T05:52:37.603Z",
+      "lastSuccessfulCheckAt": "2026-09-11T05:52:37.603Z",
       "error": null
     }
   ]
